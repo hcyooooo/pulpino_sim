@@ -1,0 +1,30 @@
+   1              		.file	"gpio.c"
+   2              		.option nopic
+   3              		.section	.text.startup.main,"ax",@progbits
+   4              		.align	1
+   5              		.globl	main
+   7              	main:
+   8 0000 37050000 		lui	a0,%hi(.LC0)
+   9 0004 4111     		add	sp,sp,-16
+  10 0006 13050500 		addi	a0,a0,%lo(.LC0)
+  11 000a 06C6     		sw	ra,12(sp)
+  12 000c 97000000 		call	puts
+  12      E7800000 
+  13              	.L2:
+  14 0014 01A0     		j	.L2
+  16              		.section	.rodata.main.str1.4,"aMS",@progbits,1
+  17              		.align	2
+  18              	.LC0:
+  19 0000 48656C6C 		.string	"Hello, UART!"
+  19      6F2C2055 
+  19      41525421 
+  19      00
+  20              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 gpio.c
+     /tmp/ccZA2XEK.s:7      .text.startup.main:0000000000000000 main
+     /tmp/ccZA2XEK.s:18     .rodata.main.str1.4:0000000000000000 .LC0
+     /tmp/ccZA2XEK.s:13     .text.startup.main:0000000000000014 .L2
+
+UNDEFINED SYMBOLS
+puts

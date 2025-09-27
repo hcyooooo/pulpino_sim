@@ -1,0 +1,326 @@
+   1              		.file	"utils.c"
+   2              		.option nopic
+   3              		.section	.text.exit,"ax",@progbits
+   4              		.align	1
+   5              		.globl	exit
+   7              	exit:
+   8              	.L2:
+   9 0000 01A0     		j	.L2
+  11              		.section	.text.eoc,"ax",@progbits
+  12              		.align	1
+  13              		.globl	eoc
+  15              	eoc:
+  16              	.L5:
+  17 0000 01A0     		j	.L5
+  19              		.section	.text.sleep_busy,"ax",@progbits
+  20              		.align	1
+  21              		.globl	sleep_busy
+  23              	sleep_busy:
+  24 0000 4111     		add	sp,sp,-16
+  25 0002 2AC6     		sw	a0,12(sp)
+  26 0004 B247     		lw	a5,12(sp)
+  27 0006 6358F000 		blez	a5,.L6
+  28 000a 8147     		li	a5,0
+  29              	.L8:
+  30              	 #APP
+  31              	# 46 "../lib/utils.c" 1
+   1              	// Copyright 2017 ETH Zurich and University of Bologna.
+   2              	// Copyright and related rights are licensed under the Solderpad Hardware
+   3              	// License, Version 0.51 (the “License”); you may not use this file except in
+   4              	// compliance with the License.  You may obtain a copy of the License at
+   5              	// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
+   6              	// or agreed to in writing, software, hardware and materials distributed under
+   7              	// this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
+   8              	// CONDITIONS OF ANY KIND, either express or implied. See the License for the
+   9              	// specific language governing permissions and limitations under the License.
+  10              	
+  11              	#include "spr-defs.h"
+  12              	#include <utils.h>
+  13              	#include <lapsiman.h>
+  14              	#include <stdint.h>
+  15              	//#include <string_lib.h>
+  16              	#include <uart.h>
+  17              	#include <gpio.h>
+  18              	
+  19              	// exit loop
+  20              	void exit (int i) {
+  21              	  eoc(i);
+  22              	  while (1);
+  23              	}
+  24              	
+  25              	// signal end of computation
+  26              	void eoc(int i)
+  27              	{
+  28              	//  if (i != 0)
+  29              	//    RES_STATUS = 1;
+  30              	//  else
+  31              	//    RES_STATUS = 0;
+  32              	//
+  33              	//  // activate GPIO
+  34              	//  CGREG |= (1 << CGGPIO);
+  35              	//  // setup GPIO
+  36              	//  set_pin_function(8, 1);
+  37              	//  set_gpio_pin_direction(8, 1);
+  38              	//  set_gpio_pin_value(8, 1);
+  39              	    while(1);
+  40              	}
+  41              	
+  42              	// sleep for 'iter' iterations. each iteration is approx 10 cycles
+  43              	void sleep_busy(volatile int iter)
+  44              	{
+  45              	  for (int i=0;i<iter;i++)
+  46 000c 0100     	    asm volatile ("nop");
+  47              	}
+  32              		nop
+  33              	# 0 "" 2
+  34              	 #NO_APP
+  35 000e 3247     		lw	a4,12(sp)
+  36 0010 8507     		add	a5,a5,1
+  37 0012 E3CDE7FE 		bgt	a4,a5,.L8
+  38              	.L6:
+  39 0016 4101     		add	sp,sp,16
+  40 0018 8280     		jr	ra
+  42              		.section	.text.cpu_perf_set,"ax",@progbits
+  43              		.align	1
+  44              		.globl	cpu_perf_set
+  46              	cpu_perf_set:
+  47 0000 37050000 		lui	a0,%hi(.LC0)
+  48 0004 13050500 		addi	a0,a0,%lo(.LC0)
+  49 0008 17030000 		tail	puts
+  49      67000300 
+  51              		.section	.text.cpu_perf_get,"ax",@progbits
+  52              		.align	1
+  53              		.globl	cpu_perf_get
+  55              	cpu_perf_get:
+  56 0000 BD47     		li	a5,15
+  57 0002 63EBA706 		bgtu	a0,a5,.L13
+  58 0006 93152500 		sll	a1,a0,2
+  59 000a 37050000 		lui	a0,%hi(.L15)
+  60 000e 13050500 		addi	a0,a0,%lo(.L15)
+  61 0012 0375B520 		p.lw	a0,a1(a0)	# load reg(reg)
+  62 0016 0285     		jr	a0
+  63              		.section	.rodata.cpu_perf_get,"a",@progbits
+  64              		.align	2
+  65              		.align	2
+  66              	.L15:
+  67 0000 00000000 		.word	.L14
+  68 0004 00000000 		.word	.L16
+  69 0008 00000000 		.word	.L17
+  70 000c 00000000 		.word	.L18
+  71 0010 00000000 		.word	.L19
+  72 0014 00000000 		.word	.L20
+  73 0018 00000000 		.word	.L21
+  74 001c 00000000 		.word	.L22
+  75 0020 00000000 		.word	.L23
+  76 0024 00000000 		.word	.L24
+  77 0028 00000000 		.word	.L25
+  78 002c 00000000 		.word	.L26
+  79 0030 00000000 		.word	.L27
+  80 0034 00000000 		.word	.L28
+  81 0038 00000000 		.word	.L29
+  82 003c 00000000 		.word	.L30
+  83              		.section	.text.cpu_perf_get
+  84              	.L29:
+  85              	 #APP
+  86              	# 73 "../lib/utils.c" 1
+  48              	
+  49              	#ifdef __riscv__
+  50              	/* Set the specified counter to the specified value */
+  51              	void cpu_perf_set(unsigned int counterId, unsigned int value) {
+  52              	  printf("cpu_perf_set: not implemented yet\n");
+  53              	}
+  54              	
+  55              	unsigned int cpu_perf_get(unsigned int counterId) {
+  56              	  uint32_t value = 0;
+  57              	  // This is stupid! But I really don't know how else we could do that
+  58              	  switch (counterId) {
+  59              	  case  0: asm volatile ("csrr %0, 0x780" : "=r" (value)); break;
+  60              	  case  1: asm volatile ("csrr %0, 0x781" : "=r" (value)); break;
+  61              	  case  2: asm volatile ("csrr %0, 0x782" : "=r" (value)); break;
+  62              	  case  3: asm volatile ("csrr %0, 0x783" : "=r" (value)); break;
+  63              	  case  4: asm volatile ("csrr %0, 0x784" : "=r" (value)); break;
+  64              	  case  5: asm volatile ("csrr %0, 0x785" : "=r" (value)); break;
+  65              	  case  6: asm volatile ("csrr %0, 0x786" : "=r" (value)); break;
+  66              	  case  7: asm volatile ("csrr %0, 0x787" : "=r" (value)); break;
+  67              	  case  8: asm volatile ("csrr %0, 0x788" : "=r" (value)); break;
+  68              	  case  9: asm volatile ("csrr %0, 0x789" : "=r" (value)); break;
+  69              	  case 10: asm volatile ("csrr %0, 0x78A" : "=r" (value)); break;
+  70              	  case 11: asm volatile ("csrr %0, 0x78B" : "=r" (value)); break;
+  71              	  case 12: asm volatile ("csrr %0, 0x78C" : "=r" (value)); break;
+  72              	  case 13: asm volatile ("csrr %0, 0x78D" : "=r" (value)); break;
+  73 0018 7325E078 	  case 14: asm volatile ("csrr %0, 0x78E" : "=r" (value)); break;
+  74              	  case 15: asm volatile ("csrr %0, 0x78F" : "=r" (value)); break;
+  87              		csrr a0, 0x78E
+  88              	# 0 "" 2
+  89              	 #NO_APP
+  90 001c 8280     		ret
+  91              	.L30:
+  92              	 #APP
+  93              	# 74 "../lib/utils.c" 1
+  75              	  default: printf("CSR %d not yet supported\n", counterId); break;
+  94              		csrr a0, 0x78F
+  95              	# 0 "" 2
+  96              	 #NO_APP
+  97 0022 8280     		ret
+  98              	.L14:
+  99              	 #APP
+ 100              	# 59 "../lib/utils.c" 1
+ 101              		csrr a0, 0x780
+ 102              	# 0 "" 2
+ 103              	 #NO_APP
+ 104 0028 8280     		ret
+ 105              	.L16:
+ 106              	 #APP
+ 107              	# 60 "../lib/utils.c" 1
+ 108              		csrr a0, 0x781
+ 109              	# 0 "" 2
+ 110              	 #NO_APP
+ 111 002e 8280     		ret
+ 112              	.L17:
+ 113              	 #APP
+ 114              	# 61 "../lib/utils.c" 1
+ 115              		csrr a0, 0x782
+ 116              	# 0 "" 2
+ 117              	 #NO_APP
+ 118 0034 8280     		ret
+ 119              	.L18:
+ 120              	 #APP
+ 121              	# 62 "../lib/utils.c" 1
+ 122              		csrr a0, 0x783
+ 123              	# 0 "" 2
+ 124              	 #NO_APP
+ 125 003a 8280     		ret
+ 126              	.L19:
+ 127              	 #APP
+ 128              	# 63 "../lib/utils.c" 1
+ 129              		csrr a0, 0x784
+ 130              	# 0 "" 2
+ 131              	 #NO_APP
+ 132 0040 8280     		ret
+ 133              	.L20:
+ 134              	 #APP
+ 135              	# 64 "../lib/utils.c" 1
+ 136              		csrr a0, 0x785
+ 137              	# 0 "" 2
+ 138              	 #NO_APP
+ 139 0046 8280     		ret
+ 140              	.L21:
+ 141              	 #APP
+ 142              	# 65 "../lib/utils.c" 1
+ 143              		csrr a0, 0x786
+ 144              	# 0 "" 2
+ 145              	 #NO_APP
+ 146 004c 8280     		ret
+ 147              	.L22:
+ 148              	 #APP
+ 149              	# 66 "../lib/utils.c" 1
+ 150              		csrr a0, 0x787
+ 151              	# 0 "" 2
+ 152              	 #NO_APP
+ 153 0052 8280     		ret
+ 154              	.L23:
+ 155              	 #APP
+ 156              	# 67 "../lib/utils.c" 1
+ 157              		csrr a0, 0x788
+ 158              	# 0 "" 2
+ 159              	 #NO_APP
+ 160 0058 8280     		ret
+ 161              	.L24:
+ 162              	 #APP
+ 163              	# 68 "../lib/utils.c" 1
+ 164              		csrr a0, 0x789
+ 165              	# 0 "" 2
+ 166              	 #NO_APP
+ 167 005e 8280     		ret
+ 168              	.L25:
+ 169              	 #APP
+ 170              	# 69 "../lib/utils.c" 1
+ 171              		csrr a0, 0x78A
+ 172              	# 0 "" 2
+ 173              	 #NO_APP
+ 174 0064 8280     		ret
+ 175              	.L26:
+ 176              	 #APP
+ 177              	# 70 "../lib/utils.c" 1
+ 178              		csrr a0, 0x78B
+ 179              	# 0 "" 2
+ 180              	 #NO_APP
+ 181 006a 8280     		ret
+ 182              	.L27:
+ 183              	 #APP
+ 184              	# 71 "../lib/utils.c" 1
+ 185              		csrr a0, 0x78C
+ 186              	# 0 "" 2
+ 187              	 #NO_APP
+ 188 0070 8280     		ret
+ 189              	.L28:
+ 190              	 #APP
+ 191              	# 72 "../lib/utils.c" 1
+ 192              		csrr a0, 0x78D
+ 193              	# 0 "" 2
+ 194              	 #NO_APP
+ 195 0076 8280     		ret
+ 196              	.L13:
+ 197 0078 AA85     		mv	a1,a0
+ 198 007a 37050000 		lui	a0,%hi(.LC1)
+ 199 007e 4111     		add	sp,sp,-16
+ 200 0080 13050500 		addi	a0,a0,%lo(.LC1)
+ 201 0084 06C6     		sw	ra,12(sp)
+ 202 0086 97000000 		call	printf
+ 202      E7800000 
+ 203 008e B240     		lw	ra,12(sp)
+ 204 0090 0145     		li	a0,0
+ 205 0092 4101     		add	sp,sp,16
+ 206 0094 8280     		jr	ra
+ 208              		.section	.rodata.cpu_perf_get.str1.4,"aMS",@progbits,1
+ 209              		.align	2
+ 210              	.LC1:
+ 211 0000 43535220 		.string	"CSR %d not yet supported\n"
+ 211      2564206E 
+ 211      6F742079 
+ 211      65742073 
+ 211      7570706F 
+ 212              		.section	.rodata.cpu_perf_set.str1.4,"aMS",@progbits,1
+ 213              		.align	2
+ 214              	.LC0:
+ 215 0000 6370755F 		.string	"cpu_perf_set: not implemented yet"
+ 215      70657266 
+ 215      5F736574 
+ 215      3A206E6F 
+ 215      7420696D 
+ 216              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 utils.c
+     /tmp/ccq6l2qt.s:7      .text.exit:0000000000000000 exit
+     /tmp/ccq6l2qt.s:15     .text.eoc:0000000000000000 eoc
+     /tmp/ccq6l2qt.s:23     .text.sleep_busy:0000000000000000 sleep_busy
+     /tmp/ccq6l2qt.s:46     .text.cpu_perf_set:0000000000000000 cpu_perf_set
+     /tmp/ccq6l2qt.s:55     .text.cpu_perf_get:0000000000000000 cpu_perf_get
+     /tmp/ccq6l2qt.s:8      .text.exit:0000000000000000 .L2
+     /tmp/ccq6l2qt.s:16     .text.eoc:0000000000000000 .L5
+     /tmp/ccq6l2qt.s:38     .text.sleep_busy:0000000000000016 .L6
+     /tmp/ccq6l2qt.s:29     .text.sleep_busy:000000000000000c .L8
+     /tmp/ccq6l2qt.s:214    .rodata.cpu_perf_set.str1.4:0000000000000000 .LC0
+     /tmp/ccq6l2qt.s:66     .rodata.cpu_perf_get:0000000000000000 .L15
+     /tmp/ccq6l2qt.s:210    .rodata.cpu_perf_get.str1.4:0000000000000000 .LC1
+     /tmp/ccq6l2qt.s:196    .text.cpu_perf_get:0000000000000078 .L13
+     /tmp/ccq6l2qt.s:98     .text.cpu_perf_get:0000000000000024 .L14
+     /tmp/ccq6l2qt.s:105    .text.cpu_perf_get:000000000000002a .L16
+     /tmp/ccq6l2qt.s:112    .text.cpu_perf_get:0000000000000030 .L17
+     /tmp/ccq6l2qt.s:119    .text.cpu_perf_get:0000000000000036 .L18
+     /tmp/ccq6l2qt.s:126    .text.cpu_perf_get:000000000000003c .L19
+     /tmp/ccq6l2qt.s:133    .text.cpu_perf_get:0000000000000042 .L20
+     /tmp/ccq6l2qt.s:140    .text.cpu_perf_get:0000000000000048 .L21
+     /tmp/ccq6l2qt.s:147    .text.cpu_perf_get:000000000000004e .L22
+     /tmp/ccq6l2qt.s:154    .text.cpu_perf_get:0000000000000054 .L23
+     /tmp/ccq6l2qt.s:161    .text.cpu_perf_get:000000000000005a .L24
+     /tmp/ccq6l2qt.s:168    .text.cpu_perf_get:0000000000000060 .L25
+     /tmp/ccq6l2qt.s:175    .text.cpu_perf_get:0000000000000066 .L26
+     /tmp/ccq6l2qt.s:182    .text.cpu_perf_get:000000000000006c .L27
+     /tmp/ccq6l2qt.s:189    .text.cpu_perf_get:0000000000000072 .L28
+     /tmp/ccq6l2qt.s:84     .text.cpu_perf_get:0000000000000018 .L29
+     /tmp/ccq6l2qt.s:91     .text.cpu_perf_get:000000000000001e .L30
+
+UNDEFINED SYMBOLS
+puts
+printf

@@ -1,0 +1,1340 @@
+   1              		.file	"qprintf.c"
+   2              		.option nopic
+   3              		.section	.text.qprinti.constprop.1,"ax",@progbits
+   4              		.align	1
+   6              	qprinti.constprop.1:
+   7 0000 5D71     		add	sp,sp,-80
+   8 0002 A6C2     		sw	s1,68(sp)
+   9 0004 86C6     		sw	ra,76(sp)
+  10 0006 A2C4     		sw	s0,72(sp)
+  11 0008 CAC0     		sw	s2,64(sp)
+  12 000a 4EDE     		sw	s3,60(sp)
+  13 000c 52DC     		sw	s4,56(sp)
+  14 000e 56DA     		sw	s5,52(sp)
+  15 0010 5AD8     		sw	s6,48(sp)
+  16 0012 2A88     		mv	a6,a0
+  17 0014 B684     		mv	s1,a3
+  18 0016 63090516 		beqz	a0,.L74
+  19 001a 3289     		mv	s2,a2
+  20 001c 19C2     		beqz	a2,.L12
+  21 001e 63ADA51A 		p.beqimm	a1,10,.L75
+  22              	.L12:
+  23 0022 A3070102 		sb	zero,47(sp)
+  24 0026 C146     		li	a3,16
+  25 0028 0149     		li	s2,0
+  26 002a 6383D510 		beq	a1,a3,.L76
+  27              	.L14:
+  28 002e 37030000 		lui	t1,%hi(.LANCHOR0)
+  29 0032 B7A89919 		li	a7,429498368
+  30 0036 1306E102 		add	a2,sp,46
+  31 003a 13030300 		addi	t1,t1,%lo(.LANCHOR0)
+  32 003e 93889899 		add	a7,a7,-1639
+  33              	.L20:
+  34 0042 93561500 		srl	a3,a0,1
+  35 0046 93572500 		srl	a5,a0,2
+  36 004a B697     		add	a5,a5,a3
+  37 004c 93D54700 		srl	a1,a5,4
+  38 0050 AE97     		add	a5,a5,a1
+  39 0052 13D88700 		srl	a6,a5,8
+  40 0056 93553500 		srl	a1,a0,3
+  41 005a B3061543 		p.mac 	a3,a0,a7	# mac 32x32 in 32 instruction
+  42 005e C297     		add	a5,a5,a6
+  43 0060 DBA6B6B8 		p.adduN 	a3,a3,a1,28
+  44 0064 93D50701 		srl	a1,a5,16
+  45 0068 DBA7B786 		p.adduN 	a5,a5,a1,3
+  46 006c 9A96     		add	a3,t1,a3
+  47 006e 03840600 		lb	s0,0(a3)
+  48 0072 93962700 		sll	a3,a5,2
+  49 0076 BE96     		add	a3,a3,a5
+  50 0078 1905     		add	a0,a0,6
+  51 007a 13040403 		add	s0,s0,48
+  52 007e 8606     		sll	a3,a3,1
+  53 0080 33640410 		p.extbs	s0,s0
+  54 0084 5B35D588 		p.subuN 	a0,a0,a3,4
+  55 0088 B289     		mv	s3,a2
+  56 008a 3E95     		add	a0,a0,a5
+  57 008c AB0F86FE 		p.sb	s0,-1(a2!)	# store post dec
+  58 0090 4DF9     		bnez	a0,.L20
+  59 0092 63030922 		beqz	s2,.L44
+  60 0096 63820412 		beqz	s1,.L22
+  61 009a 13792700 		and	s2,a4,2
+  62 009e 4A86     		mv	a2,s2
+  63 00a0 6306091E 		beqz	s2,.L23
+  64 00a4 1305D002 		li	a0,45
+  65 00a8 3AC6     		sw	a4,12(sp)
+  66 00aa 97000000 		call	uart_sendchar
+  66      E7800000 
+  67 00b2 3247     		lw	a4,12(sp)
+  68 00b4 03840900 		lb	s0,0(s3)
+  69 00b8 FD14     		add	s1,s1,-1
+  70 00ba CE8A     		mv	s5,s3
+  71 00bc 0549     		li	s2,1
+  72              	.L21:
+  73 00be 6352900A 		blez	s1,.L46
+  74 00c2 6307041E 		beqz	s0,.L47
+  75 00c6 13762700 		and	a2,a4,2
+  76              	.L24:
+  77 00ca 138A1A00 		add	s4,s5,1
+  78 00ce D287     		mv	a5,s4
+  79              	.L28:
+  80 00d0 B3895741 		sub	s3,a5,s5
+  81 00d4 8B861700 		p.lb	a3,1(a5!)	# load post inc, ext
+  82 00d8 E5FE     		bnez	a3,.L28
+  83 00da 63C99914 		bgt	s1,s3,.L29
+  84 00de 130B0002 		li	s6,32
+  85 00e2 63110610 		bnez	a2,.L77
+  86 00e6 8144     		li	s1,0
+  87 00e8 8149     		li	s3,0
+  88              	.L36:
+  89 00ea B38A5941 		sub	s5,s3,s5
+  90              	.L38:
+  91 00ee 2285     		mv	a0,s0
+  92 00f0 97000000 		call	uart_sendchar
+  92      E7800000 
+  93 00f8 B3894A01 		add	s3,s5,s4
+  94 00fc 0B041A00 		p.lb	s0,1(s4!)	# load post inc, ext
+  95 0100 7DF4     		bnez	s0,.L38
+  96              	.L37:
+  97 0102 635B9000 		blez	s1,.L39
+  98 0106 2684     		mv	s0,s1
+  99              	.L40:
+ 100 0108 7D14     		add	s0,s0,-1
+ 101 010a 5A85     		mv	a0,s6
+ 102 010c 97000000 		call	uart_sendchar
+ 102      E7800000 
+ 103 0114 75F8     		bnez	s0,.L40
+ 104 0116 A699     		add	s3,s3,s1
+ 105              	.L39:
+ 106 0118 4E99     		add	s2,s3,s2
+ 107              	.L1:
+ 108 011a B640     		lw	ra,76(sp)
+ 109 011c 2644     		lw	s0,72(sp)
+ 110 011e 4A85     		mv	a0,s2
+ 111 0120 9644     		lw	s1,68(sp)
+ 112 0122 0649     		lw	s2,64(sp)
+ 113 0124 F259     		lw	s3,60(sp)
+ 114 0126 625A     		lw	s4,56(sp)
+ 115 0128 D25A     		lw	s5,52(sp)
+ 116 012a 425B     		lw	s6,48(sp)
+ 117 012c 6161     		add	sp,sp,80
+ 118 012e 8280     		jr	ra
+ 119              	.L76:
+ 120 0130 9306E102 		add	a3,sp,46
+ 121 0134 A545     		li	a1,9
+ 122 0136 938767FC 		add	a5,a5,-58
+ 123              	.L16:
+ 124 013a 333645F6 		p.bclr 	a2,a0,27,4 # Bit clear
+ 125 013e 3384C700 		add	s0,a5,a2
+ 126 0142 13040403 		add	s0,s0,48
+ 127 0146 33640410 		p.extbs	s0,s0
+ 128 014a B68A     		mv	s5,a3
+ 129 014c 63D2C502 		ble	a2,a1,.L17
+ 130 0150 AB8F86FE 		p.sb	s0,-1(a3!)	# store post dec
+ 131 0154 1181     		srl	a0,a0,4
+ 132 0156 75F1     		bnez	a0,.L16
+ 133 0158 0149     		li	s2,0
+ 134 015a 13762700 		and	a2,a4,2
+ 135 015e E34690F6 		bgtz	s1,.L24
+ 136              	.L46:
+ 137 0162 130B0002 		li	s6,32
+ 138              	.L72:
+ 139 0166 8149     		li	s3,0
+ 140              	.L26:
+ 141 0168 138A1A00 		add	s4,s5,1
+ 142 016c 3DFC     		bnez	s0,.L36
+ 143 016e 6DB7     		j	.L39
+ 144              	.L17:
+ 145 0170 13040603 		add	s0,a2,48
+ 146 0174 1181     		srl	a0,a0,4
+ 147 0176 AB8F86FE 		p.sb	s0,-1(a3!)	# store post dec
+ 148 017a 61F1     		bnez	a0,.L16
+ 149 017c 0149     		li	s2,0
+ 150 017e 13762700 		and	a2,a4,2
+ 151 0182 E34490F4 		bgtz	s1,.L24
+ 152 0186 F1BF     		j	.L46
+ 153              	.L74:
+ 154 0188 93070003 		li	a5,48
+ 155 018c 2318F100 		sh	a5,16(sp)
+ 156 0190 635FD004 		blez	a3,.L42
+ 157 0194 13041101 		add	s0,sp,17
+ 158 0198 A287     		mv	a5,s0
+ 159 019a 93090101 		add	s3,sp,16
+ 160              	.L4:
+ 161 019e 33863741 		sub	a2,a5,s3
+ 162 01a2 8B861700 		p.lb	a3,1(a5!)	# load post inc, ext
+ 163 01a6 E5FE     		bnez	a3,.L4
+ 164 01a8 634E960A 		bgt	s1,a2,.L5
+ 165 01ac 93742700 		and	s1,a4,2
+ 166 01b0 E5CC     		beqz	s1,.L78
+ 167 01b2 8144     		li	s1,0
+ 168 01b4 130A0003 		li	s4,48
+ 169 01b8 89A0     		j	.L3
+ 170              	.L22:
+ 171 01ba 9307D002 		li	a5,45
+ 172 01be 938AF9FF 		add	s5,s3,-1
+ 173 01c2 A38FF9FE 		sb	a5,-1(s3)
+ 174              	.L25:
+ 175 01c6 1304D002 		li	s0,45
+ 176 01ca 0149     		li	s2,0
+ 177 01cc 130B0002 		li	s6,32
+ 178 01d0 8149     		li	s3,0
+ 179 01d2 138A1A00 		add	s4,s5,1
+ 180 01d6 11BF     		j	.L36
+ 181              	.L75:
+ 182 01d8 6342050E 		bltz	a0,.L79
+ 183 01dc A3070102 		sb	zero,47(sp)
+ 184 01e0 0149     		li	s2,0
+ 185 01e2 B1B5     		j	.L14
+ 186              	.L77:
+ 187 01e4 130B0003 		li	s6,48
+ 188 01e8 8144     		li	s1,0
+ 189 01ea 8149     		li	s3,0
+ 190 01ec FDBD     		j	.L36
+ 191              	.L42:
+ 192 01ee 130A0002 		li	s4,32
+ 193 01f2 13041101 		add	s0,sp,17
+ 194 01f6 93090101 		add	s3,sp,16
+ 195              	.L3:
+ 196 01fa 13050003 		li	a0,48
+ 197 01fe B3093841 		sub	s3,a6,s3
+ 198              	.L8:
+ 199 0202 97000000 		call	uart_sendchar
+ 199      E7800000 
+ 200 020a 33898900 		add	s2,s3,s0
+ 201 020e 0B051400 		p.lb	a0,1(s0!)	# load post inc, ext
+ 202 0212 65F9     		bnez	a0,.L8
+ 203 0214 E35390F0 		blez	s1,.L1
+ 204 0218 2684     		mv	s0,s1
+ 205              	.L11:
+ 206 021a 7D14     		add	s0,s0,-1
+ 207 021c 5285     		mv	a0,s4
+ 208 021e 97000000 		call	uart_sendchar
+ 208      E7800000 
+ 209 0226 75F8     		bnez	s0,.L11
+ 210 0228 2699     		add	s2,s2,s1
+ 211 022a C5BD     		j	.L1
+ 212              	.L29:
+ 213 022c B3893441 		sub	s3,s1,s3
+ 214              	.L27:
+ 215 0230 130B0002 		li	s6,32
+ 216 0234 19C2     		beqz	a2,.L33
+ 217 0236 130B0003 		li	s6,48
+ 218              	.L33:
+ 219 023a 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 220 023e CE84     		mv	s1,s3
+ 221 0240 19EB     		bnez	a4,.L34
+ 222 0242 E35230F3 		blez	s3,.L72
+ 223              	.L35:
+ 224 0246 FD14     		add	s1,s1,-1
+ 225 0248 5A85     		mv	a0,s6
+ 226 024a 97000000 		call	uart_sendchar
+ 226      E7800000 
+ 227 0252 F5F8     		bnez	s1,.L35
+ 228 0254 11BF     		j	.L26
+ 229              	.L34:
+ 230 0256 8149     		li	s3,0
+ 231 0258 E30504EA 		beqz	s0,.L37
+ 232 025c 138A1A00 		add	s4,s5,1
+ 233 0260 8149     		li	s3,0
+ 234 0262 61B5     		j	.L36
+ 235              	.L5:
+ 236 0264 93772700 		and	a5,a4,2
+ 237 0268 3389C440 		sub	s2,s1,a2
+ 238 026c 130A0003 		li	s4,48
+ 239 0270 8DCB     		beqz	a5,.L80
+ 240              	.L7:
+ 241 0272 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 242 0276 CA84     		mv	s1,s2
+ 243 0278 49F3     		bnez	a4,.L3
+ 244              	.L9:
+ 245 027a FD14     		add	s1,s1,-1
+ 246 027c 5285     		mv	a0,s4
+ 247 027e 97000000 		call	uart_sendchar
+ 247      E7800000 
+ 248 0286 F5F8     		bnez	s1,.L9
+ 249 0288 4A88     		mv	a6,s2
+ 250 028a 85BF     		j	.L3
+ 251              	.L23:
+ 252 028c 9307D002 		li	a5,45
+ 253 0290 A38FF9FE 		sb	a5,-1(s3)
+ 254 0294 938AF9FF 		add	s5,s3,-1
+ 255 0298 1304D002 		li	s0,45
+ 256 029c E34790E2 		bgtz	s1,.L24
+ 257 02a0 1DB7     		j	.L25
+ 258              	.L80:
+ 259 02a2 130A0002 		li	s4,32
+ 260 02a6 F1B7     		j	.L7
+ 261              	.L78:
+ 262 02a8 0148     		li	a6,0
+ 263 02aa 130A0002 		li	s4,32
+ 264 02ae B1B7     		j	.L3
+ 265              	.L47:
+ 266 02b0 A689     		mv	s3,s1
+ 267 02b2 13762700 		and	a2,a4,2
+ 268 02b6 ADBF     		j	.L27
+ 269              	.L44:
+ 270 02b8 CE8A     		mv	s5,s3
+ 271 02ba 11B5     		j	.L21
+ 272              	.L79:
+ 273 02bc 3305A040 		sub	a0,zero,a0
+ 274 02c0 A3070102 		sb	zero,47(sp)
+ 275 02c4 ADB3     		j	.L14
+ 277              		.section	.text.putchar,"ax",@progbits
+ 278              		.align	1
+ 279              		.globl	putchar
+ 281              	putchar:
+ 282 0000 4111     		add	sp,sp,-16
+ 283 0002 22C4     		sw	s0,8(sp)
+ 284 0004 2A84     		mv	s0,a0
+ 285 0006 33650510 		p.extbs	a0,a0
+ 286 000a 06C6     		sw	ra,12(sp)
+ 287 000c 97000000 		call	uart_sendchar
+ 287      E7800000 
+ 288 0014 2285     		mv	a0,s0
+ 289 0016 B240     		lw	ra,12(sp)
+ 290 0018 2244     		lw	s0,8(sp)
+ 291 001a 4101     		add	sp,sp,16
+ 292 001c 8280     		jr	ra
+ 294              		.section	.text.printf,"ax",@progbits
+ 295              		.align	1
+ 296              		.globl	printf
+ 298              	printf:
+ 299 0000 3571     		add	sp,sp,-160
+ 300 0002 CED6     		sw	s3,108(sp)
+ 301 0004 E2CC     		sw	s8,88(sp)
+ 302 0006 86DE     		sw	ra,124(sp)
+ 303 0008 A2DC     		sw	s0,120(sp)
+ 304 000a A6DA     		sw	s1,116(sp)
+ 305 000c CAD8     		sw	s2,112(sp)
+ 306 000e D2D4     		sw	s4,104(sp)
+ 307 0010 D6D2     		sw	s5,100(sp)
+ 308 0012 DAD0     		sw	s6,96(sp)
+ 309 0014 DECE     		sw	s7,92(sp)
+ 310 0016 E6CA     		sw	s9,84(sp)
+ 311 0018 EAC8     		sw	s10,80(sp)
+ 312 001a EEC6     		sw	s11,76(sp)
+ 313 001c 2EC3     		sw	a1,132(sp)
+ 314 001e 32C5     		sw	a2,136(sp)
+ 315 0020 36C7     		sw	a3,140(sp)
+ 316 0022 3AC9     		sw	a4,144(sp)
+ 317 0024 3ECB     		sw	a5,148(sp)
+ 318 0026 42CD     		sw	a6,152(sp)
+ 319 0028 46CF     		sw	a7,156(sp)
+ 320 002a 2A8C     		mv	s8,a0
+ 321 002c 93094108 		add	s3,sp,132
+ 322 0030 03050500 		lb	a0,0(a0)
+ 323 0034 4ECE     		sw	s3,28(sp)
+ 324 0036 63070516 		beqz	a0,.L189
+ 325 003a B70A0000 		lui	s5,%hi(.LC0)
+ 326 003e 1410     		add	a3,sp,32
+ 327 0040 938A0A00 		addi	s5,s5,%lo(.LC0)
+ 328 0044 8144     		li	s1,0
+ 329 0046 13095002 		li	s2,37
+ 330 004a 130B8101 		add	s6,sp,24
+ 331 004e 36C4     		sw	a3,8(sp)
+ 332 0050 29A8     		j	.L185
+ 333              	.L85:
+ 334 0052 97000000 		call	uart_sendchar
+ 334      E7800000 
+ 335 005a A287     		mv	a5,s0
+ 336 005c 8504     		add	s1,s1,1
+ 337 005e 6284     		mv	s0,s8
+ 338 0060 3E8C     		mv	s8,a5
+ 339              	.L110:
+ 340 0062 03051400 		lb	a0,1(s0)
+ 341 0066 63000514 		beqz	a0,.L83
+ 342              	.L185:
+ 343 006a 13041C00 		add	s0,s8,1
+ 344 006e E31225FF 		bne	a0,s2,.L85
+ 345 0072 03051C00 		lb	a0,1(s8)
+ 346 0076 63080512 		beqz	a0,.L83
+ 347 007a 63172501 		bne	a0,s2,.L86
+ 348 007e 93072C00 		add	a5,s8,2
+ 349 0082 228C     		mv	s8,s0
+ 350 0084 3E84     		mv	s0,a5
+ 351 0086 F1B7     		j	.L85
+ 352              	.L86:
+ 353 0088 9307D002 		li	a5,45
+ 354 008c 0147     		li	a4,0
+ 355 008e 6317F500 		bne	a0,a5,.L87
+ 356 0092 03052C00 		lb	a0,2(s8)
+ 357 0096 13042C00 		add	s0,s8,2
+ 358 009a 0547     		li	a4,1
+ 359              	.L87:
+ 360 009c 93070003 		li	a5,48
+ 361 00a0 631BF516 		bne	a0,a5,.L191
+ 362 00a4 93071400 		add	a5,s0,1
+ 363 00a8 93060003 		li	a3,48
+ 364              	.L89:
+ 365 00ac 03850700 		lb	a0,0(a5)
+ 366 00b0 3E84     		mv	s0,a5
+ 367 00b2 334717C0 		p.bset 	a4,a4,0,1 # Bit set
+ 368 00b6 8507     		add	a5,a5,1
+ 369 00b8 E30AD5FE 		beq	a0,a3,.L89
+ 370 00bc 094A     		li	s4,2
+ 371              	.L88:
+ 372 00be 930705FD 		add	a5,a0,-48
+ 373 00c2 13F6F70F 		and	a2,a5,0xff
+ 374 00c6 A546     		li	a3,9
+ 375 00c8 63E5C614 		bgtu	a2,a3,.L192
+ 376 00cc 93051400 		add	a1,s0,1
+ 377 00d0 814B     		li	s7,0
+ 378 00d2 2548     		li	a6,9
+ 379              	.L91:
+ 380 00d4 93962B00 		sll	a3,s7,2
+ 381 00d8 DE96     		add	a3,a3,s7
+ 382 00da 2E84     		mv	s0,a1
+ 383 00dc 0B851500 		p.lb	a0,1(a1!)	# load post inc, ext
+ 384 00e0 8606     		sll	a3,a3,1
+ 385 00e2 B38BD700 		add	s7,a5,a3
+ 386 00e6 930705FD 		add	a5,a0,-48
+ 387 00ea 93F6F70F 		and	a3,a5,0xff
+ 388 00ee E373D8FE 		bleu	a3,a6,.L91
+ 389              	.L90:
+ 390 00f2 93073007 		li	a5,115
+ 391 00f6 130C1400 		add	s8,s0,1
+ 392 00fa 6306F50C 		beq	a0,a5,.L281
+ 393 00fe 93074006 		li	a5,100
+ 394 0102 630EF514 		beq	a0,a5,.L282
+ 395 0106 93075007 		li	a5,117
+ 396 010a 6308F516 		beq	a0,a5,.L283
+ 397 010e 93078007 		li	a5,120
+ 398 0112 6302F518 		beq	a0,a5,.L284
+ 399 0116 93078005 		li	a5,88
+ 400 011a 6306F524 		beq	a0,a5,.L285
+ 401 011e 93073006 		li	a5,99
+ 402 0122 E310F5F4 		bne	a0,a5,.L110
+ 403 0126 838C0900 		lb	s9,0(s3)
+ 404 012a 9109     		add	s3,s3,4
+ 405 012c A30C0100 		sb	zero,25(sp)
+ 406 0130 230C9101 		sb	s9,24(sp)
+ 407 0134 4EC6     		sw	s3,12(sp)
+ 408 0136 63880B3A 		beqz	s7,.L169
+ 409 013a 63880C30 		beqz	s9,.L211
+ 410 013e 93079101 		add	a5,sp,25
+ 411              	.L171:
+ 412 0142 B38D6741 		sub	s11,a5,s6
+ 413 0146 8B861700 		p.lb	a3,1(a5!)	# load post inc, ext
+ 414 014a E5FE     		bnez	a3,.L171
+ 415 014c 63C07D31 		blt	s11,s7,.L170
+ 416 0150 B33B17FC 		p.bclr 	s7,a4,30,1 # Bit clear
+ 417 0154 631A0A48 		bnez	s4,.L172
+ 418 0158 63990B52 		bnez	s7,.L286
+ 419 015c 814D     		li	s11,0
+ 420 015e 130D0002 		li	s10,32
+ 421              	.L173:
+ 422 0162 63810C56 		beqz	s9,.L287
+ 423              	.L179:
+ 424 0166 93099101 		add	s3,sp,25
+ 425 016a B38D6D41 		sub	s11,s11,s6
+ 426              	.L181:
+ 427 016e 6685     		mv	a0,s9
+ 428 0170 97000000 		call	uart_sendchar
+ 428      E7800000 
+ 429 0178 338A3D01 		add	s4,s11,s3
+ 430 017c 8B8C1900 		p.lb	s9,1(s3!)	# load post inc, ext
+ 431 0180 E3970CFE 		bnez	s9,.L181
+ 432              	.L180:
+ 433 0184 635F7045 		blez	s7,.L182
+ 434 0188 DE8C     		mv	s9,s7
+ 435              	.L183:
+ 436 018a FD1C     		add	s9,s9,-1
+ 437 018c 6A85     		mv	a0,s10
+ 438 018e 97000000 		call	uart_sendchar
+ 438      E7800000 
+ 439 0196 E39A0CFE 		bnez	s9,.L183
+ 440 019a B38C4B01 		add	s9,s7,s4
+ 441 019e E694     		add	s1,s1,s9
+ 442 01a0 B249     		lw	s3,12(sp)
+ 443 01a2 C1B5     		j	.L110
+ 444              	.L189:
+ 445 01a4 8144     		li	s1,0
+ 446              	.L83:
+ 447 01a6 F650     		lw	ra,124(sp)
+ 448 01a8 6654     		lw	s0,120(sp)
+ 449 01aa 2685     		mv	a0,s1
+ 450 01ac 4659     		lw	s2,112(sp)
+ 451 01ae D654     		lw	s1,116(sp)
+ 452 01b0 B659     		lw	s3,108(sp)
+ 453 01b2 265A     		lw	s4,104(sp)
+ 454 01b4 965A     		lw	s5,100(sp)
+ 455 01b6 065B     		lw	s6,96(sp)
+ 456 01b8 F64B     		lw	s7,92(sp)
+ 457 01ba 664C     		lw	s8,88(sp)
+ 458 01bc D64C     		lw	s9,84(sp)
+ 459 01be 464D     		lw	s10,80(sp)
+ 460 01c0 B64D     		lw	s11,76(sp)
+ 461 01c2 0D61     		add	sp,sp,160
+ 462 01c4 8280     		jr	ra
+ 463              	.L281:
+ 464 01c6 03AD0900 		lw	s10,0(s3)
+ 465 01ca 9109     		add	s3,s3,4
+ 466 01cc 4EC6     		sw	s3,12(sp)
+ 467 01ce 63090D22 		beqz	s10,.L93
+ 468 01d2 03050D00 		lb	a0,0(s10)
+ 469 01d6 63820B04 		beqz	s7,.L94
+ 470 01da 630E0514 		beqz	a0,.L193
+ 471              	.L186:
+ 472 01de 93071D00 		add	a5,s10,1
+ 473 01e2 BE86     		mv	a3,a5
+ 474              	.L96:
+ 475 01e4 3385A641 		sub	a0,a3,s10
+ 476 01e8 8B851600 		p.lb	a1,1(a3!)	# load post inc, ext
+ 477 01ec E5FD     		bnez	a1,.L96
+ 478 01ee 63457515 		bgt	s7,a0,.L95
+ 479 01f2 B33C17FC 		p.bclr 	s9,a4,30,1 # Bit clear
+ 480 01f6 63120A22 		bnez	s4,.L97
+ 481 01fa 639E0C34 		bnez	s9,.L288
+ 482 01fe 814B     		li	s7,0
+ 483 0200 930D0002 		li	s11,32
+ 484              	.L98:
+ 485 0204 EA87     		mv	a5,s10
+ 486 0206 0B851700 		p.lb	a0,1(a5!)	# load post inc, ext
+ 487 020a 19ED     		bnez	a0,.L104
+ 488 020c DE94     		add	s1,s1,s7
+ 489 020e B249     		lw	s3,12(sp)
+ 490 0210 89BD     		j	.L110
+ 491              	.L192:
+ 492 0212 814B     		li	s7,0
+ 493 0214 F9BD     		j	.L90
+ 494              	.L191:
+ 495 0216 014A     		li	s4,0
+ 496 0218 5DB5     		j	.L88
+ 497              	.L94:
+ 498 021a E30405E4 		beqz	a0,.L110
+ 499 021e 814C     		li	s9,0
+ 500 0220 930D0002 		li	s11,32
+ 501 0224 93071D00 		add	a5,s10,1
+ 502              	.L104:
+ 503 0228 BE89     		mv	s3,a5
+ 504 022a 338DAB41 		sub	s10,s7,s10
+ 505              	.L106:
+ 506 022e 97000000 		call	uart_sendchar
+ 506      E7800000 
+ 507 0236 330A3D01 		add	s4,s10,s3
+ 508 023a 0B851900 		p.lb	a0,1(s3!)	# load post inc, ext
+ 509 023e 65F9     		bnez	a0,.L106
+ 510              	.L105:
+ 511 0240 6351903B 		blez	s9,.L182
+ 512 0244 668D     		mv	s10,s9
+ 513              	.L108:
+ 514 0246 7D1D     		add	s10,s10,-1
+ 515 0248 6E85     		mv	a0,s11
+ 516 024a 97000000 		call	uart_sendchar
+ 516      E7800000 
+ 517 0252 E31A0DFE 		bnez	s10,.L108
+ 518 0256 669A     		add	s4,s4,s9
+ 519 0258 D294     		add	s1,s1,s4
+ 520 025a B249     		lw	s3,12(sp)
+ 521 025c 19B5     		j	.L110
+ 522              	.L282:
+ 523 025e 03A50900 		lw	a0,0(s3)
+ 524 0262 93071006 		li	a5,97
+ 525 0266 DE86     		mv	a3,s7
+ 526 0268 0546     		li	a2,1
+ 527 026a A945     		li	a1,10
+ 528 026c 97000000 		call	qprinti.constprop.1
+ 528      E7800000 
+ 529 0274 9109     		add	s3,s3,4
+ 530 0276 AA94     		add	s1,s1,a0
+ 531 0278 EDB3     		j	.L110
+ 532              	.L283:
+ 533 027a 03A50900 		lw	a0,0(s3)
+ 534 027e 93071006 		li	a5,97
+ 535 0282 DE86     		mv	a3,s7
+ 536 0284 0146     		li	a2,0
+ 537 0286 A945     		li	a1,10
+ 538 0288 97000000 		call	qprinti.constprop.1
+ 538      E7800000 
+ 539 0290 9109     		add	s3,s3,4
+ 540 0292 AA94     		add	s1,s1,a0
+ 541 0294 F9B3     		j	.L110
+ 542              	.L284:
+ 543 0296 83A60900 		lw	a3,0(s3)
+ 544 029a 9109     		add	s3,s3,4
+ 545 029c 4EC6     		sw	s3,12(sp)
+ 546 029e 638F061C 		beqz	a3,.L289
+ 547 02a2 A30F0102 		sb	zero,63(sp)
+ 548 02a6 9305E103 		add	a1,sp,62
+ 549 02aa 2548     		li	a6,9
+ 550              	.L127:
+ 551 02ac 33B546F6 		p.bclr 	a0,a3,27,4 # Bit clear
+ 552 02b0 93077505 		add	a5,a0,87
+ 553 02b4 B3E90710 		p.extbs	s3,a5
+ 554 02b8 AE8C     		mv	s9,a1
+ 555 02ba 6357A806 		ble	a0,a6,.L128
+ 556 02be AB8F35FF 		p.sb	s3,-1(a1!)	# store post dec
+ 557 02c2 9182     		srl	a3,a3,4
+ 558 02c4 E5F6     		bnez	a3,.L127
+ 559              	.L130:
+ 560 02c6 138D1C00 		add	s10,s9,1
+ 561 02ca EA86     		mv	a3,s10
+ 562 02cc 63870B16 		beqz	s7,.L290
+ 563              	.L131:
+ 564 02d0 33859641 		sub	a0,a3,s9
+ 565 02d4 8B851600 		p.lb	a1,1(a3!)	# load post inc, ext
+ 566 02d8 E5FD     		bnez	a1,.L131
+ 567 02da 634E7529 		bgt	s7,a0,.L132
+ 568 02de B33B17FC 		p.bclr 	s7,a4,30,1 # Bit clear
+ 569 02e2 63190A30 		bnez	s4,.L133
+ 570 02e6 638C0B3A 		beqz	s7,.L201
+ 571 02ea 814B     		li	s7,0
+ 572 02ec 930D0002 		li	s11,32
+ 573              	.L135:
+ 574 02f0 B38C9B41 		sub	s9,s7,s9
+ 575              	.L139:
+ 576 02f4 4E85     		mv	a0,s3
+ 577 02f6 97000000 		call	uart_sendchar
+ 577      E7800000 
+ 578 02fe B38BAC01 		add	s7,s9,s10
+ 579 0302 8B091D00 		p.lb	s3,1(s10!)	# load post inc, ext
+ 580 0306 E39709FE 		bnez	s3,.L139
+ 581 030a D28C     		mv	s9,s4
+ 582 030c 63060A38 		beqz	s4,.L279
+ 583              	.L140:
+ 584 0310 FD1C     		add	s9,s9,-1
+ 585 0312 6E85     		mv	a0,s11
+ 586 0314 97000000 		call	uart_sendchar
+ 586      E7800000 
+ 587 031c E39A0CFE 		bnez	s9,.L140
+ 588              	.L280:
+ 589 0320 5E9A     		add	s4,s7,s4
+ 590 0322 D294     		add	s1,s1,s4
+ 591 0324 B249     		lw	s3,12(sp)
+ 592 0326 35BB     		j	.L110
+ 593              	.L128:
+ 594 0328 93090503 		add	s3,a0,48
+ 595 032c 9182     		srl	a3,a3,4
+ 596 032e AB8F35FF 		p.sb	s3,-1(a1!)	# store post dec
+ 597 0332 ADFE     		bnez	a3,.L127
+ 598 0334 49BF     		j	.L130
+ 599              	.L193:
+ 600 0336 0145     		li	a0,0
+ 601              	.L95:
+ 602 0338 B38BAB40 		sub	s7,s7,a0
+ 603 033c 930D0002 		li	s11,32
+ 604 0340 63040A00 		beqz	s4,.L101
+ 605 0344 930D0003 		li	s11,48
+ 606              	.L101:
+ 607 0348 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 608 034c 69EF     		bnez	a4,.L102
+ 609 034e DE8C     		mv	s9,s7
+ 610 0350 63517039 		blez	s7,.L291
+ 611              	.L103:
+ 612 0354 FD1C     		add	s9,s9,-1
+ 613 0356 6E85     		mv	a0,s11
+ 614 0358 97000000 		call	uart_sendchar
+ 614      E7800000 
+ 615 0360 E39A0CFE 		bnez	s9,.L103
+ 616 0364 45B5     		j	.L98
+ 617              	.L285:
+ 618 0366 83A60900 		lw	a3,0(s3)
+ 619 036a 9109     		add	s3,s3,4
+ 620 036c 4EC6     		sw	s3,12(sp)
+ 621 036e 63820618 		beqz	a3,.L292
+ 622 0372 A30F0102 		sb	zero,63(sp)
+ 623 0376 9305E103 		add	a1,sp,62
+ 624 037a 2548     		li	a6,9
+ 625              	.L155:
+ 626 037c 33B546F6 		p.bclr 	a0,a3,27,4 # Bit clear
+ 627 0380 93097503 		add	s3,a0,55
+ 628 0384 AE8C     		mv	s9,a1
+ 629 0386 6356A806 		ble	a0,a6,.L156
+ 630 038a AB8F35FF 		p.sb	s3,-1(a1!)	# store post dec
+ 631 038e 9182     		srl	a3,a3,4
+ 632 0390 F5F6     		bnez	a3,.L155
+ 633              	.L158:
+ 634 0392 938D1C00 		add	s11,s9,1
+ 635 0396 EE86     		mv	a3,s11
+ 636 0398 63850B0A 		beqz	s7,.L293
+ 637              	.L159:
+ 638 039c 33859641 		sub	a0,a3,s9
+ 639 03a0 8B851600 		p.lb	a1,1(a3!)	# load post inc, ext
+ 640 03a4 E5FD     		bnez	a1,.L159
+ 641 03a6 63407521 		bgt	s7,a0,.L160
+ 642 03aa 631C0A24 		bnez	s4,.L161
+ 643 03ae 333A17FC 		p.bclr 	s4,a4,30,1 # Bit clear
+ 644 03b2 814B     		li	s7,0
+ 645 03b4 130D0002 		li	s10,32
+ 646 03b8 63040A00 		beqz	s4,.L164
+ 647              	.L163:
+ 648 03bc 5E8A     		mv	s4,s7
+ 649 03be 814B     		li	s7,0
+ 650              	.L164:
+ 651 03c0 B38C9B41 		sub	s9,s7,s9
+ 652              	.L167:
+ 653 03c4 4E85     		mv	a0,s3
+ 654 03c6 97000000 		call	uart_sendchar
+ 654      E7800000 
+ 655 03ce B38BBC01 		add	s7,s9,s11
+ 656 03d2 8B891D00 		p.lb	s3,1(s11!)	# load post inc, ext
+ 657 03d6 E39709FE 		bnez	s3,.L167
+ 658 03da D28C     		mv	s9,s4
+ 659 03dc 635E402B 		blez	s4,.L279
+ 660              	.L168:
+ 661 03e0 FD1C     		add	s9,s9,-1
+ 662 03e2 6A85     		mv	a0,s10
+ 663 03e4 97000000 		call	uart_sendchar
+ 663      E7800000 
+ 664 03ec E39A0CFE 		bnez	s9,.L168
+ 665 03f0 05BF     		j	.L280
+ 666              	.L156:
+ 667 03f2 93090503 		add	s3,a0,48
+ 668 03f6 9182     		srl	a3,a3,4
+ 669 03f8 AB8F35FF 		p.sb	s3,-1(a1!)	# store post dec
+ 670 03fc C1F2     		bnez	a3,.L155
+ 671 03fe 51BF     		j	.L158
+ 672              	.L93:
+ 673 0400 568D     		mv	s10,s5
+ 674 0402 E39E0BDC 		bnez	s7,.L186
+ 675 0406 B7070000 		lui	a5,%hi(.LC0+1)
+ 676 040a 814C     		li	s9,0
+ 677 040c 930D0002 		li	s11,32
+ 678 0410 13058002 		li	a0,40
+ 679 0414 93871700 		addi	a5,a5,%lo(.LC0+1)
+ 680 0418 01BD     		j	.L104
+ 681              	.L97:
+ 682 041a 63960C14 		bnez	s9,.L294
+ 683 041e 814B     		li	s7,0
+ 684 0420 930D0003 		li	s11,48
+ 685 0424 C5B3     		j	.L98
+ 686              	.L102:
+ 687 0426 03050D00 		lb	a0,0(s10)
+ 688 042a DE8C     		mv	s9,s7
+ 689 042c 014A     		li	s4,0
+ 690 042e E30905E0 		beqz	a0,.L105
+ 691 0432 93071D00 		add	a5,s10,1
+ 692 0436 814B     		li	s7,0
+ 693 0438 C5BB     		j	.L104
+ 694              	.L290:
+ 695 043a 014A     		li	s4,0
+ 696 043c 930D0002 		li	s11,32
+ 697 0440 45BD     		j	.L135
+ 698              	.L293:
+ 699 0442 014A     		li	s4,0
+ 700 0444 130D0002 		li	s10,32
+ 701 0448 A5BF     		j	.L164
+ 702              	.L211:
+ 703 044a 814D     		li	s11,0
+ 704              	.L170:
+ 705 044c B38DBB41 		sub	s11,s7,s11
+ 706 0450 130D0002 		li	s10,32
+ 707 0454 63040A00 		beqz	s4,.L176
+ 708 0458 130D0003 		li	s10,48
+ 709              	.L176:
+ 710 045c 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 711 0460 EE8B     		mv	s7,s11
+ 712 0462 6319071A 		bnez	a4,.L177
+ 713 0466 6354B027 		blez	s11,.L295
+ 714              	.L178:
+ 715 046a FD1B     		add	s7,s7,-1
+ 716 046c 6A85     		mv	a0,s10
+ 717 046e 97000000 		call	uart_sendchar
+ 717      E7800000 
+ 718 0476 E39A0BFE 		bnez	s7,.L178
+ 719 047a E5B1     		j	.L173
+ 720              	.L289:
+ 721 047c 93070003 		li	a5,48
+ 722 0480 2310F102 		sh	a5,32(sp)
+ 723 0484 638D0B18 		beqz	s7,.L199
+ 724 0488 93071102 		add	a5,sp,33
+ 725              	.L116:
+ 726 048c A246     		lw	a3,8(sp)
+ 727 048e B385D740 		sub	a1,a5,a3
+ 728 0492 8B861700 		p.lb	a3,1(a5!)	# load post inc, ext
+ 729 0496 FDFA     		bnez	a3,.L116
+ 730 0498 63C77519 		blt	a1,s7,.L117
+ 731 049c 630D0A20 		beqz	s4,.L296
+ 732 04a0 930D0003 		li	s11,48
+ 733 04a4 814B     		li	s7,0
+ 734 04a6 014A     		li	s4,0
+ 735              	.L115:
+ 736 04a8 A247     		lw	a5,8(sp)
+ 737 04aa 93091102 		add	s3,sp,33
+ 738 04ae 13050003 		li	a0,48
+ 739 04b2 B38BFB40 		sub	s7,s7,a5
+ 740              	.L123:
+ 741 04b6 97000000 		call	uart_sendchar
+ 741      E7800000 
+ 742 04be 338D3B01 		add	s10,s7,s3
+ 743 04c2 0B851900 		p.lb	a0,1(s3!)	# load post inc, ext
+ 744 04c6 65F9     		bnez	a0,.L123
+ 745 04c8 630B0A1E 		beqz	s4,.L152
+ 746 04cc D28C     		mv	s9,s4
+ 747              	.L125:
+ 748 04ce FD1C     		add	s9,s9,-1
+ 749 04d0 6E85     		mv	a0,s11
+ 750 04d2 97000000 		call	uart_sendchar
+ 750      E7800000 
+ 751 04da E39A0CFE 		bnez	s9,.L125
+ 752              	.L278:
+ 753 04de 6A9A     		add	s4,s4,s10
+ 754 04e0 D294     		add	s1,s1,s4
+ 755 04e2 B249     		lw	s3,12(sp)
+ 756 04e4 BDBE     		j	.L110
+ 757              	.L169:
+ 758 04e6 814D     		li	s11,0
+ 759 04e8 130D0002 		li	s10,32
+ 760 04ec E39D0CC6 		bnez	s9,.L179
+ 761 04f0 8DBE     		j	.L110
+ 762              	.L292:
+ 763 04f2 93070003 		li	a5,48
+ 764 04f6 2310F102 		sh	a5,32(sp)
+ 765 04fa 638D0B14 		beqz	s7,.L204
+ 766 04fe 93071102 		add	a5,sp,33
+ 767              	.L144:
+ 768 0502 A246     		lw	a3,8(sp)
+ 769 0504 B385D740 		sub	a1,a5,a3
+ 770 0508 8B861700 		p.lb	a3,1(a5!)	# load post inc, ext
+ 771 050c FDFA     		bnez	a3,.L144
+ 772 050e 63C77515 		bgt	s7,a1,.L145
+ 773 0512 630E0A18 		beqz	s4,.L297
+ 774 0516 930D0003 		li	s11,48
+ 775 051a 814B     		li	s7,0
+ 776 051c 014A     		li	s4,0
+ 777              	.L143:
+ 778 051e A247     		lw	a5,8(sp)
+ 779 0520 93091102 		add	s3,sp,33
+ 780 0524 13050003 		li	a0,48
+ 781 0528 B38BFB40 		sub	s7,s7,a5
+ 782              	.L151:
+ 783 052c 97000000 		call	uart_sendchar
+ 783      E7800000 
+ 784 0534 338D3B01 		add	s10,s7,s3
+ 785 0538 0B851900 		p.lb	a0,1(s3!)	# load post inc, ext
+ 786 053c 65F9     		bnez	a0,.L151
+ 787 053e 63000A18 		beqz	s4,.L152
+ 788 0542 D28C     		mv	s9,s4
+ 789              	.L153:
+ 790 0544 FD1C     		add	s9,s9,-1
+ 791 0546 6E85     		mv	a0,s11
+ 792 0548 97000000 		call	uart_sendchar
+ 792      E7800000 
+ 793 0550 E39A0CFE 		bnez	s9,.L153
+ 794 0554 69B7     		j	.L278
+ 795              	.L288:
+ 796 0556 03050D00 		lb	a0,0(s10)
+ 797 055a 41C5     		beqz	a0,.L182
+ 798 055c 814C     		li	s9,0
+ 799 055e 814B     		li	s7,0
+ 800 0560 930D0002 		li	s11,32
+ 801 0564 D1B1     		j	.L104
+ 802              	.L294:
+ 803 0566 03050D00 		lb	a0,0(s10)
+ 804 056a 3DC9     		beqz	a0,.L277
+ 805 056c 930D0003 		li	s11,48
+ 806 0570 814C     		li	s9,0
+ 807 0572 814B     		li	s7,0
+ 808 0574 55B9     		j	.L104
+ 809              	.L132:
+ 810 0576 B38BAB40 		sub	s7,s7,a0
+ 811 057a 930D0003 		li	s11,48
+ 812 057e 63140A00 		bnez	s4,.L137
+ 813 0582 930D0002 		li	s11,32
+ 814              	.L137:
+ 815 0586 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 816 058a 5E8A     		mv	s4,s7
+ 817 058c 19C3     		beqz	a4,.L138
+ 818 058e 814B     		li	s7,0
+ 819 0590 85B3     		j	.L135
+ 820              	.L138:
+ 821 0592 7D1A     		add	s4,s4,-1
+ 822 0594 6E85     		mv	a0,s11
+ 823 0596 97000000 		call	uart_sendchar
+ 823      E7800000 
+ 824 059e E31A0AFE 		bnez	s4,.L138
+ 825              	.L134:
+ 826 05a2 014A     		li	s4,0
+ 827 05a4 B1B3     		j	.L135
+ 828              	.L160:
+ 829 05a6 B38BAB40 		sub	s7,s7,a0
+ 830 05aa 130D0002 		li	s10,32
+ 831 05ae 63040A00 		beqz	s4,.L165
+ 832 05b2 130D0003 		li	s10,48
+ 833              	.L165:
+ 834 05b6 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 835 05ba E31107E0 		bnez	a4,.L163
+ 836 05be 5E8A     		mv	s4,s7
+ 837 05c0 63557011 		blez	s7,.L209
+ 838              	.L166:
+ 839 05c4 7D1A     		add	s4,s4,-1
+ 840 05c6 6A85     		mv	a0,s10
+ 841 05c8 97000000 		call	uart_sendchar
+ 841      E7800000 
+ 842 05d0 E31A0AFE 		bnez	s4,.L166
+ 843 05d4 F5B3     		j	.L164
+ 844              	.L298:
+ 845 05d6 130D0003 		li	s10,48
+ 846 05da 814B     		li	s7,0
+ 847 05dc 639F0C02 		bnez	s9,.L275
+ 848              	.L277:
+ 849 05e0 014A     		li	s4,0
+ 850              	.L182:
+ 851 05e2 D294     		add	s1,s1,s4
+ 852 05e4 B249     		lw	s3,12(sp)
+ 853 05e6 B5BC     		j	.L110
+ 854              	.L172:
+ 855 05e8 E3970BFE 		bnez	s7,.L298
+ 856 05ec 814D     		li	s11,0
+ 857 05ee 130D0003 		li	s10,48
+ 858 05f2 85BE     		j	.L173
+ 859              	.L133:
+ 860 05f4 930D0003 		li	s11,48
+ 861 05f8 E3850BFA 		beqz	s7,.L134
+ 862 05fc 014A     		li	s4,0
+ 863 05fe 814B     		li	s7,0
+ 864 0600 C5B9     		j	.L135
+ 865              	.L161:
+ 866 0602 333A17FC 		p.bclr 	s4,a4,30,1 # Bit clear
+ 867 0606 63000A0A 		beqz	s4,.L207
+ 868 060a 130D0003 		li	s10,48
+ 869 060e 014A     		li	s4,0
+ 870 0610 814B     		li	s7,0
+ 871 0612 7DB3     		j	.L164
+ 872              	.L177:
+ 873 0614 014A     		li	s4,0
+ 874 0616 E3870CB6 		beqz	s9,.L180
+ 875              	.L275:
+ 876 061a 814D     		li	s11,0
+ 877 061c A9B6     		j	.L179
+ 878              	.L199:
+ 879 061e 014A     		li	s4,0
+ 880 0620 930D0002 		li	s11,32
+ 881 0624 51B5     		j	.L115
+ 882              	.L117:
+ 883 0626 B38BBB40 		sub	s7,s7,a1
+ 884 062a 930D0003 		li	s11,48
+ 885 062e 63140A00 		bnez	s4,.L121
+ 886 0632 930D0002 		li	s11,32
+ 887              	.L121:
+ 888 0636 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 889 063a 5E8A     		mv	s4,s7
+ 890 063c 19C3     		beqz	a4,.L122
+ 891 063e 814B     		li	s7,0
+ 892 0640 A5B5     		j	.L115
+ 893              	.L122:
+ 894 0642 7D1A     		add	s4,s4,-1
+ 895 0644 6E85     		mv	a0,s11
+ 896 0646 97000000 		call	uart_sendchar
+ 896      E7800000 
+ 897 064e E31A0AFE 		bnez	s4,.L122
+ 898 0652 99BD     		j	.L115
+ 899              	.L204:
+ 900 0654 014A     		li	s4,0
+ 901 0656 930D0002 		li	s11,32
+ 902 065a D1B5     		j	.L143
+ 903              	.L145:
+ 904 065c B38BBB40 		sub	s7,s7,a1
+ 905 0660 930D0003 		li	s11,48
+ 906 0664 63140A00 		bnez	s4,.L149
+ 907 0668 930D0002 		li	s11,32
+ 908              	.L149:
+ 909 066c 333717FC 		p.bclr 	a4,a4,30,1 # Bit clear
+ 910 0670 5E8A     		mv	s4,s7
+ 911 0672 19C3     		beqz	a4,.L150
+ 912 0674 814B     		li	s7,0
+ 913 0676 65B5     		j	.L143
+ 914              	.L150:
+ 915 0678 7D1A     		add	s4,s4,-1
+ 916 067a 6E85     		mv	a0,s11
+ 917 067c 97000000 		call	uart_sendchar
+ 917      E7800000 
+ 918 0684 E31A0AFE 		bnez	s4,.L150
+ 919 0688 59BD     		j	.L143
+ 920              	.L286:
+ 921 068a E38C0CF4 		beqz	s9,.L182
+ 922 068e 814B     		li	s7,0
+ 923 0690 814D     		li	s11,0
+ 924 0692 130D0002 		li	s10,32
+ 925 0696 C1BC     		j	.L179
+ 926              	.L279:
+ 927 0698 DE94     		add	s1,s1,s7
+ 928 069a B249     		lw	s3,12(sp)
+ 929 069c D9B2     		j	.L110
+ 930              	.L201:
+ 931 069e 930D0002 		li	s11,32
+ 932 06a2 014A     		li	s4,0
+ 933 06a4 B1B1     		j	.L135
+ 934              	.L207:
+ 935 06a6 814B     		li	s7,0
+ 936 06a8 130D0003 		li	s10,48
+ 937 06ac 11BB     		j	.L164
+ 938              	.L297:
+ 939 06ae 814B     		li	s7,0
+ 940 06b0 930D0002 		li	s11,32
+ 941 06b4 ADB5     		j	.L143
+ 942              	.L296:
+ 943 06b6 814B     		li	s7,0
+ 944 06b8 930D0002 		li	s11,32
+ 945 06bc F5B3     		j	.L115
+ 946              	.L152:
+ 947 06be EA94     		add	s1,s1,s10
+ 948 06c0 B249     		lw	s3,12(sp)
+ 949 06c2 45B2     		j	.L110
+ 950              	.L287:
+ 951 06c4 EE94     		add	s1,s1,s11
+ 952 06c6 B249     		lw	s3,12(sp)
+ 953 06c8 69BA     		j	.L110
+ 954              	.L209:
+ 955 06ca 814B     		li	s7,0
+ 956 06cc D5B9     		j	.L164
+ 957              	.L295:
+ 958 06ce 814D     		li	s11,0
+ 959 06d0 49BC     		j	.L173
+ 960              	.L291:
+ 961 06d2 814B     		li	s7,0
+ 962 06d4 05BE     		j	.L98
+ 964              		.section	.text.puts,"ax",@progbits
+ 965              		.align	1
+ 966              		.globl	puts
+ 968              	puts:
+ 969 0000 4111     		add	sp,sp,-16
+ 970 0002 22C4     		sw	s0,8(sp)
+ 971 0004 06C6     		sw	ra,12(sp)
+ 972 0006 26C2     		sw	s1,4(sp)
+ 973 0008 2A84     		mv	s0,a0
+ 974 000a 03050500 		lb	a0,0(a0)
+ 975 000e 15C5     		beqz	a0,.L302
+ 976 0010 0504     		add	s0,s0,1
+ 977 0012 8144     		li	s1,0
+ 978              	.L301:
+ 979 0014 97000000 		call	uart_sendchar
+ 979      E7800000 
+ 980 001c 0B051400 		p.lb	a0,1(s0!)	# load post inc, ext
+ 981 0020 8504     		add	s1,s1,1
+ 982 0022 6DF9     		bnez	a0,.L301
+ 983              	.L300:
+ 984 0024 2945     		li	a0,10
+ 985 0026 97000000 		call	uart_sendchar
+ 985      E7800000 
+ 986 002e B240     		lw	ra,12(sp)
+ 987 0030 2244     		lw	s0,8(sp)
+ 988 0032 2685     		mv	a0,s1
+ 989 0034 9244     		lw	s1,4(sp)
+ 990 0036 4101     		add	sp,sp,16
+ 991 0038 8280     		jr	ra
+ 992              	.L302:
+ 993 003a 8144     		li	s1,0
+ 994 003c E5B7     		j	.L300
+ 996              		.section	.text.strcmp,"ax",@progbits
+ 997              		.align	1
+ 998              		.globl	strcmp
+ 1000              	strcmp:
+ 1001 0000 B367B500 		or	a5,a0,a1
+ 1002 0004 B3B727FA 		p.bclr 	a5,a5,29,2 # Bit clear
+ 1003 0008 A1EF     		bnez	a5,.L306
+ 1004 000a 9C41     		lw	a5,0(a1)
+ 1005 000c 1841     		lw	a4,0(a0)
+ 1006 000e 6399E704 		bne	a5,a4,.L306
+ 1007 0012 370EFFFE 		li	t3,-16842752
+ 1008 0016 130EFEEF 		add	t3,t3,-257
+ 1009 001a 3387C701 		add	a4,a5,t3
+ 1010 001e 37838080 		li	t1,-2139062272
+ 1011 0022 93C7F7FF 		not	a5,a5
+ 1012 0026 F98F     		and	a5,a4,a5
+ 1013 0028 13030308 		add	t1,t1,128
+ 1014 002c B3F76700 		and	a5,a5,t1
+ 1015 0030 B5E7     		bnez	a5,.L315
+ 1016 0032 13064500 		add	a2,a0,4
+ 1017 0036 93864500 		add	a3,a1,4
+ 1018 003a 11A0     		j	.L308
+ 1019              	.L311:
+ 1020 003c A5E3     		bnez	a5,.L315
+ 1021              	.L308:
+ 1022 003e 3285     		mv	a0,a2
+ 1023 0040 0B274600 		p.lw	a4,4(a2!)	# load post inc
+ 1024 0044 03A80600 		lw	a6,0(a3)
+ 1025 0048 B307C701 		add	a5,a4,t3
+ 1026 004c 9348F7FF 		not	a7,a4
+ 1027 0050 B3F71701 		and	a5,a5,a7
+ 1028 0054 B685     		mv	a1,a3
+ 1029 0056 B3F76700 		and	a5,a5,t1
+ 1030 005a 9106     		add	a3,a3,4
+ 1031 005c E30007FF 		beq	a4,a6,.L311
+ 1032              	.L306:
+ 1033 0060 83070500 		lb	a5,0(a0)
+ 1034 0064 8DC3     		beqz	a5,.L316
+ 1035 0066 2E87     		mv	a4,a1
+ 1036 0068 8B061700 		p.lb	a3,1(a4!)	# load post inc, ext
+ 1037 006c 0505     		add	a0,a0,1
+ 1038 006e 6388F600 		beq	a3,a5,.L312
+ 1039 0072 39A8     		j	.L319
+ 1040              	.L320:
+ 1041 0074 83060700 		lb	a3,0(a4)
+ 1042 0078 0507     		add	a4,a4,1
+ 1043 007a 639BF600 		bne	a3,a5,.L319
+ 1044              	.L312:
+ 1045 007e 8B071500 		p.lb	a5,1(a0!)	# load post inc, ext
+ 1046 0082 BA85     		mv	a1,a4
+ 1047 0084 E5FB     		bnez	a5,.L320
+ 1048              	.L316:
+ 1049 0086 83C70500 		lbu	a5,0(a1)
+ 1050 008a 0145     		li	a0,0
+ 1051 008c 1D8D     		sub	a0,a0,a5
+ 1052 008e 8280     		ret
+ 1053              	.L319:
+ 1054 0090 13F5F70F 		and	a0,a5,0xff
+ 1055 0094 83C70500 		lbu	a5,0(a1)
+ 1056 0098 1D8D     		sub	a0,a0,a5
+ 1057 009a 8280     		ret
+ 1058              	.L315:
+ 1059 009c 0145     		li	a0,0
+ 1060 009e 8280     		ret
+ 1062              		.section	.text.memset,"ax",@progbits
+ 1063              		.align	1
+ 1064              		.globl	memset
+ 1066              	memset:
+ 1067 0000 4111     		add	sp,sp,-16
+ 1068 0002 22C4     		sw	s0,8(sp)
+ 1069 0004 06C6     		sw	ra,12(sp)
+ 1070 0006 2A84     		mv	s0,a0
+ 1071 0008 19C6     		beqz	a2,.L322
+ 1072 000a 93F5F50F 		and	a1,a1,0xff
+ 1073 000e 97000000 		call	memset
+ 1073      E7800000 
+ 1074              	.L322:
+ 1075 0016 2285     		mv	a0,s0
+ 1076 0018 B240     		lw	ra,12(sp)
+ 1077 001a 2244     		lw	s0,8(sp)
+ 1078 001c 4101     		add	sp,sp,16
+ 1079 001e 8280     		jr	ra
+ 1081              		.section	.text.strcpy,"ax",@progbits
+ 1082              		.align	1
+ 1083              		.globl	strcpy
+ 1085              	strcpy:
+ 1086 0000 83870500 		lb	a5,0(a1)
+ 1087 0004 81CB     		beqz	a5,.L328
+ 1088 0006 8505     		add	a1,a1,1
+ 1089 0008 2A87     		mv	a4,a0
+ 1090              	.L329:
+ 1091 000a AB00F700 		p.sb	a5,1(a4!)	# store post inc
+ 1092 000e 8B871500 		p.lb	a5,1(a1!)	# load post inc, ext
+ 1093 0012 E5FF     		bnez	a5,.L329
+ 1094              	.L328:
+ 1095 0014 8280     		ret
+ 1097              		.section	.text.strlen,"ax",@progbits
+ 1098              		.align	1
+ 1099              		.globl	strlen
+ 1101              	strlen:
+ 1102 0000 03070500 		lb	a4,0(a0)
+ 1103 0004 AA86     		mv	a3,a0
+ 1104 0006 93071500 		add	a5,a0,1
+ 1105 000a 19C7     		beqz	a4,.L337
+ 1106              	.L336:
+ 1107 000c 3385D740 		sub	a0,a5,a3
+ 1108 0010 0B871700 		p.lb	a4,1(a5!)	# load post inc, ext
+ 1109 0014 65FF     		bnez	a4,.L336
+ 1110 0016 8280     		ret
+ 1111              	.L337:
+ 1112 0018 0145     		li	a0,0
+ 1113 001a 8280     		ret
+ 1115              		.globl	remu10_table
+ 1116              		.section	.data.remu10_table,"aw",@progbits
+ 1117              		.align	2
+ 1118              		.set	.LANCHOR0,. + 0
+ 1121              	remu10_table:
+ 1122 0000 00       		.byte	0
+ 1123 0001 01       		.byte	1
+ 1124 0002 02       		.byte	2
+ 1125 0003 02       		.byte	2
+ 1126 0004 03       		.byte	3
+ 1127 0005 03       		.byte	3
+ 1128 0006 04       		.byte	4
+ 1129 0007 05       		.byte	5
+ 1130 0008 05       		.byte	5
+ 1131 0009 06       		.byte	6
+ 1132 000a 07       		.byte	7
+ 1133 000b 07       		.byte	7
+ 1134 000c 08       		.byte	8
+ 1135 000d 08       		.byte	8
+ 1136 000e 09       		.byte	9
+ 1137 000f 00       		.byte	0
+ 1138              		.section	.rodata.printf.str1.4,"aMS",@progbits,1
+ 1139              		.align	2
+ 1140              	.LC0:
+ 1141 0000 286E756C 		.string	"(null)"
+ 1141      6C2900
+ 1142              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 qprintf.c
+     /tmp/ccAbLCQS.s:6      .text.qprinti.constprop.1:0000000000000000 qprinti.constprop.1
+     /tmp/ccAbLCQS.s:281    .text.putchar:0000000000000000 putchar
+     /tmp/ccAbLCQS.s:298    .text.printf:0000000000000000 printf
+     /tmp/ccAbLCQS.s:968    .text.puts:0000000000000000 puts
+     /tmp/ccAbLCQS.s:1000   .text.strcmp:0000000000000000 strcmp
+     /tmp/ccAbLCQS.s:1066   .text.memset:0000000000000000 memset
+     /tmp/ccAbLCQS.s:1085   .text.strcpy:0000000000000000 strcpy
+     /tmp/ccAbLCQS.s:1101   .text.strlen:0000000000000000 strlen
+     /tmp/ccAbLCQS.s:1121   .data.remu10_table:0000000000000000 remu10_table
+     /tmp/ccAbLCQS.s:1118   .data.remu10_table:0000000000000000 .LANCHOR0
+     /tmp/ccAbLCQS.s:153    .text.qprinti.constprop.1:0000000000000188 .L74
+     /tmp/ccAbLCQS.s:22     .text.qprinti.constprop.1:0000000000000022 .L12
+     /tmp/ccAbLCQS.s:181    .text.qprinti.constprop.1:00000000000001d8 .L75
+     /tmp/ccAbLCQS.s:119    .text.qprinti.constprop.1:0000000000000130 .L76
+     /tmp/ccAbLCQS.s:33     .text.qprinti.constprop.1:0000000000000042 .L20
+     /tmp/ccAbLCQS.s:269    .text.qprinti.constprop.1:00000000000002b8 .L44
+     /tmp/ccAbLCQS.s:170    .text.qprinti.constprop.1:00000000000001ba .L22
+     /tmp/ccAbLCQS.s:251    .text.qprinti.constprop.1:000000000000028c .L23
+     /tmp/ccAbLCQS.s:136    .text.qprinti.constprop.1:0000000000000162 .L46
+     /tmp/ccAbLCQS.s:265    .text.qprinti.constprop.1:00000000000002b0 .L47
+     /tmp/ccAbLCQS.s:79     .text.qprinti.constprop.1:00000000000000d0 .L28
+     /tmp/ccAbLCQS.s:212    .text.qprinti.constprop.1:000000000000022c .L29
+     /tmp/ccAbLCQS.s:186    .text.qprinti.constprop.1:00000000000001e4 .L77
+     /tmp/ccAbLCQS.s:90     .text.qprinti.constprop.1:00000000000000ee .L38
+     /tmp/ccAbLCQS.s:105    .text.qprinti.constprop.1:0000000000000118 .L39
+     /tmp/ccAbLCQS.s:99     .text.qprinti.constprop.1:0000000000000108 .L40
+     /tmp/ccAbLCQS.s:144    .text.qprinti.constprop.1:0000000000000170 .L17
+     /tmp/ccAbLCQS.s:123    .text.qprinti.constprop.1:000000000000013a .L16
+     /tmp/ccAbLCQS.s:76     .text.qprinti.constprop.1:00000000000000ca .L24
+     /tmp/ccAbLCQS.s:88     .text.qprinti.constprop.1:00000000000000ea .L36
+     /tmp/ccAbLCQS.s:191    .text.qprinti.constprop.1:00000000000001ee .L42
+     /tmp/ccAbLCQS.s:160    .text.qprinti.constprop.1:000000000000019e .L4
+     /tmp/ccAbLCQS.s:235    .text.qprinti.constprop.1:0000000000000264 .L5
+     /tmp/ccAbLCQS.s:261    .text.qprinti.constprop.1:00000000000002a8 .L78
+     /tmp/ccAbLCQS.s:195    .text.qprinti.constprop.1:00000000000001fa .L3
+     /tmp/ccAbLCQS.s:272    .text.qprinti.constprop.1:00000000000002bc .L79
+     /tmp/ccAbLCQS.s:27     .text.qprinti.constprop.1:000000000000002e .L14
+     /tmp/ccAbLCQS.s:198    .text.qprinti.constprop.1:0000000000000202 .L8
+     /tmp/ccAbLCQS.s:107    .text.qprinti.constprop.1:000000000000011a .L1
+     /tmp/ccAbLCQS.s:205    .text.qprinti.constprop.1:000000000000021a .L11
+     /tmp/ccAbLCQS.s:218    .text.qprinti.constprop.1:000000000000023a .L33
+     /tmp/ccAbLCQS.s:229    .text.qprinti.constprop.1:0000000000000256 .L34
+     /tmp/ccAbLCQS.s:138    .text.qprinti.constprop.1:0000000000000166 .L72
+     /tmp/ccAbLCQS.s:223    .text.qprinti.constprop.1:0000000000000246 .L35
+     /tmp/ccAbLCQS.s:140    .text.qprinti.constprop.1:0000000000000168 .L26
+     /tmp/ccAbLCQS.s:96     .text.qprinti.constprop.1:0000000000000102 .L37
+     /tmp/ccAbLCQS.s:258    .text.qprinti.constprop.1:00000000000002a2 .L80
+     /tmp/ccAbLCQS.s:244    .text.qprinti.constprop.1:000000000000027a .L9
+     /tmp/ccAbLCQS.s:174    .text.qprinti.constprop.1:00000000000001c6 .L25
+     /tmp/ccAbLCQS.s:240    .text.qprinti.constprop.1:0000000000000272 .L7
+     /tmp/ccAbLCQS.s:214    .text.qprinti.constprop.1:0000000000000230 .L27
+     /tmp/ccAbLCQS.s:72     .text.qprinti.constprop.1:00000000000000be .L21
+     /tmp/ccAbLCQS.s:1140   .rodata.printf.str1.4:0000000000000000 .LC0
+     /tmp/ccAbLCQS.s:444    .text.printf:00000000000001a4 .L189
+     /tmp/ccAbLCQS.s:342    .text.printf:000000000000006a .L185
+     /tmp/ccAbLCQS.s:446    .text.printf:00000000000001a6 .L83
+     /tmp/ccAbLCQS.s:333    .text.printf:0000000000000052 .L85
+     /tmp/ccAbLCQS.s:352    .text.printf:0000000000000088 .L86
+     /tmp/ccAbLCQS.s:359    .text.printf:000000000000009c .L87
+     /tmp/ccAbLCQS.s:494    .text.printf:0000000000000216 .L191
+     /tmp/ccAbLCQS.s:364    .text.printf:00000000000000ac .L89
+     /tmp/ccAbLCQS.s:491    .text.printf:0000000000000212 .L192
+     /tmp/ccAbLCQS.s:379    .text.printf:00000000000000d4 .L91
+     /tmp/ccAbLCQS.s:463    .text.printf:00000000000001c6 .L281
+     /tmp/ccAbLCQS.s:522    .text.printf:000000000000025e .L282
+     /tmp/ccAbLCQS.s:532    .text.printf:000000000000027a .L283
+     /tmp/ccAbLCQS.s:542    .text.printf:0000000000000296 .L284
+     /tmp/ccAbLCQS.s:617    .text.printf:0000000000000366 .L285
+     /tmp/ccAbLCQS.s:339    .text.printf:0000000000000062 .L110
+     /tmp/ccAbLCQS.s:757    .text.printf:00000000000004e6 .L169
+     /tmp/ccAbLCQS.s:702    .text.printf:000000000000044a .L211
+     /tmp/ccAbLCQS.s:411    .text.printf:0000000000000142 .L171
+     /tmp/ccAbLCQS.s:704    .text.printf:000000000000044c .L170
+     /tmp/ccAbLCQS.s:854    .text.printf:00000000000005e8 .L172
+     /tmp/ccAbLCQS.s:920    .text.printf:000000000000068a .L286
+     /tmp/ccAbLCQS.s:950    .text.printf:00000000000006c4 .L287
+     /tmp/ccAbLCQS.s:426    .text.printf:000000000000016e .L181
+     /tmp/ccAbLCQS.s:850    .text.printf:00000000000005e2 .L182
+     /tmp/ccAbLCQS.s:435    .text.printf:000000000000018a .L183
+     /tmp/ccAbLCQS.s:672    .text.printf:0000000000000400 .L93
+     /tmp/ccAbLCQS.s:497    .text.printf:000000000000021a .L94
+     /tmp/ccAbLCQS.s:599    .text.printf:0000000000000336 .L193
+     /tmp/ccAbLCQS.s:474    .text.printf:00000000000001e4 .L96
+     /tmp/ccAbLCQS.s:601    .text.printf:0000000000000338 .L95
+     /tmp/ccAbLCQS.s:681    .text.printf:000000000000041a .L97
+     /tmp/ccAbLCQS.s:795    .text.printf:0000000000000556 .L288
+     /tmp/ccAbLCQS.s:502    .text.printf:0000000000000228 .L104
+     /tmp/ccAbLCQS.s:389    .text.printf:00000000000000f2 .L90
+     /tmp/ccAbLCQS.s:371    .text.printf:00000000000000be .L88
+     /tmp/ccAbLCQS.s:505    .text.printf:000000000000022e .L106
+     /tmp/ccAbLCQS.s:513    .text.printf:0000000000000246 .L108
+     /tmp/ccAbLCQS.s:720    .text.printf:000000000000047c .L289
+     /tmp/ccAbLCQS.s:593    .text.printf:0000000000000328 .L128
+     /tmp/ccAbLCQS.s:550    .text.printf:00000000000002ac .L127
+     /tmp/ccAbLCQS.s:694    .text.printf:000000000000043a .L290
+     /tmp/ccAbLCQS.s:563    .text.printf:00000000000002d0 .L131
+     /tmp/ccAbLCQS.s:809    .text.printf:0000000000000576 .L132
+     /tmp/ccAbLCQS.s:859    .text.printf:00000000000005f4 .L133
+     /tmp/ccAbLCQS.s:930    .text.printf:000000000000069e .L201
+     /tmp/ccAbLCQS.s:575    .text.printf:00000000000002f4 .L139
+     /tmp/ccAbLCQS.s:926    .text.printf:0000000000000698 .L279
+     /tmp/ccAbLCQS.s:583    .text.printf:0000000000000310 .L140
+     /tmp/ccAbLCQS.s:559    .text.printf:00000000000002c6 .L130
+     /tmp/ccAbLCQS.s:606    .text.printf:0000000000000348 .L101
+     /tmp/ccAbLCQS.s:686    .text.printf:0000000000000426 .L102
+     /tmp/ccAbLCQS.s:960    .text.printf:00000000000006d2 .L291
+     /tmp/ccAbLCQS.s:611    .text.printf:0000000000000354 .L103
+     /tmp/ccAbLCQS.s:484    .text.printf:0000000000000204 .L98
+     /tmp/ccAbLCQS.s:762    .text.printf:00000000000004f2 .L292
+     /tmp/ccAbLCQS.s:666    .text.printf:00000000000003f2 .L156
+     /tmp/ccAbLCQS.s:625    .text.printf:000000000000037c .L155
+     /tmp/ccAbLCQS.s:698    .text.printf:0000000000000442 .L293
+     /tmp/ccAbLCQS.s:637    .text.printf:000000000000039c .L159
+     /tmp/ccAbLCQS.s:828    .text.printf:00000000000005a6 .L160
+     /tmp/ccAbLCQS.s:865    .text.printf:0000000000000602 .L161
+     /tmp/ccAbLCQS.s:650    .text.printf:00000000000003c0 .L164
+     /tmp/ccAbLCQS.s:652    .text.printf:00000000000003c4 .L167
+     /tmp/ccAbLCQS.s:660    .text.printf:00000000000003e0 .L168
+     /tmp/ccAbLCQS.s:588    .text.printf:0000000000000320 .L280
+     /tmp/ccAbLCQS.s:633    .text.printf:0000000000000392 .L158
+     /tmp/ccAbLCQS.s:471    .text.printf:00000000000001de .L186
+     /tmp/ccAbLCQS.s:802    .text.printf:0000000000000566 .L294
+     /tmp/ccAbLCQS.s:510    .text.printf:0000000000000240 .L105
+     /tmp/ccAbLCQS.s:573    .text.printf:00000000000002f0 .L135
+     /tmp/ccAbLCQS.s:709    .text.printf:000000000000045c .L176
+     /tmp/ccAbLCQS.s:872    .text.printf:0000000000000614 .L177
+     /tmp/ccAbLCQS.s:957    .text.printf:00000000000006ce .L295
+     /tmp/ccAbLCQS.s:714    .text.printf:000000000000046a .L178
+     /tmp/ccAbLCQS.s:421    .text.printf:0000000000000162 .L173
+     /tmp/ccAbLCQS.s:878    .text.printf:000000000000061e .L199
+     /tmp/ccAbLCQS.s:725    .text.printf:000000000000048c .L116
+     /tmp/ccAbLCQS.s:882    .text.printf:0000000000000626 .L117
+     /tmp/ccAbLCQS.s:942    .text.printf:00000000000006b6 .L296
+     /tmp/ccAbLCQS.s:740    .text.printf:00000000000004b6 .L123
+     /tmp/ccAbLCQS.s:946    .text.printf:00000000000006be .L152
+     /tmp/ccAbLCQS.s:747    .text.printf:00000000000004ce .L125
+     /tmp/ccAbLCQS.s:423    .text.printf:0000000000000166 .L179
+     /tmp/ccAbLCQS.s:899    .text.printf:0000000000000654 .L204
+     /tmp/ccAbLCQS.s:767    .text.printf:0000000000000502 .L144
+     /tmp/ccAbLCQS.s:903    .text.printf:000000000000065c .L145
+     /tmp/ccAbLCQS.s:938    .text.printf:00000000000006ae .L297
+     /tmp/ccAbLCQS.s:782    .text.printf:000000000000052c .L151
+     /tmp/ccAbLCQS.s:789    .text.printf:0000000000000544 .L153
+     /tmp/ccAbLCQS.s:752    .text.printf:00000000000004de .L278
+     /tmp/ccAbLCQS.s:848    .text.printf:00000000000005e0 .L277
+     /tmp/ccAbLCQS.s:814    .text.printf:0000000000000586 .L137
+     /tmp/ccAbLCQS.s:820    .text.printf:0000000000000592 .L138
+     /tmp/ccAbLCQS.s:833    .text.printf:00000000000005b6 .L165
+     /tmp/ccAbLCQS.s:647    .text.printf:00000000000003bc .L163
+     /tmp/ccAbLCQS.s:954    .text.printf:00000000000006ca .L209
+     /tmp/ccAbLCQS.s:838    .text.printf:00000000000005c4 .L166
+     /tmp/ccAbLCQS.s:875    .text.printf:000000000000061a .L275
+     /tmp/ccAbLCQS.s:844    .text.printf:00000000000005d6 .L298
+     /tmp/ccAbLCQS.s:825    .text.printf:00000000000005a2 .L134
+     /tmp/ccAbLCQS.s:934    .text.printf:00000000000006a6 .L207
+     /tmp/ccAbLCQS.s:432    .text.printf:0000000000000184 .L180
+     /tmp/ccAbLCQS.s:735    .text.printf:00000000000004a8 .L115
+     /tmp/ccAbLCQS.s:887    .text.printf:0000000000000636 .L121
+     /tmp/ccAbLCQS.s:893    .text.printf:0000000000000642 .L122
+     /tmp/ccAbLCQS.s:777    .text.printf:000000000000051e .L143
+     /tmp/ccAbLCQS.s:908    .text.printf:000000000000066c .L149
+     /tmp/ccAbLCQS.s:914    .text.printf:0000000000000678 .L150
+     /tmp/ccAbLCQS.s:992    .text.puts:000000000000003a .L302
+     /tmp/ccAbLCQS.s:978    .text.puts:0000000000000014 .L301
+     /tmp/ccAbLCQS.s:983    .text.puts:0000000000000024 .L300
+     /tmp/ccAbLCQS.s:1032   .text.strcmp:0000000000000060 .L306
+     /tmp/ccAbLCQS.s:1058   .text.strcmp:000000000000009c .L315
+     /tmp/ccAbLCQS.s:1021   .text.strcmp:000000000000003e .L308
+     /tmp/ccAbLCQS.s:1019   .text.strcmp:000000000000003c .L311
+     /tmp/ccAbLCQS.s:1048   .text.strcmp:0000000000000086 .L316
+     /tmp/ccAbLCQS.s:1044   .text.strcmp:000000000000007e .L312
+     /tmp/ccAbLCQS.s:1053   .text.strcmp:0000000000000090 .L319
+     /tmp/ccAbLCQS.s:1040   .text.strcmp:0000000000000074 .L320
+     /tmp/ccAbLCQS.s:1074   .text.memset:0000000000000016 .L322
+     /tmp/ccAbLCQS.s:1094   .text.strcpy:0000000000000014 .L328
+     /tmp/ccAbLCQS.s:1090   .text.strcpy:000000000000000a .L329
+     /tmp/ccAbLCQS.s:1111   .text.strlen:0000000000000018 .L337
+     /tmp/ccAbLCQS.s:1106   .text.strlen:000000000000000c .L336
+
+UNDEFINED SYMBOLS
+uart_sendchar

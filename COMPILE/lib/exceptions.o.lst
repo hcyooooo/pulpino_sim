@@ -1,0 +1,31 @@
+   1              		.file	"exceptions.c"
+   2              		.option nopic
+   3              		.section	.text.default_exception_handler_c,"ax",@progbits
+   4              		.align	1
+   5              		.weak	default_exception_handler_c
+   7              	default_exception_handler_c:
+   8              	.L2:
+   9 0000 01A0     		j	.L2
+  11              		.section	.text.illegal_insn_handler_c,"ax",@progbits
+  12              		.align	1
+  13              		.weak	illegal_insn_handler_c
+  15              	illegal_insn_handler_c:
+  16              	.L5:
+  17 0000 01A0     		j	.L5
+  19              		.section	.text.ecall_insn_handler_c,"ax",@progbits
+  20              		.align	1
+  21              		.weak	ecall_insn_handler_c
+  23              	ecall_insn_handler_c:
+  24              	.L7:
+  25 0000 01A0     		j	.L7
+  27              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 exceptions.c
+     /tmp/ccuZqbcV.s:7      .text.default_exception_handler_c:0000000000000000 default_exception_handler_c
+     /tmp/ccuZqbcV.s:15     .text.illegal_insn_handler_c:0000000000000000 illegal_insn_handler_c
+     /tmp/ccuZqbcV.s:23     .text.ecall_insn_handler_c:0000000000000000 ecall_insn_handler_c
+     /tmp/ccuZqbcV.s:8      .text.default_exception_handler_c:0000000000000000 .L2
+     /tmp/ccuZqbcV.s:16     .text.illegal_insn_handler_c:0000000000000000 .L5
+     /tmp/ccuZqbcV.s:24     .text.ecall_insn_handler_c:0000000000000000 .L7
+
+NO UNDEFINED SYMBOLS

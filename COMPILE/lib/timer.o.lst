@@ -1,0 +1,48 @@
+   1              		.file	"timer.c"
+   2              		.option nopic
+   3              		.section	.text.reset_timer,"ax",@progbits
+   4              		.align	1
+   5              		.globl	reset_timer
+   7              	reset_timer:
+   8 0000 B727101A 		li	a5,437264384
+   9 0004 23A00700 		sw	zero,0(a5)
+  10 0008 8280     		ret
+  12              		.section	.text.start_timer,"ax",@progbits
+  13              		.align	1
+  14              		.globl	start_timer
+  16              	start_timer:
+  17 0000 B727101A 		li	a5,437264384
+  18 0004 0547     		li	a4,1
+  19 0006 D8C3     		sw	a4,4(a5)
+  20 0008 8280     		ret
+  22              		.section	.text.stop_timer,"ax",@progbits
+  23              		.align	1
+  24              		.globl	stop_timer
+  26              	stop_timer:
+  27 0000 B727101A 		li	a5,437264384
+  28 0004 23A20700 		sw	zero,4(a5)
+  29 0008 8280     		ret
+  31              		.section	.text.get_time,"ax",@progbits
+  32              		.align	1
+  33              		.globl	get_time
+  35              	get_time:
+  36 0000 B727101A 		li	a5,437264384
+  37 0004 8843     		lw	a0,0(a5)
+  38 0006 8280     		ret
+  40              		.section	.text.set_timer_cmp,"ax",@progbits
+  41              		.align	1
+  42              		.globl	set_timer_cmp
+  44              	set_timer_cmp:
+  45 0000 B727101A 		li	a5,437264384
+  46 0004 88C7     		sw	a0,8(a5)
+  47 0006 8280     		ret
+  49              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 timer.c
+     /tmp/cc7Y96gD.s:7      .text.reset_timer:0000000000000000 reset_timer
+     /tmp/cc7Y96gD.s:16     .text.start_timer:0000000000000000 start_timer
+     /tmp/cc7Y96gD.s:26     .text.stop_timer:0000000000000000 stop_timer
+     /tmp/cc7Y96gD.s:35     .text.get_time:0000000000000000 get_time
+     /tmp/cc7Y96gD.s:44     .text.set_timer_cmp:0000000000000000 set_timer_cmp
+
+NO UNDEFINED SYMBOLS

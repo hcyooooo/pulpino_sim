@@ -1,0 +1,38 @@
+   1              		.file	"hello.c"
+   2              		.option nopic
+   3              		.section	.text.startup.main,"ax",@progbits
+   4              		.align	1
+   5              		.globl	main
+   7              	main:
+   8              	 #APP
+   9              	# 18 "../src/hello/hello.c" 1
+   1              	#include "stdio.h"
+   2              	
+   3              	int main()
+   4              	{
+   5              	 int a = 1;
+   6              	 int b = 3;
+   7              	 
+   8              	 int c = 0;
+   9              	 
+  10              	 c = a + b;
+  11              	 
+  12              	 if(c == 3)
+  13              	 {
+  14              	 	asm volatile ("li x30,0x1");
+  15              	 }
+  16              	 else if(c == 4)
+  17              	 {
+  18 0000 094F     	 	asm volatile ("li x30,0x2");
+  19              	 }
+  10              		li x30,0x2
+  11              	# 0 "" 2
+  12              	 #NO_APP
+  13 0002 0145     		li	a0,0
+  14 0004 8280     		ret
+  16              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 hello.c
+     /tmp/cct2ftBP.s:7      .text.startup.main:0000000000000000 main
+
+NO UNDEFINED SYMBOLS
