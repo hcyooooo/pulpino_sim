@@ -89,17 +89,17 @@
   99              		.ident	"GCC: (GNU) 7.1.1 20170509"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 uart.c
-     /tmp/ccaNbxk9.s:7      .text.uart_set_cfg:0000000000000000 uart_set_cfg
-     /tmp/ccaNbxk9.s:31     .text.uart_send:0000000000000000 uart_send
-     /tmp/ccaNbxk9.s:61     .text.uart_getchar:0000000000000000 uart_getchar
-     /tmp/ccaNbxk9.s:76     .text.uart_sendchar:0000000000000000 uart_sendchar
-     /tmp/ccaNbxk9.s:90     .text.uart_wait_tx_done:0000000000000000 uart_wait_tx_done
-     /tmp/ccaNbxk9.s:48     .text.uart_send:0000000000000028 .L17
-     /tmp/ccaNbxk9.s:52     .text.uart_send:000000000000002c .L15
-     /tmp/ccaNbxk9.s:35     .text.uart_send:000000000000000a .L5
-     /tmp/ccaNbxk9.s:54     .text.uart_send:000000000000002e .L16
-     /tmp/ccaNbxk9.s:64     .text.uart_getchar:0000000000000008 .L19
-     /tmp/ccaNbxk9.s:79     .text.uart_sendchar:0000000000000008 .L23
-     /tmp/ccaNbxk9.s:93     .text.uart_wait_tx_done:0000000000000006 .L27
+     /tmp/ccyr5C3g.s:7      .text.uart_set_cfg:0000000000000000 uart_set_cfg
+     /tmp/ccyr5C3g.s:31     .text.uart_send:0000000000000000 uart_send
+     /tmp/ccyr5C3g.s:61     .text.uart_getchar:0000000000000000 uart_getchar
+     /tmp/ccyr5C3g.s:76     .text.uart_sendchar:0000000000000000 uart_sendchar
+     /tmp/ccyr5C3g.s:90     .text.uart_wait_tx_done:0000000000000000 uart_wait_tx_done
+     /tmp/ccyr5C3g.s:48     .text.uart_send:0000000000000028 .L17
+     /tmp/ccyr5C3g.s:52     .text.uart_send:000000000000002c .L15
+     /tmp/ccyr5C3g.s:35     .text.uart_send:000000000000000a .L5
+     /tmp/ccyr5C3g.s:54     .text.uart_send:000000000000002e .L16
+     /tmp/ccyr5C3g.s:64     .text.uart_getchar:0000000000000008 .L19
+     /tmp/ccyr5C3g.s:79     .text.uart_sendchar:0000000000000008 .L23
+     /tmp/ccyr5C3g.s:93     .text.uart_wait_tx_done:0000000000000006 .L27
 
 NO UNDEFINED SYMBOLS

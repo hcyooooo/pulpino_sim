@@ -1,21 +1,32 @@
-// Copyright 2017 ETH Zurich and University of Bologna.
-// Copyright and related rights are licensed under the Solderpad Hardware
-// License, Version 0.51 (the “License”); you may not use this file except in
-// compliance with the License.  You may obtain a copy of the License at
-// http://solderpad.org/licenses/SHL-0.51. Unless required by applicable law
-// or agreed to in writing, software, hardware and materials distributed under
-// this License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR
-// CONDITIONS OF ANY KIND, either express or implied. See the License for the
-// specific language governing permissions and limitations under the License.
-
-
-
-
-#include "utils.h"
+#include "gpio.h"
 #include "string_lib.h"
 
 int main() {
-    printf("Hello, UART!\n");
-    while(1);
-}
+    // 设置 GPIO0~GPIO7 为输出
+    for (int i = 0; i < 8; i++) {
+        set_gpio_pin_direction(i, DIR_OUT);
+    }
 
+    // 测试：依次输出高低电平
+    while (1) {
+        // 全部置高
+        for (int i = 0; i < 8; i++) {
+            set_gpio_pin_value(i, 1);
+        }
+        printf("GPIO0~7 set HIGH\n");
+
+        // 可以在这里添加延时函数，如果有实现的话
+        // delay_ms(500);
+
+        // 全部置低
+        for (int i = 0; i < 8; i++) {
+            set_gpio_pin_value(i, 0);
+        }
+        printf("GPIO0~7 set LOW\n");
+
+        // 延时
+        // delay_ms(500);
+    }
+
+    return 0;
+}

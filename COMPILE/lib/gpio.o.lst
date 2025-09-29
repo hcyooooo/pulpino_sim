@@ -144,17 +144,17 @@
  158              		.ident	"GCC: (GNU) 7.1.1 20170509"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gpio.c
-     /tmp/cck2OE7D.s:7      .text.set_gpio_pin_direction:0000000000000000 set_gpio_pin_direction
-     /tmp/cck2OE7D.s:38     .text.get_gpio_pin_direction:0000000000000000 get_gpio_pin_direction
-     /tmp/cck2OE7D.s:56     .text.set_gpio_pin_value:0000000000000000 set_gpio_pin_value
-     /tmp/cck2OE7D.s:87     .text.get_gpio_pin_value:0000000000000000 get_gpio_pin_value
-     /tmp/cck2OE7D.s:104    .text.set_gpio_pin_irq_en:0000000000000000 set_gpio_pin_irq_en
-     /tmp/cck2OE7D.s:122    .text.set_gpio_pin_irq_type:0000000000000000 set_gpio_pin_irq_type
-     /tmp/cck2OE7D.s:153    .text.get_gpio_irq_status:0000000000000000 get_gpio_irq_status
-     /tmp/cck2OE7D.s:23     .text.set_gpio_pin_direction:0000000000000024 .L6
-     /tmp/cck2OE7D.s:72     .text.set_gpio_pin_value:0000000000000024 .L13
-     /tmp/cck2OE7D.s:113    .text.set_gpio_pin_irq_en:000000000000001a .L18
-     /tmp/cck2OE7D.s:135    .text.set_gpio_pin_irq_type:0000000000000026 .L21
-     /tmp/cck2OE7D.s:141    .text.set_gpio_pin_irq_type:0000000000000036 .L23
+     /tmp/ccHFuSvO.s:7      .text.set_gpio_pin_direction:0000000000000000 set_gpio_pin_direction
+     /tmp/ccHFuSvO.s:38     .text.get_gpio_pin_direction:0000000000000000 get_gpio_pin_direction
+     /tmp/ccHFuSvO.s:56     .text.set_gpio_pin_value:0000000000000000 set_gpio_pin_value
+     /tmp/ccHFuSvO.s:87     .text.get_gpio_pin_value:0000000000000000 get_gpio_pin_value
+     /tmp/ccHFuSvO.s:104    .text.set_gpio_pin_irq_en:0000000000000000 set_gpio_pin_irq_en
+     /tmp/ccHFuSvO.s:122    .text.set_gpio_pin_irq_type:0000000000000000 set_gpio_pin_irq_type
+     /tmp/ccHFuSvO.s:153    .text.get_gpio_irq_status:0000000000000000 get_gpio_irq_status
+     /tmp/ccHFuSvO.s:23     .text.set_gpio_pin_direction:0000000000000024 .L6
+     /tmp/ccHFuSvO.s:72     .text.set_gpio_pin_value:0000000000000024 .L13
+     /tmp/ccHFuSvO.s:113    .text.set_gpio_pin_irq_en:000000000000001a .L18
+     /tmp/ccHFuSvO.s:135    .text.set_gpio_pin_irq_type:0000000000000026 .L21
+     /tmp/ccHFuSvO.s:141    .text.set_gpio_pin_irq_type:0000000000000036 .L23
 
 NO UNDEFINED SYMBOLS

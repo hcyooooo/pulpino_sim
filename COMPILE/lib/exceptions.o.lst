@@ -21,11 +21,11 @@
   27              		.ident	"GCC: (GNU) 7.1.1 20170509"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 exceptions.c
-     /tmp/ccuZqbcV.s:7      .text.default_exception_handler_c:0000000000000000 default_exception_handler_c
-     /tmp/ccuZqbcV.s:15     .text.illegal_insn_handler_c:0000000000000000 illegal_insn_handler_c
-     /tmp/ccuZqbcV.s:23     .text.ecall_insn_handler_c:0000000000000000 ecall_insn_handler_c
-     /tmp/ccuZqbcV.s:8      .text.default_exception_handler_c:0000000000000000 .L2
-     /tmp/ccuZqbcV.s:16     .text.illegal_insn_handler_c:0000000000000000 .L5
-     /tmp/ccuZqbcV.s:24     .text.ecall_insn_handler_c:0000000000000000 .L7
+     /tmp/ccXv6Xcz.s:7      .text.default_exception_handler_c:0000000000000000 default_exception_handler_c
+     /tmp/ccXv6Xcz.s:15     .text.illegal_insn_handler_c:0000000000000000 illegal_insn_handler_c
+     /tmp/ccXv6Xcz.s:23     .text.ecall_insn_handler_c:0000000000000000 ecall_insn_handler_c
+     /tmp/ccXv6Xcz.s:8      .text.default_exception_handler_c:0000000000000000 .L2
+     /tmp/ccXv6Xcz.s:16     .text.illegal_insn_handler_c:0000000000000000 .L5
+     /tmp/ccXv6Xcz.s:24     .text.ecall_insn_handler_c:0000000000000000 .L7
 
 NO UNDEFINED SYMBOLS

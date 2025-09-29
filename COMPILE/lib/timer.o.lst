@@ -39,10 +39,10 @@
   49              		.ident	"GCC: (GNU) 7.1.1 20170509"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 timer.c
-     /tmp/cc7Y96gD.s:7      .text.reset_timer:0000000000000000 reset_timer
-     /tmp/cc7Y96gD.s:16     .text.start_timer:0000000000000000 start_timer
-     /tmp/cc7Y96gD.s:26     .text.stop_timer:0000000000000000 stop_timer
-     /tmp/cc7Y96gD.s:35     .text.get_time:0000000000000000 get_time
-     /tmp/cc7Y96gD.s:44     .text.set_timer_cmp:0000000000000000 set_timer_cmp
+     /tmp/ccJmdTIl.s:7      .text.reset_timer:0000000000000000 reset_timer
+     /tmp/ccJmdTIl.s:16     .text.start_timer:0000000000000000 start_timer
+     /tmp/ccJmdTIl.s:26     .text.stop_timer:0000000000000000 stop_timer
+     /tmp/ccJmdTIl.s:35     .text.get_time:0000000000000000 get_time
+     /tmp/ccJmdTIl.s:44     .text.set_timer_cmp:0000000000000000 set_timer_cmp
 
 NO UNDEFINED SYMBOLS

@@ -291,35 +291,35 @@
  216              		.ident	"GCC: (GNU) 7.1.1 20170509"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 utils.c
-     /tmp/ccq6l2qt.s:7      .text.exit:0000000000000000 exit
-     /tmp/ccq6l2qt.s:15     .text.eoc:0000000000000000 eoc
-     /tmp/ccq6l2qt.s:23     .text.sleep_busy:0000000000000000 sleep_busy
-     /tmp/ccq6l2qt.s:46     .text.cpu_perf_set:0000000000000000 cpu_perf_set
-     /tmp/ccq6l2qt.s:55     .text.cpu_perf_get:0000000000000000 cpu_perf_get
-     /tmp/ccq6l2qt.s:8      .text.exit:0000000000000000 .L2
-     /tmp/ccq6l2qt.s:16     .text.eoc:0000000000000000 .L5
-     /tmp/ccq6l2qt.s:38     .text.sleep_busy:0000000000000016 .L6
-     /tmp/ccq6l2qt.s:29     .text.sleep_busy:000000000000000c .L8
-     /tmp/ccq6l2qt.s:214    .rodata.cpu_perf_set.str1.4:0000000000000000 .LC0
-     /tmp/ccq6l2qt.s:66     .rodata.cpu_perf_get:0000000000000000 .L15
-     /tmp/ccq6l2qt.s:210    .rodata.cpu_perf_get.str1.4:0000000000000000 .LC1
-     /tmp/ccq6l2qt.s:196    .text.cpu_perf_get:0000000000000078 .L13
-     /tmp/ccq6l2qt.s:98     .text.cpu_perf_get:0000000000000024 .L14
-     /tmp/ccq6l2qt.s:105    .text.cpu_perf_get:000000000000002a .L16
-     /tmp/ccq6l2qt.s:112    .text.cpu_perf_get:0000000000000030 .L17
-     /tmp/ccq6l2qt.s:119    .text.cpu_perf_get:0000000000000036 .L18
-     /tmp/ccq6l2qt.s:126    .text.cpu_perf_get:000000000000003c .L19
-     /tmp/ccq6l2qt.s:133    .text.cpu_perf_get:0000000000000042 .L20
-     /tmp/ccq6l2qt.s:140    .text.cpu_perf_get:0000000000000048 .L21
-     /tmp/ccq6l2qt.s:147    .text.cpu_perf_get:000000000000004e .L22
-     /tmp/ccq6l2qt.s:154    .text.cpu_perf_get:0000000000000054 .L23
-     /tmp/ccq6l2qt.s:161    .text.cpu_perf_get:000000000000005a .L24
-     /tmp/ccq6l2qt.s:168    .text.cpu_perf_get:0000000000000060 .L25
-     /tmp/ccq6l2qt.s:175    .text.cpu_perf_get:0000000000000066 .L26
-     /tmp/ccq6l2qt.s:182    .text.cpu_perf_get:000000000000006c .L27
-     /tmp/ccq6l2qt.s:189    .text.cpu_perf_get:0000000000000072 .L28
-     /tmp/ccq6l2qt.s:84     .text.cpu_perf_get:0000000000000018 .L29
-     /tmp/ccq6l2qt.s:91     .text.cpu_perf_get:000000000000001e .L30
+     /tmp/cc9V4hFA.s:7      .text.exit:0000000000000000 exit
+     /tmp/cc9V4hFA.s:15     .text.eoc:0000000000000000 eoc
+     /tmp/cc9V4hFA.s:23     .text.sleep_busy:0000000000000000 sleep_busy
+     /tmp/cc9V4hFA.s:46     .text.cpu_perf_set:0000000000000000 cpu_perf_set
+     /tmp/cc9V4hFA.s:55     .text.cpu_perf_get:0000000000000000 cpu_perf_get
+     /tmp/cc9V4hFA.s:8      .text.exit:0000000000000000 .L2
+     /tmp/cc9V4hFA.s:16     .text.eoc:0000000000000000 .L5
+     /tmp/cc9V4hFA.s:38     .text.sleep_busy:0000000000000016 .L6
+     /tmp/cc9V4hFA.s:29     .text.sleep_busy:000000000000000c .L8
+     /tmp/cc9V4hFA.s:214    .rodata.cpu_perf_set.str1.4:0000000000000000 .LC0
+     /tmp/cc9V4hFA.s:66     .rodata.cpu_perf_get:0000000000000000 .L15
+     /tmp/cc9V4hFA.s:210    .rodata.cpu_perf_get.str1.4:0000000000000000 .LC1
+     /tmp/cc9V4hFA.s:196    .text.cpu_perf_get:0000000000000078 .L13
+     /tmp/cc9V4hFA.s:98     .text.cpu_perf_get:0000000000000024 .L14
+     /tmp/cc9V4hFA.s:105    .text.cpu_perf_get:000000000000002a .L16
+     /tmp/cc9V4hFA.s:112    .text.cpu_perf_get:0000000000000030 .L17
+     /tmp/cc9V4hFA.s:119    .text.cpu_perf_get:0000000000000036 .L18
+     /tmp/cc9V4hFA.s:126    .text.cpu_perf_get:000000000000003c .L19
+     /tmp/cc9V4hFA.s:133    .text.cpu_perf_get:0000000000000042 .L20
+     /tmp/cc9V4hFA.s:140    .text.cpu_perf_get:0000000000000048 .L21
+     /tmp/cc9V4hFA.s:147    .text.cpu_perf_get:000000000000004e .L22
+     /tmp/cc9V4hFA.s:154    .text.cpu_perf_get:0000000000000054 .L23
+     /tmp/cc9V4hFA.s:161    .text.cpu_perf_get:000000000000005a .L24
+     /tmp/cc9V4hFA.s:168    .text.cpu_perf_get:0000000000000060 .L25
+     /tmp/cc9V4hFA.s:175    .text.cpu_perf_get:0000000000000066 .L26
+     /tmp/cc9V4hFA.s:182    .text.cpu_perf_get:000000000000006c .L27
+     /tmp/cc9V4hFA.s:189    .text.cpu_perf_get:0000000000000072 .L28
+     /tmp/cc9V4hFA.s:84     .text.cpu_perf_get:0000000000000018 .L29
+     /tmp/cc9V4hFA.s:91     .text.cpu_perf_get:000000000000001e .L30
 
 UNDEFINED SYMBOLS
 puts
