@@ -1,26 +1,44 @@
-#include "utils.h"
-#include "string_lib.h"
-#include "bar.h"
 #include "gpio.h"
-#include "spi.h"
-int main()
-{
-  set_pin_function(PIN_MSPI_CSN1, FUNC_EXT2);
-  if (get_pin_function(PIN_MSPI_CSN1) == FUNC_EXT2) {
-     printf("Successfully enabled func 2 on PIN_MSPI_CSN1\n");
-  } else {
-     printf("ERROR on enabling func 2 on PIN_MSPI_CSN1\n");
-  }
+#include "string_lib.h"
+#include "utils.h"
 
-  set_pin_function(PIN_MSPI_CSN2, FUNC_GPIO);
-  set_gpio_pin_direction(PIN_MSPI_CSN2, DIR_OUT);
-  if (get_gpio_pin_direction(PIN_MSPI_CSN2) == DIR_OUT) {
-     printf("Successfully set out dir on PIN_MSPI_CSN2\n");
-  } else {
-     printf("ERROR on setting out dir on PIN_MSPI_CSN2\n");
-  }
+void delay(volatile int cycles) {
+    for (volatile int i = 0; i < cycles; i++);
+}
 
-  printf("Done!!!\n");
+int main() {
+    // 设置 GPIO0~GPIO7 为输出
+    for (int i = 0; i < 8; i++) {
+        set_gpio_pin_direction(i, DIR_OUT);
+    }
 
-  return 0;
+    printf("GPIO0~GPIO7 configured as output\n");
+
+    while (1) {
+        // 全部置高
+        for (int i = 0; i < 8; i++) {
+            set_gpio_pin_value(i, 1);
+        }
+        printf("GPIO0~7 set HIGH\n");
+        delay(1000000);
+
+        // 全部置低
+        for (int i = 0; i < 8; i++) {
+            set_gpio_pin_value(i, 0);
+        }
+        printf("GPIO0~7 set LOW\n");
+        delay(1000000);
+
+        // 单个引脚轮流置高
+        for (int i = 0; i < 8; i++) {
+            // 先清零所有
+            for (int j = 0; j < 8; j++)
+                set_gpio_pin_value(j, 0);
+            set_gpio_pin_value(i, 1);
+            printf("GPIO%d set HIGH\n", i);
+            delay(500000);
+        }
+    }
+
+    return 0;
 }

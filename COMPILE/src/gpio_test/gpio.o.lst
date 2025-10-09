@@ -1,0 +1,184 @@
+   1              		.file	"gpio.c"
+   2              		.option nopic
+   3              		.section	.text.delay,"ax",@progbits
+   4              		.align	1
+   5              		.globl	delay
+   7              	delay:
+   8 0000 0111     		add	sp,sp,-32
+   9 0002 2AC6     		sw	a0,12(sp)
+  10 0004 02CE     		sw	zero,28(sp)
+  11 0006 7247     		lw	a4,28(sp)
+  12 0008 B247     		lw	a5,12(sp)
+  13 000a 6359F700 		bge	a4,a5,.L1
+  14              	.L3:
+  15 000e F247     		lw	a5,28(sp)
+  16 0010 8507     		add	a5,a5,1
+  17 0012 3ECE     		sw	a5,28(sp)
+  18 0014 7247     		lw	a4,28(sp)
+  19 0016 B247     		lw	a5,12(sp)
+  20 0018 E34BF7FE 		blt	a4,a5,.L3
+  21              	.L1:
+  22 001c 0561     		add	sp,sp,32
+  23 001e 8280     		jr	ra
+  25              		.section	.text.startup.main,"ax",@progbits
+  26              		.align	1
+  27              		.globl	main
+  29              	main:
+  30 0000 7971     		add	sp,sp,-48
+  31 0002 22D4     		sw	s0,40(sp)
+  32 0004 06D6     		sw	ra,44(sp)
+  33 0006 26D2     		sw	s1,36(sp)
+  34 0008 4AD0     		sw	s2,32(sp)
+  35 000a 4ECE     		sw	s3,28(sp)
+  36 000c 52CC     		sw	s4,24(sp)
+  37 000e 56CA     		sw	s5,20(sp)
+  38 0010 5AC8     		sw	s6,16(sp)
+  39 0012 0144     		li	s0,0
+  40              	.L8:
+  41 0014 2285     		mv	a0,s0
+  42 0016 8545     		li	a1,1
+  43 0018 0504     		add	s0,s0,1
+  44 001a 97000000 		call	set_gpio_pin_direction
+  44      E7800000 
+  45 0022 E33984FE 		p.bneimm	s0,8,.L8
+  46 0026 37050000 		lui	a0,%hi(.LC0)
+  47 002a 13050500 		addi	a0,a0,%lo(.LC0)
+  48 002e B7490F00 		li	s3,999424
+  49 0032 B7A40700 		li	s1,499712
+  50 0036 97000000 		call	puts
+  50      E7800000 
+  51 003e 370B0000 		lui	s6,%hi(.LC1)
+  52 0042 B70A0000 		lui	s5,%hi(.LC2)
+  53 0046 370A0000 		lui	s4,%hi(.LC3)
+  54 004a 93890924 		add	s3,s3,576
+  55 004e 93840412 		add	s1,s1,288
+  56              	.L19:
+  57 0052 0144     		li	s0,0
+  58              	.L9:
+  59 0054 2285     		mv	a0,s0
+  60 0056 8545     		li	a1,1
+  61 0058 0504     		add	s0,s0,1
+  62 005a 97000000 		call	set_gpio_pin_value
+  62      E7800000 
+  63 0062 E33984FE 		p.bneimm	s0,8,.L9
+  64 0066 13050B00 		addi	a0,s6,%lo(.LC1)
+  65 006a 97000000 		call	puts
+  65      E7800000 
+  66 0072 02C2     		sw	zero,4(sp)
+  67 0074 9247     		lw	a5,4(sp)
+  68 0076 63D83701 		ble	s3,a5,.L10
+  69              	.L11:
+  70 007a 9247     		lw	a5,4(sp)
+  71 007c 8507     		add	a5,a5,1
+  72 007e 3EC2     		sw	a5,4(sp)
+  73 0080 9247     		lw	a5,4(sp)
+  74 0082 E3CC37FF 		blt	a5,s3,.L11
+  75              	.L10:
+  76 0086 0144     		li	s0,0
+  77              	.L12:
+  78 0088 2285     		mv	a0,s0
+  79 008a 8145     		li	a1,0
+  80 008c 0504     		add	s0,s0,1
+  81 008e 97000000 		call	set_gpio_pin_value
+  81      E7800000 
+  82 0096 E33984FE 		p.bneimm	s0,8,.L12
+  83 009a 13850A00 		addi	a0,s5,%lo(.LC2)
+  84 009e 97000000 		call	puts
+  84      E7800000 
+  85 00a6 02C4     		sw	zero,8(sp)
+  86 00a8 A247     		lw	a5,8(sp)
+  87 00aa 63D83701 		ble	s3,a5,.L13
+  88              	.L14:
+  89 00ae A247     		lw	a5,8(sp)
+  90 00b0 8507     		add	a5,a5,1
+  91 00b2 3EC4     		sw	a5,8(sp)
+  92 00b4 A247     		lw	a5,8(sp)
+  93 00b6 E3CC37FF 		blt	a5,s3,.L14
+  94              	.L13:
+  95 00ba 0149     		li	s2,0
+  96              	.L15:
+  97 00bc 0144     		li	s0,0
+  98              	.L16:
+  99 00be 2285     		mv	a0,s0
+ 100 00c0 8145     		li	a1,0
+ 101 00c2 0504     		add	s0,s0,1
+ 102 00c4 97000000 		call	set_gpio_pin_value
+ 102      E7800000 
+ 103 00cc E33984FE 		p.bneimm	s0,8,.L16
+ 104 00d0 4A85     		mv	a0,s2
+ 105 00d2 8545     		li	a1,1
+ 106 00d4 97000000 		call	set_gpio_pin_value
+ 106      E7800000 
+ 107 00dc CA85     		mv	a1,s2
+ 108 00de 13050A00 		addi	a0,s4,%lo(.LC3)
+ 109 00e2 97000000 		call	printf
+ 109      E7800000 
+ 110 00ea 02C6     		sw	zero,12(sp)
+ 111 00ec B247     		lw	a5,12(sp)
+ 112 00ee 63D89700 		ble	s1,a5,.L17
+ 113              	.L18:
+ 114 00f2 B247     		lw	a5,12(sp)
+ 115 00f4 8507     		add	a5,a5,1
+ 116 00f6 3EC6     		sw	a5,12(sp)
+ 117 00f8 B247     		lw	a5,12(sp)
+ 118 00fa E3CC97FE 		blt	a5,s1,.L18
+ 119              	.L17:
+ 120 00fe 0509     		add	s2,s2,1
+ 121 0100 E33E89FA 		p.bneimm	s2,8,.L15
+ 122 0104 B9B7     		j	.L19
+ 124              		.section	.rodata.main.str1.4,"aMS",@progbits,1
+ 125              		.align	2
+ 126              	.LC0:
+ 127 0000 4750494F 		.string	"GPIO0~GPIO7 configured as output"
+ 127      307E4750 
+ 127      494F3720 
+ 127      636F6E66 
+ 127      69677572 
+ 128 0021 000000   		.zero	3
+ 129              	.LC1:
+ 130 0024 4750494F 		.string	"GPIO0~7 set HIGH"
+ 130      307E3720 
+ 130      73657420 
+ 130      48494748 
+ 130      00
+ 131 0035 000000   		.zero	3
+ 132              	.LC2:
+ 133 0038 4750494F 		.string	"GPIO0~7 set LOW"
+ 133      307E3720 
+ 133      73657420 
+ 133      4C4F5700 
+ 134              	.LC3:
+ 135 0048 4750494F 		.string	"GPIO%d set HIGH\n"
+ 135      25642073 
+ 135      65742048 
+ 135      4947480A 
+ 135      00
+ 136              		.ident	"GCC: (GNU) 7.1.1 20170509"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 gpio.c
+     /tmp/cceuMrEG.s:7      .text.delay:0000000000000000 delay
+     /tmp/cceuMrEG.s:29     .text.startup.main:0000000000000000 main
+     /tmp/cceuMrEG.s:21     .text.delay:000000000000001c .L1
+     /tmp/cceuMrEG.s:14     .text.delay:000000000000000e .L3
+     /tmp/cceuMrEG.s:126    .rodata.main.str1.4:0000000000000000 .LC0
+     /tmp/cceuMrEG.s:129    .rodata.main.str1.4:0000000000000024 .LC1
+     /tmp/cceuMrEG.s:132    .rodata.main.str1.4:0000000000000038 .LC2
+     /tmp/cceuMrEG.s:134    .rodata.main.str1.4:0000000000000048 .LC3
+     /tmp/cceuMrEG.s:40     .text.startup.main:0000000000000014 .L8
+     /tmp/cceuMrEG.s:58     .text.startup.main:0000000000000054 .L9
+     /tmp/cceuMrEG.s:75     .text.startup.main:0000000000000086 .L10
+     /tmp/cceuMrEG.s:69     .text.startup.main:000000000000007a .L11
+     /tmp/cceuMrEG.s:77     .text.startup.main:0000000000000088 .L12
+     /tmp/cceuMrEG.s:94     .text.startup.main:00000000000000ba .L13
+     /tmp/cceuMrEG.s:88     .text.startup.main:00000000000000ae .L14
+     /tmp/cceuMrEG.s:98     .text.startup.main:00000000000000be .L16
+     /tmp/cceuMrEG.s:119    .text.startup.main:00000000000000fe .L17
+     /tmp/cceuMrEG.s:113    .text.startup.main:00000000000000f2 .L18
+     /tmp/cceuMrEG.s:96     .text.startup.main:00000000000000bc .L15
+     /tmp/cceuMrEG.s:56     .text.startup.main:0000000000000052 .L19
+
+UNDEFINED SYMBOLS
+set_gpio_pin_direction
+puts
+set_gpio_pin_value
+printf

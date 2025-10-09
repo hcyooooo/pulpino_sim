@@ -3,4 +3,5 @@
 *.wlf
 *.txt
 COMPILE/lib/
-
+COMPILE/compile/
+TEST/
