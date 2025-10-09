@@ -2,3 +2,5 @@
 *.elf
 *.wlf
 *.txt
+COMPILE/lib/
+
