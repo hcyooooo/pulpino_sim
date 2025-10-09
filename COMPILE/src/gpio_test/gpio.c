@@ -1,32 +1,26 @@
-#include "gpio.h"
+#include "utils.h"
 #include "string_lib.h"
+#include "bar.h"
+#include "gpio.h"
+#include "spi.h"
+int main()
+{
+  set_pin_function(PIN_MSPI_CSN1, FUNC_EXT2);
+  if (get_pin_function(PIN_MSPI_CSN1) == FUNC_EXT2) {
+     printf("Successfully enabled func 2 on PIN_MSPI_CSN1\n");
+  } else {
+     printf("ERROR on enabling func 2 on PIN_MSPI_CSN1\n");
+  }
 
-int main() {
-    // 设置 GPIO0~GPIO7 为输出
-    for (int i = 0; i < 8; i++) {
-        set_gpio_pin_direction(i, DIR_OUT);
-    }
+  set_pin_function(PIN_MSPI_CSN2, FUNC_GPIO);
+  set_gpio_pin_direction(PIN_MSPI_CSN2, DIR_OUT);
+  if (get_gpio_pin_direction(PIN_MSPI_CSN2) == DIR_OUT) {
+     printf("Successfully set out dir on PIN_MSPI_CSN2\n");
+  } else {
+     printf("ERROR on setting out dir on PIN_MSPI_CSN2\n");
+  }
 
-    // 测试：依次输出高低电平
-    while (1) {
-        // 全部置高
-        for (int i = 0; i < 8; i++) {
-            set_gpio_pin_value(i, 1);
-        }
-        printf("GPIO0~7 set HIGH\n");
+  printf("Done!!!\n");
 
-        // 可以在这里添加延时函数，如果有实现的话
-        // delay_ms(500);
-
-        // 全部置低
-        for (int i = 0; i < 8; i++) {
-            set_gpio_pin_value(i, 0);
-        }
-        printf("GPIO0~7 set LOW\n");
-
-        // 延时
-        // delay_ms(500);
-    }
-
-    return 0;
+  return 0;
 }

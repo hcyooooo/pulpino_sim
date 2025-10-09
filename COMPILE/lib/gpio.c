@@ -10,7 +10,7 @@
 
 #include <gpio.h>
 
-/*void set_pin_function(int pinnumber, int function) {
+void set_pin_function(int pinnumber, int function) {
   volatile int old_function;
   int addr;
 
@@ -27,7 +27,7 @@ int  get_pin_function(int pinnumber) {
   old_function = (old_function >> pinnumber & 0x01);
   return old_function;
 }
-*/
+
 
 void set_gpio_pin_direction(int pinnumber, int direction) {
   volatile int old_dir;

@@ -63,6 +63,7 @@
 
 
 #define FUNC_GPIO 1
+#define FUNC_EXT2 2
 
 #define DIR_IN  0
 #define DIR_OUT 1
