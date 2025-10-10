@@ -1,4 +1,4 @@
-# //  ModelSim SE-64 2020.4 Oct 13 2020 Linux 6.8.0-84-generic
+# //  ModelSim SE-64 2020.4 Oct 13 2020 Linux 6.8.0-85-generic
 # //
 # //  Copyright 1991-2020 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -54,7 +54,7 @@ do ../scripts/run_pre_syn.do
 #   ../../RTL/rtl/components/pulp_clock_gating.sv  ../../RTL/rtl/components/cluster_clock_gating.sv  ../../RTL/rtl/components/cluster_clock_inverter.sv  ../../RTL/rtl/components/cluster_clock_mux2.sv  ../../RTL/rtl/components/rstgen.sv  ../../RTL/rtl/components/pulp_clock_inverter.sv  ../../RTL/rtl/components/pulp_clock_mux2.sv  ../../RTL/rtl/components/generic_fifo.sv  ../../RTL/rtl/components/sp_ram.sv  
 #   ../../RTL/rtl/axi2apb_wrap.sv  ../../RTL/rtl/periph_bus_wrap.sv  ../../RTL/rtl/core2axi_wrap.sv  ../../RTL/rtl/axi_node_intf_wrap.sv  ../../RTL/rtl/axi_spi_slave_wrap.sv  ../../RTL/rtl/axi_slice_wrap.sv  ../../RTL/rtl/axi_mem_if_SP_wrap.sv  ../../RTL/rtl/core_region.sv  ../../RTL/rtl/instr_ram_wrap.sv  ../../RTL/rtl/sp_ram_wrap.sv  ../../RTL/rtl/boot_code.sv  ../../RTL/rtl/boot_rom_wrap.sv  ../../RTL/rtl/peripherals.sv  ../../RTL/rtl/ram_mux.sv  ../../RTL/rtl/pulpino_top.sv  ../../RTL/rtl/clk_rst_gen.sv  
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:42 on Sep 29,2025
+# Start time: 20:01:33 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_node/apb_regs_top.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv ../../RTL/ips/axi/axi_node/axi_BR_allocator.sv ../../RTL/ips/axi/axi_node/axi_BW_allocator.sv ../../RTL/ips/axi/axi_node/axi_DW_allocator.sv ../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv ../../RTL/ips/axi/axi_node/axi_multiplexer.sv ../../RTL/ips/axi/axi_node/axi_node.sv ../../RTL/ips/axi/axi_node/axi_node_wrap.sv ../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv ../../RTL/ips/axi/axi_node/axi_regs_top.sv ../../RTL/ips/axi/axi_node/axi_request_block.sv ../../RTL/ips/axi/axi_node/axi_response_block.sv ../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv 
 # -- Compiling module apb_regs_top
 # ** Warning: ../../RTL/ips/axi/axi_node/apb_regs_top.sv(92): (vlog-13314) Defaulting port 'init_START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -204,10 +204,10 @@ do ../scripts/run_pre_syn.do
 # 	apb_regs_top
 # 	axi_node_wrap_with_slices
 # 	axi_regs_top
-# End time: 14:53:42 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:33 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 122
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_node/apb_node.sv ../../RTL/ips/apb/apb_node/apb_node_wrap.sv 
 # -- Compiling module apb_node
 # ** Warning: ../../RTL/ips/apb/apb_node/apb_node.sv(46): (vlog-13314) Defaulting port 'prdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -219,10 +219,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_node_wrap
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 5
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_multi_bank.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP_hybr.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_read_only_ctrl.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv 
 # -- Compiling module axi_mem_if_MP_Hybrid_multi_bank
 # ** Warning: ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv(46): (vlog-13314) Defaulting port 'CH0_AWID_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -271,10 +271,10 @@ do ../scripts/run_pre_syn.do
 # 	axi_mem_if_DP_hybr
 # 	axi_mem_if_DP
 # 	axi_mem_if_SP
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 33
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_spi_slave/axi_spi_slave.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_controller.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_regs.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_rx.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_syncro.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_tx.sv 
 # -- Compiling module axi_spi_slave
 # -- Compiling module spi_slave_axi_plug
@@ -288,10 +288,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	axi_spi_slave
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_spi_master/axi_spi_master.sv ../../RTL/ips/axi/axi_spi_master/spi_master_axi_if.sv ../../RTL/ips/axi/axi_spi_master/spi_master_clkgen.sv ../../RTL/ips/axi/axi_spi_master/spi_master_controller.sv ../../RTL/ips/axi/axi_spi_master/spi_master_fifo.sv ../../RTL/ips/axi/axi_spi_master/spi_master_rx.sv ../../RTL/ips/axi/axi_spi_master/spi_master_tx.sv 
 # -- Compiling module axi_spi_master
 # -- Compiling module spi_master_axi_if
@@ -303,10 +303,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	axi_spi_master
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_uart_sv/apb_uart_sv.sv ../../RTL/ips/apb/apb_uart_sv/uart_rx.sv ../../RTL/ips/apb/apb_uart_sv/uart_tx.sv ../../RTL/ips/apb/apb_uart_sv/io_generic_fifo.sv ../../RTL/ips/apb/apb_uart_sv/uart_interrupt.sv 
 # -- Compiling module apb_uart_sv
 # -- Compiling module uart_rx
@@ -317,19 +317,19 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_uart_sv
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_gpio/apb_gpio.sv 
 # -- Compiling module apb_gpio
 # 
 # Top level modules:
 # 	apb_gpio
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv ../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv ../../RTL/ips/apb/apb_event_unit/sleep_unit.sv "+incdir+../../RTL/ips/apb/apb_event_unit/include" 
 # -- Compiling module apb_event_unit
 # -- Compiling module generic_service_unit
@@ -337,10 +337,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_event_unit
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_spi_master/apb_spi_master.sv ../../RTL/ips/apb/apb_spi_master/spi_master_apb_if.sv ../../RTL/ips/apb/apb_spi_master/spi_master_clkgen.sv ../../RTL/ips/apb/apb_spi_master/spi_master_controller.sv ../../RTL/ips/apb/apb_spi_master/spi_master_fifo.sv ../../RTL/ips/apb/apb_spi_master/spi_master_rx.sv ../../RTL/ips/apb/apb_spi_master/spi_master_tx.sv 
 # -- Compiling module apb_spi_master
 # -- Compiling module spi_master_apb_if
@@ -352,47 +352,47 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_spi_master
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_pulpino/apb_pulpino.sv 
 # -- Compiling module apb_pulpino
 # 
 # Top level modules:
 # 	apb_pulpino
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:34 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_fll_if/apb_fll_if.sv 
 # -- Compiling module apb_fll_if
 # 
 # Top level modules:
 # 	apb_fll_if
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:35 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/core2axi/core2axi.sv 
 # -- Compiling module core2axi
 # 
 # Top level modules:
 # 	core2axi
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:35 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_timer/apb_timer.sv ../../RTL/ips/apb/apb_timer/timer.sv 
 # -- Compiling module apb_timer
 # -- Compiling module timer
 # 
 # Top level modules:
 # 	apb_timer
-# End time: 14:53:43 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:43 on Sep 29,2025
+# Start time: 20:01:35 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi2apb/AXI_2_APB.sv ../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv ../../RTL/ips/axi/axi2apb/axi2apb.sv ../../RTL/ips/axi/axi2apb/axi2apb32.sv 
 # -- Compiling module AXI_2_APB
 # ** Warning: ../../RTL/ips/axi/axi2apb/AXI_2_APB.sv(69): (vlog-13314) Defaulting port 'WDATA_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -408,10 +408,10 @@ do ../scripts/run_pre_syn.do
 # 	AXI_2_APB_32
 # 	axi2apb
 # 	axi2apb32
-# End time: 14:53:44 on Sep 29,2025, Elapsed time: 0:00:01
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:44 on Sep 29,2025
+# Start time: 20:01:35 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_i2c/apb_i2c.sv ../../RTL/ips/apb/apb_i2c/i2c_master_bit_ctrl.sv ../../RTL/ips/apb/apb_i2c/i2c_master_byte_ctrl.sv ../../RTL/ips/apb/apb_i2c/i2c_master_defines.sv 
 # -- Compiling module apb_i2c
 # -- Compiling module i2c_master_bit_ctrl
@@ -419,10 +419,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_i2c
-# End time: 14:53:44 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:44 on Sep 29,2025
+# Start time: 20:01:35 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_master.sv ../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_slave.sv ../../RTL/ips/axi/axi_slice_dc/dc_data_buffer.v ../../RTL/ips/axi/axi_slice_dc/onehot_to_bin.sv ../../RTL/ips/axi/axi_slice_dc/dc_full_detector.v ../../RTL/ips/axi/axi_slice_dc/dc_synchronizer.v ../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_din.v ../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_dout.v ../../RTL/ips/axi/axi_slice_dc/dc_token_ring.v 
 # -- Compiling module axi_slice_dc_master
 # -- Compiling module axi_slice_dc_slave
@@ -438,10 +438,10 @@ do ../scripts/run_pre_syn.do
 # 	axi_slice_dc_master
 # 	axi_slice_dc_slave
 # 	onehot_to_bin
-# End time: 14:53:44 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:44 on Sep 29,2025
+# Start time: 20:01:35 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/riscv/include/apu_core_package.sv ../../RTL/ips/riscv/include/riscv_defines.sv ../../RTL/ips/riscv/include/riscv_tracer_defines.sv ../../RTL/ips/riscv/riscv_alu.sv ../../RTL/ips/riscv/riscv_alu_basic.sv ../../RTL/ips/riscv/riscv_alu_div.sv ../../RTL/ips/riscv/riscv_compressed_decoder.sv ../../RTL/ips/riscv/riscv_controller.sv ../../RTL/ips/riscv/riscv_cs_registers.sv ../../RTL/ips/riscv/riscv_debug_unit.sv ../../RTL/ips/riscv/riscv_decoder.sv ../../RTL/ips/riscv/riscv_int_controller.sv ../../RTL/ips/riscv/riscv_ex_stage.sv ../../RTL/ips/riscv/riscv_hwloop_controller.sv ../../RTL/ips/riscv/riscv_hwloop_regs.sv ../../RTL/ips/riscv/riscv_id_stage.sv ../../RTL/ips/riscv/riscv_if_stage.sv ../../RTL/ips/riscv/riscv_load_store_unit.sv ../../RTL/ips/riscv/riscv_mult.sv ../../RTL/ips/riscv/riscv_prefetch_buffer.sv ../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv ../../RTL/ips/riscv/riscv_core.sv ../../RTL/ips/riscv/riscv_apu_disp.sv ../../RTL/ips/riscv/riscv_fetch_fifo.sv ../../RTL/ips/riscv/riscv_L0_buffer.sv "+incdir+../../RTL/ips/riscv/include/" 
 # -- Compiling package apu_core_package
 # -- Compiling package riscv_defines
@@ -834,19 +834,19 @@ do ../scripts/run_pre_syn.do
 # Top level modules:
 # 	riscv_alu_basic
 # 	riscv_core
-# End time: 14:53:44 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 344
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:44 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/riscv/riscv_register_file.sv 
 # -- Compiling module riscv_register_file
 # 
 # Top level modules:
 # 	riscv_register_file
-# End time: 14:53:44 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vcom -reportprogress 300 ../../RTL/ips/apb/apb_uart/apb_uart.vhd ../../RTL/ips/apb/apb_uart/slib_clock_div.vhd ../../RTL/ips/apb/apb_uart/slib_counter.vhd ../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd ../../RTL/ips/apb/apb_uart/slib_fifo.vhd ../../RTL/ips/apb/apb_uart/slib_input_filter.vhd ../../RTL/ips/apb/apb_uart/slib_input_sync.vhd ../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd ../../RTL/ips/apb/apb_uart/uart_baudgen.vhd ../../RTL/ips/apb/apb_uart/uart_interrupt.vhd ../../RTL/ips/apb/apb_uart/uart_receiver.vhd ../../RTL/ips/apb/apb_uart/uart_transmitter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -876,10 +876,10 @@ do ../scripts/run_pre_syn.do
 # -- Compiling architecture rtl of uart_receiver
 # -- Compiling entity uart_transmitter
 # -- Compiling architecture rtl of uart_transmitter
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_slice/axi_ar_buffer.sv ../../RTL/ips/axi/axi_slice/axi_aw_buffer.sv ../../RTL/ips/axi/axi_slice/axi_b_buffer.sv ../../RTL/ips/axi/axi_slice/axi_buffer.sv ../../RTL/ips/axi/axi_slice/axi_r_buffer.sv ../../RTL/ips/axi/axi_slice/axi_slice.sv ../../RTL/ips/axi/axi_slice/axi_w_buffer.sv 
 # -- Compiling module axi_ar_buffer
 # -- Compiling module axi_aw_buffer
@@ -892,10 +892,10 @@ do ../scripts/run_pre_syn.do
 # Top level modules:
 # 	axi_buffer
 # 	axi_slice
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv ../../RTL/ips/adv_dbg_if/rtl/bytefifo.v ../../RTL/ips/adv_dbg_if/rtl/syncflop.v ../../RTL/ips/adv_dbg_if/rtl/syncreg.v ../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v ../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv 
 # -- Compiling module adbg_axi_biu
 # -- Compiling module adbg_axi_module
@@ -972,19 +972,19 @@ do ../scripts/run_pre_syn.do
 # 	adv_dbg_if
 # 	adbg_axionly_top
 # 	adbg_lintonly_top
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 52
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb2per/apb2per.sv 
 # -- Compiling module apb2per
 # 
 # Top level modules:
 # 	apb2per
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/rtl/components/pulp_clock_gating.sv ../../RTL/rtl/components/cluster_clock_gating.sv ../../RTL/rtl/components/cluster_clock_inverter.sv ../../RTL/rtl/components/cluster_clock_mux2.sv ../../RTL/rtl/components/rstgen.sv ../../RTL/rtl/components/pulp_clock_inverter.sv ../../RTL/rtl/components/pulp_clock_mux2.sv ../../RTL/rtl/components/generic_fifo.sv ../../RTL/rtl/components/sp_ram.sv 
 # -- Compiling module pulp_clock_gating
 # -- Compiling module cluster_clock_gating
@@ -1005,10 +1005,10 @@ do ../scripts/run_pre_syn.do
 # 	pulp_clock_mux2
 # 	generic_fifo
 # 	sp_ram
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:36 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/rtl/axi2apb_wrap.sv ../../RTL/rtl/periph_bus_wrap.sv ../../RTL/rtl/core2axi_wrap.sv ../../RTL/rtl/axi_node_intf_wrap.sv ../../RTL/rtl/axi_spi_slave_wrap.sv ../../RTL/rtl/axi_slice_wrap.sv ../../RTL/rtl/axi_mem_if_SP_wrap.sv ../../RTL/rtl/core_region.sv ../../RTL/rtl/instr_ram_wrap.sv ../../RTL/rtl/sp_ram_wrap.sv ../../RTL/rtl/boot_code.sv ../../RTL/rtl/boot_rom_wrap.sv ../../RTL/rtl/peripherals.sv ../../RTL/rtl/ram_mux.sv ../../RTL/rtl/pulpino_top.sv ../../RTL/rtl/clk_rst_gen.sv "+incdir+../../RTL/rtl/includes/" 
 # -- Compiling interface AXI_BUS
 # -- Compiling module axi2apb_wrap
@@ -1058,10 +1058,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	pulpino_top
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 10
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:37 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/tb.sv "+incdir+../../RTL/rtl/includes" 
 # -- Compiling interface jtag_i
 # -- Compiling package tb_sv_unit
@@ -1069,37 +1069,37 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	tb
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:37 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/if_spi_master.sv 
 # -- Compiling interface spi_bus_master
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:37 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/if_spi_slave.sv 
 # -- Compiling interface spi_slave
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:37 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/uart.sv 
 # -- Compiling interface uart_bus
 # 
 # Top level modules:
 # 	--none--
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:37 on Oct 09,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" -timescale 1 ns / 1 ns ../../RTL/tb/i2c_eeprom_model.sv 
 # -- Compiling package pkg_i2c_model
 # -- Compiling module i2c_buf
@@ -1110,10 +1110,10 @@ do ../scripts/run_pre_syn.do
 # Top level modules:
 # 	i2c_buf
 # 	i2c_eeprom_model
-# End time: 14:53:45 on Sep 29,2025, Elapsed time: 0:00:00
+# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -vopt -t ns work.tb -voptargs="+acc" 
-# Start time: 14:53:45 on Sep 29,2025
+# Start time: 20:01:37 on Oct 09,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt6
 # Loading sv_std.std
 # Loading work.tb_sv_unit(fast)
@@ -1329,19 +1329,8 @@ do ../scripts/run_pre_syn.do
 #    Time: 0 ns  Iteration: 0  Instance: /tb/top_i/peripherals_i/apb_uart_i/UART_TXFF
 # Using MEMLOAD method: SPI
 # Using      ri5cy core
-run 20ms
+run -all
 # [SPI] Enabling QPI mode
 # [adv_dbg_if] AXI4 WRITE         32 burst @1a107008 for           4 bytes.
 # [SPI] Loading Instruction RAM
-# [SPI] Prev address 00000dd0 current addr 00100000
-# [SPI] Loading Data RAM
 # [SPI] Checking Instruction RAM
-# [SPI] Prev address 00000dd0 current addr 00100000
-# [SPI] Checking Data RAM
-run -all
-run -all
-run 1s
-# Invalid time value: 1s
-run 200ms
-run -all
-# ** Error: Failure to license for PSL & SVA. Unable to checkout 'mtiverification' license feature.

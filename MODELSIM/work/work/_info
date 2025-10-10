@@ -86,9 +86,20 @@ R4
 n@_opt6
 R5
 R0
+T_opt7
+R1
+!s110 1759995490
+V07T[X;m]:=`fQ_VRzbnZ@0
+R2
+=1-000ae431a4f1-68e76661-c5d40-3d38
+R3
+R4
+n@_opt7
+R5
+R0
 vadbg_axi_biu
 Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z7 !s110 1759128825
+Z7 !s110 1760011296
 !i10b 1
 !s100 dNBH3WXRh^Wc:>;be3h_X2
 Z8 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -98,14 +109,14 @@ Z9 d/home/icer/Desktop/pro0_init/MODELSIM/work
 Z10 w1757920481
 8../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv
-!i122 1046
+!i122 1191
 L0 66 506
 Z11 VDg1SIo80bB@j0V0VzS_@n1
 Z12 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z13 !s108 1759128825.000000
+Z13 !s108 1760011296.000000
 Z14 !s107 ../../RTL/ips/adv_dbg_if/rtl/adbg_tap_defines.v|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_defines.v|../../RTL/ips/adv_dbg_if/rtl/adbg_lint_defines.v|../../RTL/ips/adv_dbg_if/rtl/adbg_axi_defines.v|../../RTL/ips/adv_dbg_if/rtl/adbg_defines.v|../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv|../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v|../../RTL/ips/adv_dbg_if/rtl/syncreg.v|../../RTL/ips/adv_dbg_if/rtl/syncflop.v|../../RTL/ips/adv_dbg_if/rtl/bytefifo.v|../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v|../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv|
 Z15 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv|../../RTL/ips/adv_dbg_if/rtl/bytefifo.v|../../RTL/ips/adv_dbg_if/rtl/syncflop.v|../../RTL/ips/adv_dbg_if/rtl/syncreg.v|../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v|../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv|../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv|
 !i113 0
@@ -124,7 +135,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv
-!i122 1046
+!i122 1191
 L0 69 843
 R11
 R12
@@ -150,7 +161,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv
-!i122 1046
+!i122 1191
 L0 44 239
 R11
 R12
@@ -176,7 +187,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v
 F../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v
-!i122 1046
+!i122 1191
 L0 52 70
 R11
 R12
@@ -202,7 +213,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv
-!i122 1046
+!i122 1191
 L0 12 398
 R11
 R12
@@ -228,7 +239,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv
-!i122 1046
+!i122 1191
 L0 15 714
 R11
 R12
@@ -254,7 +265,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv
-!i122 1046
+!i122 1191
 L0 15 159
 R11
 R12
@@ -280,7 +291,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv
-!i122 1046
+!i122 1191
 L0 59 277
 R11
 R12
@@ -306,7 +317,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv
-!i122 1046
+!i122 1191
 L0 69 653
 R11
 R12
@@ -332,7 +343,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv
-!i122 1046
+!i122 1191
 L0 68 99
 R11
 R12
@@ -358,7 +369,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v
 F../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v
-!i122 1046
+!i122 1191
 L0 73 479
 R11
 R12
@@ -384,7 +395,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv
 F../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv
-!i122 1046
+!i122 1191
 L0 44 280
 R11
 R12
@@ -410,7 +421,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv
 F../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv
-!i122 1046
+!i122 1191
 L0 11 224
 R11
 R12
@@ -429,7 +440,7 @@ R6
 R6
 Z18 DXx4 work 13 riscv_defines 0 22 UaBNlH7L8O_nl^0hBcJO22
 Z19 DXx4 work 17 riscv_alu_sv_unit 0 22 g1]N2=nP?ZK8`lDbW;I?B1
-Z20 !s110 1759128824
+Z20 !s110 1760011295
 R11
 r1
 !s85 0
@@ -442,11 +453,11 @@ R9
 Z22 w1757920483
 Z23 8../../RTL/ips/riscv/riscv_alu.sv
 Z24 F../../RTL/ips/riscv/riscv_alu.sv
-!i122 1042
+!i122 1187
 L0 1042 74
 R12
 31
-Z25 !s108 1759128824.000000
+Z25 !s108 1760011295.000000
 Z26 !s107 ../../RTL/ips/riscv/include//riscv_config.sv|../../RTL/ips/riscv/include//apu_macros.sv|../../RTL/ips/riscv/riscv_L0_buffer.sv|../../RTL/ips/riscv/riscv_fetch_fifo.sv|../../RTL/ips/riscv/riscv_apu_disp.sv|../../RTL/ips/riscv/riscv_core.sv|../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv|../../RTL/ips/riscv/riscv_prefetch_buffer.sv|../../RTL/ips/riscv/riscv_mult.sv|../../RTL/ips/riscv/riscv_load_store_unit.sv|../../RTL/ips/riscv/riscv_if_stage.sv|../../RTL/ips/riscv/riscv_id_stage.sv|../../RTL/ips/riscv/riscv_hwloop_regs.sv|../../RTL/ips/riscv/riscv_hwloop_controller.sv|../../RTL/ips/riscv/riscv_ex_stage.sv|../../RTL/ips/riscv/riscv_int_controller.sv|../../RTL/ips/riscv/riscv_decoder.sv|../../RTL/ips/riscv/riscv_debug_unit.sv|../../RTL/ips/riscv/riscv_cs_registers.sv|../../RTL/ips/riscv/riscv_controller.sv|../../RTL/ips/riscv/riscv_compressed_decoder.sv|../../RTL/ips/riscv/riscv_alu_div.sv|../../RTL/ips/riscv/riscv_alu_basic.sv|../../RTL/ips/riscv/riscv_alu.sv|../../RTL/ips/riscv/include/riscv_tracer_defines.sv|../../RTL/ips/riscv/include/riscv_defines.sv|../../RTL/ips/riscv/include/apu_core_package.sv|
 Z27 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/riscv/include/apu_core_package.sv|../../RTL/ips/riscv/include/riscv_defines.sv|../../RTL/ips/riscv/include/riscv_tracer_defines.sv|../../RTL/ips/riscv/riscv_alu.sv|../../RTL/ips/riscv/riscv_alu_basic.sv|../../RTL/ips/riscv/riscv_alu_div.sv|../../RTL/ips/riscv/riscv_compressed_decoder.sv|../../RTL/ips/riscv/riscv_controller.sv|../../RTL/ips/riscv/riscv_cs_registers.sv|../../RTL/ips/riscv/riscv_debug_unit.sv|../../RTL/ips/riscv/riscv_decoder.sv|../../RTL/ips/riscv/riscv_int_controller.sv|../../RTL/ips/riscv/riscv_ex_stage.sv|../../RTL/ips/riscv/riscv_hwloop_controller.sv|../../RTL/ips/riscv/riscv_hwloop_regs.sv|../../RTL/ips/riscv/riscv_id_stage.sv|../../RTL/ips/riscv/riscv_if_stage.sv|../../RTL/ips/riscv/riscv_load_store_unit.sv|../../RTL/ips/riscv/riscv_mult.sv|../../RTL/ips/riscv/riscv_prefetch_buffer.sv|../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv|../../RTL/ips/riscv/riscv_core.sv|../../RTL/ips/riscv/riscv_apu_disp.sv|../../RTL/ips/riscv/riscv_fetch_fifo.sv|../../RTL/ips/riscv/riscv_L0_buffer.sv|+incdir+../../RTL/ips/riscv/include/|
 !i113 0
@@ -471,7 +482,7 @@ R9
 R22
 R23
 R24
-!i122 1042
+!i122 1187
 L0 1118 39
 R12
 31
@@ -494,7 +505,7 @@ R9
 w1757920469
 8../../RTL/ips/apb/apb2per/apb2per.sv
 F../../RTL/ips/apb/apb2per/apb2per.sv
-!i122 1047
+!i122 1192
 L0 28 131
 R11
 R12
@@ -520,7 +531,7 @@ R9
 Z29 w1757920442
 8../../RTL/rtl/includes//apb_bus.sv
 F../../RTL/rtl/includes//apb_bus.sv
-!i122 1049
+!i122 1194
 L0 73 0
 R11
 R12
@@ -537,7 +548,7 @@ R4
 n@a@p@b_@b@u@s
 vapb_event_unit
 R6
-Z33 !s110 1759128823
+Z33 !s110 1760011294
 !i10b 1
 !s100 :L5<kk1R31EUGmISoYTFb1
 R8
@@ -547,14 +558,14 @@ R9
 Z34 w1757920457
 8../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv
 F../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv
-!i122 1033
+!i122 1178
 L0 13 156
 R11
 R12
 r1
 !s85 0
 31
-Z35 !s108 1759128823.000000
+Z35 !s108 1760011294.000000
 Z36 !s107 ../../RTL/ips/apb/apb_event_unit/include/defines_event_unit.sv|../../RTL/ips/apb/apb_event_unit/sleep_unit.sv|../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv|../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv|
 Z37 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv|../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv|../../RTL/ips/apb/apb_event_unit/sleep_unit.sv|+incdir+../../RTL/ips/apb/apb_event_unit/include|
 !i113 0
@@ -563,7 +574,7 @@ Z38 !s92 -sv +define+SYNTHESIS +incdir+../../RTL/ips/apb/apb_event_unit/include 
 R4
 vapb_fll_if
 R6
-R33
+R20
 !i10b 1
 !s100 _HMR_cQ>^B3=`FKhAg[M?2
 R8
@@ -573,7 +584,7 @@ R9
 w1757920458
 8../../RTL/ips/apb/apb_fll_if/apb_fll_if.sv
 F../../RTL/ips/apb/apb_fll_if/apb_fll_if.sv
-!i122 1036
+!i122 1181
 L0 11 255
 R11
 R12
@@ -599,7 +610,7 @@ R9
 w1757920459
 8../../RTL/ips/apb/apb_gpio/apb_gpio.sv
 F../../RTL/ips/apb/apb_gpio/apb_gpio.sv
-!i122 1032
+!i122 1177
 L0 29 247
 R11
 R12
@@ -625,7 +636,7 @@ R9
 Z39 w1757920461
 8../../RTL/ips/apb/apb_i2c/apb_i2c.sv
 F../../RTL/ips/apb/apb_i2c/apb_i2c.sv
-!i122 1040
+!i122 1185
 L0 20 198
 R11
 R12
@@ -651,7 +662,7 @@ R9
 Z42 w1757920455
 8../../RTL/ips/apb/apb_node/apb_node.sv
 F../../RTL/ips/apb/apb_node/apb_node.sv
-!i122 1027
+!i122 1172
 L0 23 148
 R11
 R12
@@ -677,7 +688,7 @@ R9
 R42
 8../../RTL/ips/apb/apb_node/apb_node_wrap.sv
 F../../RTL/ips/apb/apb_node/apb_node_wrap.sv
-!i122 1027
+!i122 1172
 L0 23 78
 R11
 R12
@@ -703,7 +714,7 @@ R9
 w1757920462
 8../../RTL/ips/apb/apb_pulpino/apb_pulpino.sv
 F../../RTL/ips/apb/apb_pulpino/apb_pulpino.sv
-!i122 1035
+!i122 1180
 L0 36 240
 R11
 R12
@@ -719,7 +730,7 @@ R17
 R4
 vapb_regs_top
 R6
-Z45 !s110 1759128822
+Z45 !s110 1760011293
 !i10b 1
 !s100 UJmRE;>4AjP]ce`Ei;5zX0
 R8
@@ -729,14 +740,14 @@ R9
 Z46 w1757920473
 8../../RTL/ips/axi/axi_node/apb_regs_top.sv
 F../../RTL/ips/axi/axi_node/apb_regs_top.sv
-!i122 1026
+!i122 1171
 L0 72 112
 R11
 R12
 r1
 !s85 0
 31
-Z47 !s108 1759128822.000000
+Z47 !s108 1760011293.000000
 Z48 !s107 ../../RTL/ips/axi/axi_node/defines.v|../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv|../../RTL/ips/axi/axi_node/axi_response_block.sv|../../RTL/ips/axi/axi_node/axi_request_block.sv|../../RTL/ips/axi/axi_node/axi_regs_top.sv|../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv|../../RTL/ips/axi/axi_node/axi_node_wrap.sv|../../RTL/ips/axi/axi_node/axi_node.sv|../../RTL/ips/axi/axi_node/axi_multiplexer.sv|../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv|../../RTL/ips/axi/axi_node/axi_DW_allocator.sv|../../RTL/ips/axi/axi_node/axi_BW_allocator.sv|../../RTL/ips/axi/axi_node/axi_BR_allocator.sv|../../RTL/ips/axi/axi_node/axi_AW_allocator.sv|../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv|../../RTL/ips/axi/axi_node/axi_AR_allocator.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv|../../RTL/ips/axi/axi_node/apb_regs_top.sv|
 Z49 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/axi/axi_node/apb_regs_top.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv|../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv|../../RTL/ips/axi/axi_node/axi_AR_allocator.sv|../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv|../../RTL/ips/axi/axi_node/axi_AW_allocator.sv|../../RTL/ips/axi/axi_node/axi_BR_allocator.sv|../../RTL/ips/axi/axi_node/axi_BW_allocator.sv|../../RTL/ips/axi/axi_node/axi_DW_allocator.sv|../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv|../../RTL/ips/axi/axi_node/axi_multiplexer.sv|../../RTL/ips/axi/axi_node/axi_node.sv|../../RTL/ips/axi/axi_node/axi_node_wrap.sv|../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv|../../RTL/ips/axi/axi_node/axi_regs_top.sv|../../RTL/ips/axi/axi_node/axi_request_block.sv|../../RTL/ips/axi/axi_node/axi_response_block.sv|../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv|
 !i113 0
@@ -755,7 +766,7 @@ R9
 Z50 w1757920463
 8../../RTL/ips/apb/apb_spi_master/apb_spi_master.sv
 F../../RTL/ips/apb/apb_spi_master/apb_spi_master.sv
-!i122 1034
+!i122 1179
 L0 14 366
 R11
 R12
@@ -771,7 +782,7 @@ R17
 R4
 vapb_timer
 R6
-R33
+R20
 !i10b 1
 !s100 bBC?baQeTF_V@K3Z8[]B93
 R8
@@ -781,14 +792,14 @@ R9
 Z53 w1757920465
 8../../RTL/ips/apb/apb_timer/apb_timer.sv
 F../../RTL/ips/apb/apb_timer/apb_timer.sv
-!i122 1038
+!i122 1183
 L0 13 75
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 Z54 !s107 ../../RTL/ips/apb/apb_timer/timer.sv|../../RTL/ips/apb/apb_timer/apb_timer.sv|
 Z55 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/apb/apb_timer/apb_timer.sv|../../RTL/ips/apb/apb_timer/timer.sv|
 !i113 0
@@ -800,7 +811,7 @@ Z56 w1757920466
 Z57 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z58 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z59 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1044
+!i122 1189
 R9
 Z60 8../../RTL/ips/apb/apb_uart/apb_uart.vhd
 Z61 F../../RTL/ips/apb/apb_uart/apb_uart.vhd
@@ -822,7 +833,7 @@ R57
 R58
 R59
 DEx4 work 8 apb_uart 0 22 dTPm7jJU_f>XocAH7@X0f0
-!i122 1044
+!i122 1189
 l374
 L66 966
 V43zKlNZMXi8CiD1OfcgK^1
@@ -848,7 +859,7 @@ R9
 Z66 w1757920467
 8../../RTL/ips/apb/apb_uart_sv/apb_uart_sv.sv
 F../../RTL/ips/apb/apb_uart_sv/apb_uart_sv.sv
-!i122 1031
+!i122 1176
 L0 11 337
 R11
 R12
@@ -874,7 +885,7 @@ R9
 R22
 8../../RTL/ips/riscv/include/apu_core_package.sv
 F../../RTL/ips/riscv/include/apu_core_package.sv
-!i122 1042
+!i122 1187
 Z69 L0 22 0
 V<=:Q11QALe<J]dS?K6Ab<0
 R12
@@ -900,14 +911,14 @@ R9
 Z70 w1757920470
 8../../RTL/ips/axi/axi2apb/axi2apb.sv
 F../../RTL/ips/axi/axi2apb/axi2apb.sv
-!i122 1039
+!i122 1184
 L0 31 863
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 Z71 !s107 ../../RTL/ips/axi/axi2apb/axi2apb32.sv|../../RTL/ips/axi/axi2apb/axi2apb.sv|../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv|../../RTL/ips/axi/axi2apb/AXI_2_APB.sv|
 Z72 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/axi/axi2apb/AXI_2_APB.sv|../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv|../../RTL/ips/axi/axi2apb/axi2apb.sv|../../RTL/ips/axi/axi2apb/axi2apb32.sv|
 !i113 0
@@ -926,14 +937,14 @@ R9
 R70
 8../../RTL/ips/axi/axi2apb/axi2apb32.sv
 F../../RTL/ips/axi/axi2apb/axi2apb32.sv
-!i122 1039
+!i122 1184
 L0 30 517
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 R71
 R72
 !i113 0
@@ -952,7 +963,7 @@ R9
 R29
 8../../RTL/rtl/axi2apb_wrap.sv
 F../../RTL/rtl/axi2apb_wrap.sv
-!i122 1049
+!i122 1194
 L0 13 183
 R11
 R12
@@ -978,14 +989,14 @@ R9
 R70
 8../../RTL/ips/axi/axi2apb/AXI_2_APB.sv
 F../../RTL/ips/axi/axi2apb/AXI_2_APB.sv
-!i122 1039
+!i122 1184
 L0 32 819
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 R71
 R72
 !i113 0
@@ -1005,14 +1016,14 @@ R9
 R70
 8../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv
 F../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv
-!i122 1039
+!i122 1184
 L0 29 538
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 R71
 R72
 !i113 0
@@ -1032,7 +1043,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv
 F../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv
-!i122 1026
+!i122 1171
 L0 42 186
 R11
 R12
@@ -1059,7 +1070,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv
 F../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv
-!i122 1026
+!i122 1171
 L0 42 235
 R11
 R12
@@ -1086,7 +1097,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv
 F../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv
-!i122 1026
+!i122 1171
 L0 45 44
 R11
 R12
@@ -1113,7 +1124,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv
 F../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv
-!i122 1026
+!i122 1171
 L0 43 45
 R11
 R12
@@ -1140,7 +1151,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv
 F../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv
-!i122 1026
+!i122 1171
 L0 45 82
 R11
 R12
@@ -1167,7 +1178,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_AR_allocator.sv
 F../../RTL/ips/axi/axi_node/axi_AR_allocator.sv
-!i122 1026
+!i122 1171
 L0 42 110
 R11
 R12
@@ -1194,7 +1205,7 @@ R9
 Z73 w1757920475
 8../../RTL/ips/axi/axi_slice/axi_ar_buffer.sv
 F../../RTL/ips/axi/axi_slice/axi_ar_buffer.sv
-!i122 1045
+!i122 1190
 Z74 L0 41 71
 R11
 R12
@@ -1220,7 +1231,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv
 F../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv
-!i122 1026
+!i122 1171
 L0 44 257
 R11
 R12
@@ -1247,7 +1258,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_AW_allocator.sv
 F../../RTL/ips/axi/axi_node/axi_AW_allocator.sv
-!i122 1026
+!i122 1171
 L0 42 122
 R11
 R12
@@ -1274,7 +1285,7 @@ R9
 R73
 8../../RTL/ips/axi/axi_slice/axi_aw_buffer.sv
 F../../RTL/ips/axi/axi_slice/axi_aw_buffer.sv
-!i122 1045
+!i122 1190
 R74
 R11
 R12
@@ -1300,7 +1311,7 @@ R9
 R73
 8../../RTL/ips/axi/axi_slice/axi_b_buffer.sv
 F../../RTL/ips/axi/axi_slice/axi_b_buffer.sv
-!i122 1045
+!i122 1190
 L0 40 51
 R11
 R12
@@ -1326,7 +1337,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_BR_allocator.sv
 F../../RTL/ips/axi/axi_node/axi_BR_allocator.sv
-!i122 1026
+!i122 1171
 L0 44 358
 R11
 R12
@@ -1353,7 +1364,7 @@ R9
 R73
 8../../RTL/ips/axi/axi_slice/axi_buffer.sv
 F../../RTL/ips/axi/axi_slice/axi_buffer.sv
-!i122 1045
+!i122 1190
 L0 41 109
 R11
 R12
@@ -1379,7 +1390,7 @@ R9
 R29
 8../../RTL/rtl/includes//axi_bus.sv
 F../../RTL/rtl/includes//axi_bus.sv
-!i122 1049
+!i122 1194
 Z77 L0 23 0
 R11
 R12
@@ -1406,7 +1417,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_BW_allocator.sv
 F../../RTL/ips/axi/axi_node/axi_BW_allocator.sv
-!i122 1026
+!i122 1171
 L0 45 272
 R11
 R12
@@ -1433,7 +1444,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_DW_allocator.sv
 F../../RTL/ips/axi/axi_node/axi_DW_allocator.sv
-!i122 1026
+!i122 1171
 L0 44 221
 R11
 R12
@@ -1460,7 +1471,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv
 F../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv
-!i122 1026
+!i122 1171
 L0 42 73
 R11
 R12
@@ -1487,7 +1498,7 @@ R9
 Z78 w1757920472
 8../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP.sv
-!i122 1028
+!i122 1173
 L0 14 1025
 R11
 R12
@@ -1514,7 +1525,7 @@ R9
 R78
 8../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP_hybr.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP_hybr.sv
-!i122 1028
+!i122 1173
 L0 15 583
 R11
 R12
@@ -1541,7 +1552,7 @@ R9
 R78
 8../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_multi_bank.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_multi_bank.sv
-!i122 1028
+!i122 1173
 L0 14 561
 R11
 R12
@@ -1568,7 +1579,7 @@ R9
 R78
 8../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv
-!i122 1028
+!i122 1173
 L0 14 597
 R11
 R12
@@ -1595,7 +1606,7 @@ R9
 R78
 8../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv
-!i122 1028
+!i122 1173
 L0 11 497
 R11
 R12
@@ -1622,7 +1633,7 @@ R9
 R29
 8../../RTL/rtl/axi_mem_if_SP_wrap.sv
 F../../RTL/rtl/axi_mem_if_SP_wrap.sv
-!i122 1049
+!i122 1194
 L0 13 102
 R11
 R12
@@ -1649,7 +1660,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_multiplexer.sv
 F../../RTL/ips/axi/axi_node/axi_multiplexer.sv
-!i122 1026
+!i122 1171
 L0 42 16
 R11
 R12
@@ -1675,7 +1686,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_node.sv
 F../../RTL/ips/axi/axi_node/axi_node.sv
-!i122 1026
+!i122 1171
 L0 43 609
 R11
 R12
@@ -1701,7 +1712,7 @@ R9
 R29
 8../../RTL/rtl/axi_node_intf_wrap.sv
 F../../RTL/rtl/axi_node_intf_wrap.sv
-!i122 1049
+!i122 1194
 L0 14 378
 R11
 R12
@@ -1727,7 +1738,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_node_wrap.sv
 F../../RTL/ips/axi/axi_node/axi_node_wrap.sv
-!i122 1026
+!i122 1171
 L0 43 569
 R11
 R12
@@ -1753,7 +1764,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv
 F../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv
-!i122 1026
+!i122 1171
 L0 43 159
 R11
 R12
@@ -1779,7 +1790,7 @@ R9
 R73
 8../../RTL/ips/axi/axi_slice/axi_r_buffer.sv
 F../../RTL/ips/axi/axi_slice/axi_r_buffer.sv
-!i122 1045
+!i122 1190
 L0 41 58
 R11
 R12
@@ -1805,7 +1816,7 @@ R9
 R78
 8../../RTL/ips/axi/axi_mem_if_DP/axi_read_only_ctrl.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_read_only_ctrl.sv
-!i122 1028
+!i122 1173
 L0 16 503
 R11
 R12
@@ -1831,7 +1842,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_regs_top.sv
 F../../RTL/ips/axi/axi_node/axi_regs_top.sv
-!i122 1026
+!i122 1171
 L0 92 371
 R11
 R12
@@ -1857,7 +1868,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_request_block.sv
 F../../RTL/ips/axi/axi_node/axi_request_block.sv
-!i122 1026
+!i122 1171
 L0 42 323
 R11
 R12
@@ -1883,7 +1894,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_response_block.sv
 F../../RTL/ips/axi/axi_node/axi_response_block.sv
-!i122 1026
+!i122 1171
 L0 42 306
 R11
 R12
@@ -1909,7 +1920,7 @@ R9
 R46
 8../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv
 F../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv
-!i122 1026
+!i122 1171
 L0 43 32
 R11
 R12
@@ -1936,7 +1947,7 @@ R9
 R73
 8../../RTL/ips/axi/axi_slice/axi_slice.sv
 F../../RTL/ips/axi/axi_slice/axi_slice.sv
-!i122 1045
+!i122 1190
 L0 42 299
 R11
 R12
@@ -1962,7 +1973,7 @@ R9
 Z81 w1757920476
 8../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_master.sv
 F../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_master.sv
-!i122 1041
+!i122 1186
 L0 11 289
 R11
 R12
@@ -1988,7 +1999,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_slave.sv
 F../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_slave.sv
-!i122 1041
+!i122 1186
 L0 11 292
 R11
 R12
@@ -2014,7 +2025,7 @@ R9
 R29
 8../../RTL/rtl/axi_slice_wrap.sv
 F../../RTL/rtl/axi_slice_wrap.sv
-!i122 1049
+!i122 1194
 L0 12 186
 R11
 R12
@@ -2040,7 +2051,7 @@ R9
 Z84 w1757920477
 8../../RTL/ips/axi/axi_spi_master/axi_spi_master.sv
 F../../RTL/ips/axi/axi_spi_master/axi_spi_master.sv
-!i122 1030
+!i122 1175
 L0 13 286
 R11
 R12
@@ -2066,7 +2077,7 @@ R9
 Z87 w1757920479
 8../../RTL/ips/axi/axi_spi_slave/axi_spi_slave.sv
 F../../RTL/ips/axi/axi_spi_slave/axi_spi_slave.sv
-!i122 1029
+!i122 1174
 L0 11 309
 R11
 R12
@@ -2092,7 +2103,7 @@ R9
 R29
 8../../RTL/rtl/axi_spi_slave_wrap.sv
 F../../RTL/rtl/axi_spi_slave_wrap.sv
-!i122 1049
+!i122 1194
 L0 12 104
 R11
 R12
@@ -2118,7 +2129,7 @@ R9
 R73
 8../../RTL/ips/axi/axi_slice/axi_w_buffer.sv
 F../../RTL/ips/axi/axi_slice/axi_w_buffer.sv
-!i122 1045
+!i122 1190
 L0 42 53
 R11
 R12
@@ -2144,7 +2155,7 @@ R9
 R78
 8../../RTL/ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv
 F../../RTL/ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv
-!i122 1028
+!i122 1173
 L0 16 336
 R11
 R12
@@ -2170,7 +2181,7 @@ R9
 R29
 8../../RTL/rtl/boot_code.sv
 F../../RTL/rtl/boot_code.sv
-!i122 1049
+!i122 1194
 L0 11 574
 R11
 R12
@@ -2196,7 +2207,7 @@ R9
 R29
 8../../RTL/rtl/boot_rom_wrap.sv
 F../../RTL/rtl/boot_rom_wrap.sv
-!i122 1049
+!i122 1194
 L0 14 23
 R11
 R12
@@ -2222,7 +2233,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/bytefifo.v
 F../../RTL/ips/adv_dbg_if/rtl/bytefifo.v
-!i122 1046
+!i122 1191
 L0 73 153
 R11
 R12
@@ -2248,7 +2259,7 @@ R9
 R29
 8../../RTL/rtl/clk_rst_gen.sv
 F../../RTL/rtl/clk_rst_gen.sv
-!i122 1049
+!i122 1194
 L0 12 90
 R11
 R12
@@ -2274,7 +2285,7 @@ R9
 R29
 8../../RTL/rtl/components/cluster_clock_gating.sv
 F../../RTL/rtl/components/cluster_clock_gating.sv
-!i122 1048
+!i122 1193
 Z90 L0 11 24
 R11
 R12
@@ -2300,7 +2311,7 @@ R9
 R29
 8../../RTL/rtl/components/cluster_clock_inverter.sv
 F../../RTL/rtl/components/cluster_clock_inverter.sv
-!i122 1048
+!i122 1193
 Z93 L0 11 9
 R11
 R12
@@ -2326,7 +2337,7 @@ R9
 R29
 8../../RTL/rtl/components/cluster_clock_mux2.sv
 F../../RTL/rtl/components/cluster_clock_mux2.sv
-!i122 1048
+!i122 1193
 Z94 L0 11 17
 R11
 R12
@@ -2342,7 +2353,7 @@ R17
 R4
 vcore2axi
 R6
-R33
+R20
 !i10b 1
 !s100 ]TiZ2_3QSENh;?0DWYKi:0
 R8
@@ -2352,14 +2363,14 @@ R9
 w1757920480
 8../../RTL/ips/axi/core2axi/core2axi.sv
 F../../RTL/ips/axi/core2axi/core2axi.sv
-!i122 1037
+!i122 1182
 L0 16 321
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 !s107 ../../RTL/ips/axi/core2axi/core2axi.sv|
 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/axi/core2axi/core2axi.sv|
 !i113 0
@@ -2378,7 +2389,7 @@ R9
 R29
 8../../RTL/rtl/core2axi_wrap.sv
 F../../RTL/rtl/core2axi_wrap.sv
-!i122 1049
+!i122 1194
 L0 14 102
 R11
 R12
@@ -2404,7 +2415,7 @@ R9
 R29
 8../../RTL/rtl/core_region.sv
 F../../RTL/rtl/core_region.sv
-!i122 1049
+!i122 1194
 L0 15 709
 R11
 R12
@@ -2430,7 +2441,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/dc_data_buffer.v
 F../../RTL/ips/axi/axi_slice_dc/dc_data_buffer.v
-!i122 1041
+!i122 1186
 L0 11 42
 R11
 R12
@@ -2456,7 +2467,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/dc_full_detector.v
 F../../RTL/ips/axi/axi_slice_dc/dc_full_detector.v
-!i122 1041
+!i122 1186
 L0 11 47
 R11
 R12
@@ -2482,7 +2493,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/dc_synchronizer.v
 F../../RTL/ips/axi/axi_slice_dc/dc_synchronizer.v
-!i122 1041
+!i122 1186
 L0 11 28
 R11
 R12
@@ -2508,7 +2519,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/dc_token_ring.v
 F../../RTL/ips/axi/axi_slice_dc/dc_token_ring.v
-!i122 1041
+!i122 1186
 L0 11 30
 R11
 R12
@@ -2534,7 +2545,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_din.v
 F../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_din.v
-!i122 1041
+!i122 1186
 L0 11 74
 R11
 R12
@@ -2560,7 +2571,7 @@ R9
 R81
 8../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_dout.v
 F../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_dout.v
-!i122 1041
+!i122 1186
 L0 11 67
 R11
 R12
@@ -2586,7 +2597,7 @@ R9
 R29
 8../../RTL/rtl/includes//debug_bus.sv
 F../../RTL/rtl/includes//debug_bus.sv
-!i122 1049
+!i122 1194
 L0 16 0
 R11
 R12
@@ -2613,7 +2624,7 @@ R9
 R29
 8../../RTL/rtl/components/generic_fifo.sv
 F../../RTL/rtl/components/generic_fifo.sv
-!i122 1048
+!i122 1193
 L0 11 242
 R11
 R12
@@ -2639,7 +2650,7 @@ R9
 R34
 8../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv
 F../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv
-!i122 1033
+!i122 1178
 L0 13 147
 R11
 R12
@@ -2655,56 +2666,56 @@ R38
 R4
 vi2c_buf
 R6
-R7
+Z95 !s110 1760011297
 !i10b 1
 !s100 O_`2c_i=1ed7VS<K5U[J02
 R8
 IPEdfA;jbWLOE40UTzPeM?1
 S1
 R9
-Z95 w1754039389
-Z96 8../../RTL/tb/i2c_eeprom_model.sv
-Z97 F../../RTL/tb/i2c_eeprom_model.sv
-!i122 1054
+Z96 w1754039389
+Z97 8../../RTL/tb/i2c_eeprom_model.sv
+Z98 F../../RTL/tb/i2c_eeprom_model.sv
+!i122 1199
 L0 19 20
 R11
 R12
 r1
 !s85 0
 31
-R13
+Z99 !s108 1760011297.000000
 !s107 ../../RTL/tb/i2c_eeprom_model.sv|
-Z98 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|-timescale|1 ns / 1 ns|../../RTL/tb/i2c_eeprom_model.sv|
+Z100 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|-timescale|1 ns / 1 ns|../../RTL/tb/i2c_eeprom_model.sv|
 !i113 0
-Z99 o-sv -timescale {1 ns / 1 ns} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z100 !s92 -sv +define+SYNTHESIS -timescale {1 ns / 1 ns} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z101 o-sv -timescale {1 ns / 1 ns} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z102 !s92 -sv +define+SYNTHESIS -timescale {1 ns / 1 ns} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vi2c_eeprom_model
 R6
-Z101 DXx4 work 13 pkg_i2c_model 0 22 zb7]EMS20bfgZ4AdRLfVf1
-R7
+Z103 DXx4 work 13 pkg_i2c_model 0 22 zb7]EMS20bfgZ4AdRLfVf1
+R95
 !i10b 1
 !s100 VB4nRjAa4dQ`GS9B@MeeP1
 R8
 IEB=_HZmkk=@>V<?dIHK8I3
 S1
 R9
-R95
 R96
 R97
-!i122 1054
+R98
+!i122 1199
 L0 243 166
 R11
 R12
 r1
 !s85 0
 31
-R13
-Z102 !s107 ../../RTL/tb/i2c_eeprom_model.sv|
-R98
-!i113 0
 R99
+Z104 !s107 ../../RTL/tb/i2c_eeprom_model.sv|
 R100
+!i113 0
+R101
+R102
 R4
 vi2c_master_bit_ctrl
 R6
@@ -2718,7 +2729,7 @@ R9
 R39
 8../../RTL/ips/apb/apb_i2c/i2c_master_bit_ctrl.sv
 F../../RTL/ips/apb/apb_i2c/i2c_master_bit_ctrl.sv
-!i122 1040
+!i122 1185
 L0 139 406
 R11
 R12
@@ -2744,7 +2755,7 @@ R9
 R39
 8../../RTL/ips/apb/apb_i2c/i2c_master_byte_ctrl.sv
 F../../RTL/ips/apb/apb_i2c/i2c_master_byte_ctrl.sv
-!i122 1040
+!i122 1185
 L0 71 264
 R11
 R12
@@ -2760,30 +2771,30 @@ R17
 R4
 vi2c_model_phy
 R6
-R101
-R7
+R103
+R95
 !i10b 1
 !s100 iF1Shc<cX_R1Xh2X71G1=2
 R8
 IBmNmWVC3PW?[SMK;5<zh:3
 S1
 R9
-R95
 R96
 R97
-!i122 1054
+R98
+!i122 1199
 L0 40 202
 R11
 R12
 r1
 !s85 0
 31
-R13
-R102
-R98
-!i113 0
 R99
+R104
 R100
+!i113 0
+R101
+R102
 R4
 vinstr_ram_wrap
 R6
@@ -2797,7 +2808,7 @@ R9
 R29
 8../../RTL/rtl/instr_ram_wrap.sv
 F../../RTL/rtl/instr_ram_wrap.sv
-!i122 1049
+!i122 1194
 L0 14 74
 R11
 R12
@@ -2823,8 +2834,8 @@ R9
 R66
 8../../RTL/ips/apb/apb_uart_sv/io_generic_fifo.sv
 F../../RTL/ips/apb/apb_uart_sv/io_generic_fifo.sv
-!i122 1031
-Z103 L0 11 129
+!i122 1176
+Z105 L0 11 129
 R11
 R12
 r1
@@ -2838,32 +2849,32 @@ R16
 R17
 R4
 Yjtag_i
-Z104 !s105 tb_sv_unit
-Z105 DXx4 work 10 tb_sv_unit 0 22 R5?D]1=422]WdZC5Dzc:21
+Z106 !s105 tb_sv_unit
+Z107 DXx4 work 10 tb_sv_unit 0 22 R5?D]1=422]WdZC5Dzc:21
 R6
-R7
+R95
 !i10b 1
 !s100 1YQI^k9`XPK>?HGga?A<Z3
 R8
 IMJgeI:5cA0dEU<>4F2W673
 S1
 R9
-R95
+R96
 8../../RTL/tb/tb_jtag_pkg.sv
-Z106 F../../RTL/tb/tb_jtag_pkg.sv
-!i122 1050
+Z108 F../../RTL/tb/tb_jtag_pkg.sv
+!i122 1195
 R69
 R11
 R12
 r1
 !s85 0
 31
-R13
-Z107 !s107 ../../RTL/tb/mem_dpi.svh|../../RTL/tb/spi_debug_test.svh|../../RTL/tb/tb_mem_pkg.sv|../../RTL/tb/tb_spi_pkg.sv|../../RTL/tb/tb_jtag_pkg.sv|../../RTL/rtl/includes/config.sv|../../RTL/tb/tb.sv|
-Z108 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/tb/tb.sv|+incdir+../../RTL/rtl/includes|
+R99
+Z109 !s107 ../../RTL/tb/mem_dpi.svh|../../RTL/tb/spi_debug_test.svh|../../RTL/tb/tb_mem_pkg.sv|../../RTL/tb/tb_spi_pkg.sv|../../RTL/tb/tb_jtag_pkg.sv|../../RTL/rtl/includes/config.sv|../../RTL/tb/tb.sv|
+Z110 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/tb/tb.sv|+incdir+../../RTL/rtl/includes|
 !i113 0
 R16
-Z109 !s92 -sv +define+SYNTHESIS +incdir+../../RTL/rtl/includes -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z111 !s92 -sv +define+SYNTHESIS +incdir+../../RTL/rtl/includes -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vonehot_to_bin
 R6
@@ -2874,10 +2885,10 @@ R8
 Ij=g8HC2@e8NOmbBi]zV;62
 S1
 R9
-R95
+R96
 8../../RTL/ips/axi/axi_slice_dc/onehot_to_bin.sv
 F../../RTL/ips/axi/axi_slice_dc/onehot_to_bin.sv
-!i122 1041
+!i122 1186
 L0 13 26
 R11
 R12
@@ -2903,7 +2914,7 @@ R9
 R29
 8../../RTL/rtl/periph_bus_wrap.sv
 F../../RTL/rtl/periph_bus_wrap.sv
-!i122 1049
+!i122 1194
 L0 13 103
 R11
 R12
@@ -2929,7 +2940,7 @@ R9
 R29
 8../../RTL/rtl/peripherals.sv
 F../../RTL/rtl/peripherals.sv
-!i122 1049
+!i122 1194
 L0 16 534
 R11
 R12
@@ -2945,29 +2956,29 @@ R32
 R4
 Xpkg_i2c_model
 R6
-R7
+R95
 !i10b 1
 !s100 GZzK>f^DOYVR@1TkLccKh2
 R8
 Izb7]EMS20bfgZ4AdRLfVf1
 S1
 R9
-R95
 R96
 R97
-!i122 1054
-Z110 L0 12 0
+R98
+!i122 1199
+Z112 L0 12 0
 Vzb7]EMS20bfgZ4AdRLfVf1
 R12
 r1
 !s85 0
 31
-R13
-R102
-R98
-!i113 0
 R99
+R104
 R100
+!i113 0
+R101
+R102
 R4
 vpulp_clock_gating
 R6
@@ -2981,7 +2992,7 @@ R9
 R29
 8../../RTL/rtl/components/pulp_clock_gating.sv
 F../../RTL/rtl/components/pulp_clock_gating.sv
-!i122 1048
+!i122 1193
 R90
 R11
 R12
@@ -3007,7 +3018,7 @@ R9
 R29
 8../../RTL/rtl/components/pulp_clock_inverter.sv
 F../../RTL/rtl/components/pulp_clock_inverter.sv
-!i122 1048
+!i122 1193
 R93
 R11
 R12
@@ -3033,7 +3044,7 @@ R9
 R29
 8../../RTL/rtl/components/pulp_clock_mux2.sv
 F../../RTL/rtl/components/pulp_clock_mux2.sv
-!i122 1048
+!i122 1193
 R94
 R11
 R12
@@ -3059,7 +3070,7 @@ R9
 R29
 8../../RTL/rtl/pulpino_top.sv
 F../../RTL/rtl/pulpino_top.sv
-!i122 1049
+!i122 1194
 L0 20 299
 R11
 R12
@@ -3085,7 +3096,7 @@ R9
 R29
 8../../RTL/rtl/ram_mux.sv
 F../../RTL/rtl/ram_mux.sv
-!i122 1049
+!i122 1194
 L0 11 155
 R11
 R12
@@ -3117,7 +3128,7 @@ R9
 R22
 R23
 R24
-!i122 1042
+!i122 1187
 L0 31 1010
 R12
 31
@@ -3144,9 +3155,9 @@ IU5L4B@2<H@DN;YbMN?=N93
 S1
 R9
 R22
-Z111 8../../RTL/ips/riscv/riscv_alu_basic.sv
-Z112 F../../RTL/ips/riscv/riscv_alu_basic.sv
-!i122 1042
+Z113 8../../RTL/ips/riscv/riscv_alu_basic.sv
+Z114 F../../RTL/ips/riscv/riscv_alu_basic.sv
+!i122 1187
 L0 30 292
 R12
 31
@@ -3172,10 +3183,10 @@ IYOamoO1Z9UhH7zJ`6a8mZ0
 S1
 R9
 R22
-R111
-R112
-!i122 1042
-Z113 L0 28 0
+R113
+R114
+!i122 1187
+Z115 L0 28 0
 R12
 31
 R25
@@ -3197,7 +3208,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_alu_div.sv
 F../../RTL/ips/riscv/riscv_alu_div.sv
-!i122 1042
+!i122 1187
 L0 26 198
 R11
 R12
@@ -3228,8 +3239,8 @@ R9
 R22
 R23
 R24
-!i122 1042
-Z114 L0 29 0
+!i122 1187
+Z116 L0 29 0
 R12
 31
 R25
@@ -3242,7 +3253,7 @@ R4
 vriscv_apu_disp
 R6
 R6
-Z115 DXx4 work 16 apu_core_package 0 22 <=:Q11QALe<J]dS?K6Ab<0
+Z117 DXx4 work 16 apu_core_package 0 22 <=:Q11QALe<J]dS?K6Ab<0
 DXx4 work 22 riscv_apu_disp_sv_unit 0 22 G;nIO6m43IVFi?jbkacPG1
 R20
 R11
@@ -3255,9 +3266,9 @@ I7o77ca<b>Wb0jbU5m6?jV1
 S1
 R9
 R22
-Z116 8../../RTL/ips/riscv/riscv_apu_disp.sv
-Z117 F../../RTL/ips/riscv/riscv_apu_disp.sv
-!i122 1042
+Z118 8../../RTL/ips/riscv/riscv_apu_disp.sv
+Z119 F../../RTL/ips/riscv/riscv_apu_disp.sv
+!i122 1187
 L0 27 222
 R12
 31
@@ -3271,7 +3282,7 @@ R4
 Xriscv_apu_disp_sv_unit
 R6
 R6
-R115
+R117
 R20
 VG;nIO6m43IVFi?jbkacPG1
 r1
@@ -3283,11 +3294,11 @@ IG;nIO6m43IVFi?jbkacPG1
 S1
 R9
 R22
-R116
-R117
-Z118 F../../RTL/ips/riscv/include//apu_macros.sv
-!i122 1042
-Z119 L0 15 0
+R118
+R119
+Z120 F../../RTL/ips/riscv/include//apu_macros.sv
+!i122 1187
+Z121 L0 15 0
 R12
 31
 R25
@@ -3313,9 +3324,9 @@ Iei0nL5ZYJkXh[b9o^jgfJ1
 S1
 R9
 R22
-Z120 8../../RTL/ips/riscv/riscv_compressed_decoder.sv
-Z121 F../../RTL/ips/riscv/riscv_compressed_decoder.sv
-!i122 1042
+Z122 8../../RTL/ips/riscv/riscv_compressed_decoder.sv
+Z123 F../../RTL/ips/riscv/riscv_compressed_decoder.sv
+!i122 1187
 L0 30 270
 R12
 31
@@ -3341,10 +3352,10 @@ I2^hS>SAFO=HO3MQ]ohg952
 S1
 R9
 R22
-R120
-R121
-!i122 1042
-R113
+R122
+R123
+!i122 1187
+R115
 R12
 31
 R25
@@ -3370,9 +3381,9 @@ IQ9jGC4LE:Wk8NbddNY;c[3
 S1
 R9
 R22
-Z122 8../../RTL/ips/riscv/riscv_controller.sv
-Z123 F../../RTL/ips/riscv/riscv_controller.sv
-!i122 1042
+Z124 8../../RTL/ips/riscv/riscv_controller.sv
+Z125 F../../RTL/ips/riscv/riscv_controller.sv
+!i122 1187
 L0 31 838
 R12
 31
@@ -3398,10 +3409,10 @@ ITAbWAZ3imY3bK7:LkBcJW0
 S1
 R9
 R22
-R122
-R123
-!i122 1042
-R114
+R124
+R125
+!i122 1187
+R116
 R12
 31
 R25
@@ -3414,7 +3425,7 @@ R4
 vriscv_core
 R6
 R6
-R115
+R117
 R6
 R18
 DXx4 work 18 riscv_core_sv_unit 0 22 L0RVVVSjHgl8MRSO=8DCK3
@@ -3429,9 +3440,9 @@ I;AzF_^zRnhE[oon0eg^ZK0
 S1
 R9
 R22
-Z124 8../../RTL/ips/riscv/riscv_core.sv
-Z125 F../../RTL/ips/riscv/riscv_core.sv
-!i122 1042
+Z126 8../../RTL/ips/riscv/riscv_core.sv
+Z127 F../../RTL/ips/riscv/riscv_core.sv
+!i122 1187
 L0 37 1116
 R12
 31
@@ -3445,7 +3456,7 @@ R4
 Xriscv_core_sv_unit
 R6
 R6
-R115
+R117
 R6
 R18
 R20
@@ -3459,10 +3470,10 @@ IL0RVVVSjHgl8MRSO=8DCK3
 S1
 R9
 R22
-R124
-R125
+R126
+R127
 F../../RTL/ips/riscv/include//riscv_config.sv
-!i122 1042
+!i122 1187
 L0 31 0
 R12
 31
@@ -3489,9 +3500,9 @@ Ik8AOfVcB^USoRIMoC^bB>0
 S1
 R9
 R22
-Z126 8../../RTL/ips/riscv/riscv_cs_registers.sv
-Z127 F../../RTL/ips/riscv/riscv_cs_registers.sv
-!i122 1042
+Z128 8../../RTL/ips/riscv/riscv_cs_registers.sv
+Z129 F../../RTL/ips/riscv/riscv_cs_registers.sv
+!i122 1187
 L0 37 831
 R12
 31
@@ -3517,10 +3528,10 @@ IDPh[gE=FeB1anPWfHO<7F3
 S1
 R9
 R22
-R126
-R127
-!i122 1042
-R114
+R128
+R129
+!i122 1187
+R116
 R12
 31
 R25
@@ -3546,9 +3557,9 @@ IhK1>z?QS16Ad7ekQOzb[[0
 S1
 R9
 R22
-Z128 8../../RTL/ips/riscv/riscv_debug_unit.sv
-Z129 F../../RTL/ips/riscv/riscv_debug_unit.sv
-!i122 1042
+Z130 8../../RTL/ips/riscv/riscv_debug_unit.sv
+Z131 F../../RTL/ips/riscv/riscv_debug_unit.sv
+!i122 1187
 L0 25 538
 R12
 31
@@ -3574,9 +3585,9 @@ ISG37gFZBz<9TLHJTUJKJ52
 S1
 R9
 R22
-R128
-R129
-!i122 1042
+R130
+R131
+!i122 1187
 R77
 R12
 31
@@ -3589,7 +3600,7 @@ R28
 R4
 vriscv_decoder
 R6
-R115
+R117
 R6
 R18
 DXx4 work 21 riscv_decoder_sv_unit 0 22 n4SCo25zRVHH0B^<74Rb_2
@@ -3604,9 +3615,9 @@ IYm>WPEi;BcG_[jWNb:`eW1
 S1
 R9
 R22
-Z130 8../../RTL/ips/riscv/riscv_decoder.sv
-Z131 F../../RTL/ips/riscv/riscv_decoder.sv
-!i122 1042
+Z132 8../../RTL/ips/riscv/riscv_decoder.sv
+Z133 F../../RTL/ips/riscv/riscv_decoder.sv
+!i122 1187
 L0 32 1511
 R12
 31
@@ -3619,7 +3630,7 @@ R28
 R4
 Xriscv_decoder_sv_unit
 R6
-R115
+R117
 R6
 R18
 R20
@@ -3633,11 +3644,11 @@ In4SCo25zRVHH0B^<74Rb_2
 S1
 R9
 R22
-R130
-R131
-R118
-!i122 1042
-R119
+R132
+R133
+R120
+!i122 1187
+R121
 R12
 31
 R25
@@ -3659,7 +3670,7 @@ R9
 R22
 8../../RTL/ips/riscv/include/riscv_defines.sv
 F../../RTL/ips/riscv/include/riscv_defines.sv
-!i122 1042
+!i122 1187
 L0 26 0
 VUaBNlH7L8O_nl^0hBcJO22
 R12
@@ -3676,7 +3687,7 @@ R4
 vriscv_ex_stage
 R6
 R6
-R115
+R117
 R6
 R18
 DXx4 work 22 riscv_ex_stage_sv_unit 0 22 FJZ^8bd]KPd>Bh;lO;kjV1
@@ -3691,9 +3702,9 @@ IDO2F`GMoNQ;1ee;i;zk<a3
 S1
 R9
 R22
-Z132 8../../RTL/ips/riscv/riscv_ex_stage.sv
-Z133 F../../RTL/ips/riscv/riscv_ex_stage.sv
-!i122 1042
+Z134 8../../RTL/ips/riscv/riscv_ex_stage.sv
+Z135 F../../RTL/ips/riscv/riscv_ex_stage.sv
+!i122 1187
 L0 40 446
 R12
 31
@@ -3707,7 +3718,7 @@ R4
 Xriscv_ex_stage_sv_unit
 R6
 R6
-R115
+R117
 R6
 R18
 R20
@@ -3721,11 +3732,11 @@ IFJZ^8bd]KPd>Bh;lO;kjV1
 S1
 R9
 R22
-R132
-R133
-R118
-!i122 1042
-R119
+R134
+R135
+R120
+!i122 1187
+R121
 R12
 31
 R25
@@ -3747,7 +3758,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_fetch_fifo.sv
 F../../RTL/ips/riscv/riscv_fetch_fifo.sv
-!i122 1042
+!i122 1187
 L0 25 250
 R11
 R12
@@ -3773,7 +3784,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_hwloop_controller.sv
 F../../RTL/ips/riscv/riscv_hwloop_controller.sv
-!i122 1042
+!i122 1187
 L0 25 74
 R11
 R12
@@ -3799,7 +3810,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_hwloop_regs.sv
 F../../RTL/ips/riscv/riscv_hwloop_regs.sv
-!i122 1042
+!i122 1187
 L0 25 110
 R11
 R12
@@ -3818,7 +3829,7 @@ R6
 R6
 R18
 R6
-R115
+R117
 DXx4 work 22 riscv_id_stage_sv_unit 0 22 ^3i1K62O;3Qz`6mV8[<ZH0
 R20
 R11
@@ -3831,9 +3842,9 @@ I:IJm3C2k>CBgU2k<iQ2NZ2
 S1
 R9
 R22
-Z134 8../../RTL/ips/riscv/riscv_id_stage.sv
-Z135 F../../RTL/ips/riscv/riscv_id_stage.sv
-!i122 1042
+Z136 8../../RTL/ips/riscv/riscv_id_stage.sv
+Z137 F../../RTL/ips/riscv/riscv_id_stage.sv
+!i122 1187
 L0 40 1495
 R12
 31
@@ -3849,7 +3860,7 @@ R6
 R6
 R18
 R6
-R115
+R117
 R20
 V^3i1K62O;3Qz`6mV8[<ZH0
 r1
@@ -3861,10 +3872,10 @@ I^3i1K62O;3Qz`6mV8[<ZH0
 S1
 R9
 R22
-R134
-R135
-!i122 1042
-Z136 L0 30 0
+R136
+R137
+!i122 1187
+Z138 L0 30 0
 R12
 31
 R25
@@ -3890,9 +3901,9 @@ I_a=IzLI9PFkWLzVHY^:bN1
 S1
 R9
 R22
-Z137 8../../RTL/ips/riscv/riscv_if_stage.sv
-Z138 F../../RTL/ips/riscv/riscv_if_stage.sv
-!i122 1042
+Z139 8../../RTL/ips/riscv/riscv_if_stage.sv
+Z140 F../../RTL/ips/riscv/riscv_if_stage.sv
+!i122 1187
 L0 31 374
 R12
 31
@@ -3918,10 +3929,10 @@ IWN3Z_Xl2;n2]hmFIhZk3S2
 S1
 R9
 R22
-R137
-R138
-!i122 1042
-R114
+R139
+R140
+!i122 1187
+R116
 R12
 31
 R25
@@ -3947,9 +3958,9 @@ INSdzQYG9=^0WDP`IX96nW3
 S1
 R9
 R22
-Z139 8../../RTL/ips/riscv/riscv_int_controller.sv
-Z140 F../../RTL/ips/riscv/riscv_int_controller.sv
-!i122 1042
+Z141 8../../RTL/ips/riscv/riscv_int_controller.sv
+Z142 F../../RTL/ips/riscv/riscv_int_controller.sv
+!i122 1187
 L0 26 101
 R12
 31
@@ -3975,9 +3986,9 @@ IDo:AZQ?JTjh7PgIagC9;O1
 S1
 R9
 R22
-R139
-R140
-!i122 1042
+R141
+R142
+!i122 1187
 L0 24 0
 R12
 31
@@ -4000,7 +4011,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_L0_buffer.sv
 F../../RTL/ips/riscv/riscv_L0_buffer.sv
-!i122 1042
+!i122 1187
 L0 11 272
 R11
 R12
@@ -4027,7 +4038,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_load_store_unit.sv
 F../../RTL/ips/riscv/riscv_load_store_unit.sv
-!i122 1042
+!i122 1187
 L0 27 457
 R11
 R12
@@ -4057,9 +4068,9 @@ I88=11PoCIHP>Ea`AD[Gfm1
 S1
 R9
 R22
-Z141 8../../RTL/ips/riscv/riscv_mult.sv
-Z142 F../../RTL/ips/riscv/riscv_mult.sv
-!i122 1042
+Z143 8../../RTL/ips/riscv/riscv_mult.sv
+Z144 F../../RTL/ips/riscv/riscv_mult.sv
+!i122 1187
 L0 30 312
 R12
 31
@@ -4085,10 +4096,10 @@ IeF82L?Pd6T4?54lh1n<@03
 S1
 R9
 R22
-R141
-R142
-!i122 1042
-R113
+R143
+R144
+!i122 1187
+R115
 R12
 31
 R25
@@ -4110,7 +4121,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_prefetch_buffer.sv
 F../../RTL/ips/riscv/riscv_prefetch_buffer.sv
-!i122 1042
+!i122 1187
 L0 27 355
 R11
 R12
@@ -4136,7 +4147,7 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv
 F../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv
-!i122 1042
+!i122 1187
 L0 26 553
 R11
 R12
@@ -4153,7 +4164,7 @@ R4
 nriscv_prefetch_@l0_buffer
 vriscv_register_file
 R6
-R20
+R7
 !i10b 1
 !s100 PXe[?LRZLH[iK[4Xi;AL62
 R8
@@ -4163,14 +4174,14 @@ R9
 R22
 8../../RTL/ips/riscv/riscv_register_file.sv
 F../../RTL/ips/riscv/riscv_register_file.sv
-!i122 1043
+!i122 1188
 L0 27 140
 R11
 R12
 r1
 !s85 0
 31
-R25
+R13
 !s107 ../../RTL/ips/riscv/riscv_register_file.sv|
 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/ips/riscv/riscv_register_file.sv|
 !i113 0
@@ -4190,8 +4201,8 @@ R9
 R22
 8../../RTL/ips/riscv/include/riscv_tracer_defines.sv
 F../../RTL/ips/riscv/include/riscv_tracer_defines.sv
-!i122 1042
-R110
+!i122 1187
+R112
 VW2miXDSJ;A?=ZZTjDo<W63
 R12
 r1
@@ -4216,7 +4227,7 @@ R9
 R29
 8../../RTL/rtl/components/rstgen.sv
 F../../RTL/rtl/components/rstgen.sv
-!i122 1048
+!i122 1193
 L0 11 57
 R11
 R12
@@ -4242,7 +4253,7 @@ R9
 R34
 8../../RTL/ips/apb/apb_event_unit/sleep_unit.sv
 F../../RTL/ips/apb/apb_event_unit/sleep_unit.sv
-!i122 1033
+!i122 1178
 L0 13 212
 R11
 R12
@@ -4261,12 +4272,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z143 8../../RTL/ips/apb/apb_uart/slib_clock_div.vhd
-Z144 F../../RTL/ips/apb/apb_uart/slib_clock_div.vhd
+Z145 8../../RTL/ips/apb/apb_uart/slib_clock_div.vhd
+Z146 F../../RTL/ips/apb/apb_uart/slib_clock_div.vhd
 l0
-Z145 L29 1
+Z147 L29 1
 V1g9N`H;3ZTBFflY`dX;PV0
 !s100 MMkNn?B9nbLjZnd>l93X82
 R62
@@ -4283,7 +4294,7 @@ R57
 R58
 R59
 DEx4 work 14 slib_clock_div 0 22 1g9N`H;3ZTBFflY`dX;PV0
-!i122 1044
+!i122 1189
 l46
 L41 29
 V3fYTlnWAg<CIFhOdlW;7]0
@@ -4302,12 +4313,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z146 8../../RTL/ips/apb/apb_uart/slib_counter.vhd
-Z147 F../../RTL/ips/apb/apb_uart/slib_counter.vhd
+Z148 8../../RTL/ips/apb/apb_uart/slib_counter.vhd
+Z149 F../../RTL/ips/apb/apb_uart/slib_counter.vhd
 l0
-R145
+R147
 V52?0`YUb_BOzCe3WBK<He2
 !s100 ZaUbW]WbFM?Yo1InA2Q_M1
 R62
@@ -4324,7 +4335,7 @@ R57
 R58
 R59
 DEx4 work 12 slib_counter 0 22 52?0`YUb_BOzCe3WBK<He2
-!i122 1044
+!i122 1189
 l48
 L46 31
 VDgPV:I`S_<loEOgLRLA5Y0
@@ -4343,12 +4354,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z148 8../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd
-Z149 F../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd
+Z150 8../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd
+Z151 F../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd
 l0
-Z150 L28 1
+Z152 L28 1
 Vz0a9FMk26=mClgB[RA?o=0
 !s100 R95d@G3W<A8B69ZP?bA@o0
 R62
@@ -4365,7 +4376,7 @@ R57
 R58
 R59
 DEx4 work 16 slib_edge_detect 0 22 z0a9FMk26=mClgB[RA?o=0
-!i122 1044
+!i122 1189
 l40
 L38 18
 VnUZOQ1@ZhWE4hOeM;>DVR1
@@ -4384,12 +4395,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z151 8../../RTL/ips/apb/apb_uart/slib_fifo.vhd
-Z152 F../../RTL/ips/apb/apb_uart/slib_fifo.vhd
+Z153 8../../RTL/ips/apb/apb_uart/slib_fifo.vhd
+Z154 F../../RTL/ips/apb/apb_uart/slib_fifo.vhd
 l0
-R145
+R147
 VkZcFh_lIoI1AVhdMT:2fe2
 !s100 VM:U`coZh[>kYdWJz<F`@1
 R62
@@ -4406,7 +4417,7 @@ R57
 R58
 R59
 DEx4 work 9 slib_fifo 0 22 kZcFh_lIoI1AVhdMT:2fe2
-!i122 1044
+!i122 1189
 l59
 L48 84
 V6Y9?1YJCA93o7fm;W8iGh1
@@ -4425,12 +4436,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z153 8../../RTL/ips/apb/apb_uart/slib_input_filter.vhd
-Z154 F../../RTL/ips/apb/apb_uart/slib_input_filter.vhd
+Z155 8../../RTL/ips/apb/apb_uart/slib_input_filter.vhd
+Z156 F../../RTL/ips/apb/apb_uart/slib_input_filter.vhd
 l0
-R150
+R152
 V]l4A]1_<Xk_<QmS@fMo@73
 !s100 >oNX^fWhdS@iN^<F0e_fi3
 R62
@@ -4447,7 +4458,7 @@ R57
 R58
 R59
 DEx4 work 17 slib_input_filter 0 22 ]l4A]1_<Xk_<QmS@fMo@73
-!i122 1044
+!i122 1189
 l43
 L41 28
 VXT7F^`0Cc<8SIg:zaT50Z2
@@ -4466,12 +4477,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z155 8../../RTL/ips/apb/apb_uart/slib_input_sync.vhd
-Z156 F../../RTL/ips/apb/apb_uart/slib_input_sync.vhd
+Z157 8../../RTL/ips/apb/apb_uart/slib_input_sync.vhd
+Z158 F../../RTL/ips/apb/apb_uart/slib_input_sync.vhd
 l0
-R150
+R152
 VL8c^LVnB2e>k7bee3S8<Y3
 !s100 D3`NbI_2J0?NN6WcaYI2n0
 R62
@@ -4488,7 +4499,7 @@ R57
 R58
 R59
 DEx4 work 15 slib_input_sync 0 22 L8c^LVnB2e>k7bee3S8<Y3
-!i122 1044
+!i122 1189
 l39
 L37 17
 V_;=>^j:JOQ:K<G<bDjo@V3
@@ -4507,12 +4518,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z157 8../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd
-Z158 F../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd
+Z159 8../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd
+Z160 F../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd
 l0
-R145
+R147
 Va;m2KQF[R[MKZ9d2DcbS^1
 !s100 Y68Tlh21jam^^_XODK@540
 R62
@@ -4529,7 +4540,7 @@ R57
 R58
 R59
 DEx4 work 14 slib_mv_filter 0 22 a;m2KQF[R[MKZ9d2DcbS^1
-!i122 1044
+!i122 1189
 l50
 L44 34
 VZ6o^g[1CT3@HYMb_NRGH`2
@@ -4555,7 +4566,7 @@ R9
 R29
 8../../RTL/rtl/components/sp_ram.sv
 F../../RTL/rtl/components/sp_ram.sv
-!i122 1048
+!i122 1193
 L0 11 50
 R11
 R12
@@ -4578,7 +4589,7 @@ R8
 IZceO9S77kP:AL1]IX89542
 S1
 R0
-R95
+R96
 8../../RTL/rtl/../rtl_synthesis/sp_ram_bank.sv
 F../../RTL/rtl/../rtl_synthesis/sp_ram_bank.sv
 !i122 190
@@ -4607,7 +4618,7 @@ R9
 w1758085178
 8../../RTL/rtl/sp_ram_wrap.sv
 F../../RTL/rtl/sp_ram_wrap.sv
-!i122 1049
+!i122 1194
 L0 13 79
 R11
 R12
@@ -4623,24 +4634,24 @@ R32
 R4
 Yspi_bus_master
 R6
-R7
+R95
 !i10b 1
 !s100 B`Rc:d_bnClSFc@Vfo<;E1
 R8
 IC<hO[07bHjz0lE7]8<EO31
 S1
 R9
-R95
+R96
 8../../RTL/tb/if_spi_master.sv
 F../../RTL/tb/if_spi_master.sv
-!i122 1051
-Z159 L0 11 0
+!i122 1196
+Z161 L0 11 0
 R11
 R12
 r1
 !s85 0
 31
-R13
+R99
 !s107 ../../RTL/tb/if_spi_master.sv|
 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/tb/if_spi_master.sv|
 !i113 0
@@ -4659,7 +4670,7 @@ R9
 R50
 8../../RTL/ips/apb/apb_spi_master/spi_master_apb_if.sv
 F../../RTL/ips/apb/apb_spi_master/spi_master_apb_if.sv
-!i122 1034
+!i122 1179
 L0 24 196
 R11
 R12
@@ -4685,7 +4696,7 @@ R9
 R84
 8../../RTL/ips/axi/axi_spi_master/spi_master_axi_if.sv
 F../../RTL/ips/axi/axi_spi_master/spi_master_axi_if.sv
-!i122 1030
+!i122 1175
 L0 24 720
 R11
 R12
@@ -4711,7 +4722,7 @@ R9
 R84
 8../../RTL/ips/apb/apb_spi_master/spi_master_clkgen.sv
 F../../RTL/ips/apb/apb_spi_master/spi_master_clkgen.sv
-!i122 1034
+!i122 1179
 L0 11 71
 R11
 R12
@@ -4737,7 +4748,7 @@ R9
 R84
 8../../RTL/ips/apb/apb_spi_master/spi_master_controller.sv
 F../../RTL/ips/apb/apb_spi_master/spi_master_controller.sv
-!i122 1034
+!i122 1179
 L0 15 546
 R11
 R12
@@ -4763,7 +4774,7 @@ R9
 R84
 8../../RTL/ips/apb/apb_spi_master/spi_master_fifo.sv
 F../../RTL/ips/apb/apb_spi_master/spi_master_fifo.sv
-!i122 1034
+!i122 1179
 L0 13 127
 R11
 R12
@@ -4789,8 +4800,8 @@ R9
 R84
 8../../RTL/ips/apb/apb_spi_master/spi_master_rx.sv
 F../../RTL/ips/apb/apb_spi_master/spi_master_rx.sv
-!i122 1034
-R103
+!i122 1179
+R105
 R11
 R12
 r1
@@ -4815,7 +4826,7 @@ R9
 R84
 8../../RTL/ips/apb/apb_spi_master/spi_master_tx.sv
 F../../RTL/ips/apb/apb_spi_master/spi_master_tx.sv
-!i122 1034
+!i122 1179
 L0 11 119
 R11
 R12
@@ -4831,24 +4842,24 @@ R17
 R4
 Yspi_slave
 R6
-R7
+R95
 !i10b 1
 !s100 EbMAY7=GI=^`Ioj=Ib_hJ1
 R8
 InQh7dagznGoAOWPGX:=KA0
 S1
 R9
-R95
+R96
 8../../RTL/tb/if_spi_slave.sv
 F../../RTL/tb/if_spi_slave.sv
-!i122 1052
-R159
+!i122 1197
+R161
 R11
 R12
 r1
 !s85 0
 31
-R13
+R99
 !s107 ../../RTL/tb/if_spi_slave.sv|
 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/tb/if_spi_slave.sv|
 !i113 0
@@ -4867,7 +4878,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv
-!i122 1029
+!i122 1174
 L0 11 304
 R11
 R12
@@ -4893,7 +4904,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv
-!i122 1029
+!i122 1174
 L0 11 150
 R11
 R12
@@ -4919,7 +4930,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_controller.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_controller.sv
-!i122 1029
+!i122 1174
 L0 16 355
 R11
 R12
@@ -4945,7 +4956,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv
-!i122 1029
+!i122 1174
 L0 11 46
 R11
 R12
@@ -4971,7 +4982,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_regs.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_regs.sv
-!i122 1029
+!i122 1174
 L0 11 65
 R11
 R12
@@ -4997,7 +5008,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_rx.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_rx.sv
-!i122 1029
+!i122 1174
 L0 11 87
 R11
 R12
@@ -5023,7 +5034,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_syncro.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_syncro.sv
-!i122 1029
+!i122 1174
 L0 11 43
 R11
 R12
@@ -5049,7 +5060,7 @@ R9
 R87
 8../../RTL/ips/axi/axi_spi_slave/spi_slave_tx.sv
 F../../RTL/ips/axi/axi_spi_slave/spi_slave_tx.sv
-!i122 1029
+!i122 1174
 L0 11 108
 R11
 R12
@@ -5075,7 +5086,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/syncflop.v
 F../../RTL/ips/adv_dbg_if/rtl/syncflop.v
-!i122 1046
+!i122 1191
 L0 62 65
 R11
 R12
@@ -5101,7 +5112,7 @@ R9
 R10
 8../../RTL/ips/adv_dbg_if/rtl/syncreg.v
 F../../RTL/ips/adv_dbg_if/rtl/syncreg.v
-!i122 1046
+!i122 1191
 L0 68 91
 R11
 R12
@@ -5117,39 +5128,39 @@ R17
 R4
 vtb
 R6
-R105
-R7
+R107
+R95
 R11
 r1
 !s85 0
 !i10b 1
 !s100 EnICn3:<><IZ:fWmAd;7j2
 ITAGaaH[T7<X0<[lXkm8K62
-R104
+R106
 S1
 R9
-R95
-Z160 8../../RTL/tb/tb.sv
-Z161 F../../RTL/tb/tb.sv
+R96
+Z162 8../../RTL/tb/tb.sv
+Z163 F../../RTL/tb/tb.sv
 F../../RTL/tb/tb_spi_pkg.sv
 F../../RTL/tb/tb_mem_pkg.sv
 F../../RTL/tb/spi_debug_test.svh
 F../../RTL/tb/mem_dpi.svh
-!i122 1050
+!i122 1195
 L0 23 3410
 R12
 31
-R13
-R107
-R108
+R99
+R109
+R110
 !i113 0
 R16
-R109
+R111
 R4
 Xtb_sv_unit
 !s115 jtag_i
 R6
-R7
+R95
 VR5?D]1=422]WdZC5Dzc:21
 r1
 !s85 0
@@ -5160,24 +5171,24 @@ IR5?D]1=422]WdZC5Dzc:21
 S1
 R9
 R29
-R160
-R161
+R162
+R163
 F../../RTL/rtl/includes/config.sv
-R106
-!i122 1050
-R136
+R108
+!i122 1195
+R138
 R12
 31
-R13
-R107
-R108
+R99
+R109
+R110
 !i113 0
 R16
-R109
+R111
 R4
 vtimer
 R6
-R33
+R20
 !i10b 1
 !s100 ?l]NFiVhfkRIZiCn2?:6z2
 R8
@@ -5187,14 +5198,14 @@ R9
 R53
 8../../RTL/ips/apb/apb_timer/timer.sv
 F../../RTL/ips/apb/apb_timer/timer.sv
-!i122 1038
+!i122 1183
 L0 21 126
 R11
 R12
 r1
 !s85 0
 31
-R35
+R25
 R54
 R55
 !i113 0
@@ -5206,12 +5217,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z162 8../../RTL/ips/apb/apb_uart/uart_baudgen.vhd
-Z163 F../../RTL/ips/apb/apb_uart/uart_baudgen.vhd
+Z164 8../../RTL/ips/apb/apb_uart/uart_baudgen.vhd
+Z165 F../../RTL/ips/apb/apb_uart/uart_baudgen.vhd
 l0
-R145
+R147
 VWE>LhVPn8HAPCLQC:bdJ@2
 !s100 nMkhmIiXVBbOz3OzGgdVm0
 R62
@@ -5228,7 +5239,7 @@ R57
 R58
 R59
 DEx4 work 12 uart_baudgen 0 22 WE>LhVPn8HAPCLQC:bdJ@2
-!i122 1044
+!i122 1189
 l43
 L40 26
 Vn>5]^aU8E1NgN`9?>zB<R3
@@ -5244,24 +5255,24 @@ R64
 R65
 Yuart_bus
 R6
-R7
+R95
 !i10b 1
 !s100 JQb5X;>O_YQjkV^aGETeH1
 R8
 I6HNCkeEgVHz@njPH?@JiJ1
 S1
 R9
-R95
+R96
 8../../RTL/tb/uart.sv
 F../../RTL/tb/uart.sv
-!i122 1053
+!i122 1198
 L0 14 0
 R11
 R12
 r1
 !s85 0
 31
-R13
+R99
 !s107 ../../RTL/tb/uart.sv|
 !s90 -reportprogress|300|-sv|+define+SYNTHESIS|../../RTL/tb/uart.sv|
 !i113 0
@@ -5273,10 +5284,10 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z164 8../../RTL/ips/apb/apb_uart/uart_interrupt.vhd
-Z165 F../../RTL/ips/apb/apb_uart/uart_interrupt.vhd
+Z166 8../../RTL/ips/apb/apb_uart/uart_interrupt.vhd
+Z167 F../../RTL/ips/apb/apb_uart/uart_interrupt.vhd
 l0
 L33 1
 VfWNHXCMUchXN^<GZnZ^iZ0
@@ -5295,7 +5306,7 @@ R57
 R58
 R59
 DEx4 work 14 uart_interrupt 0 22 fWNHXCMUchXN^<GZnZ^iZ0
-!i122 1044
+!i122 1189
 l57
 L49 53
 VLmPIKdH3X_243B9d6B;Qj3
@@ -5314,12 +5325,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z166 8../../RTL/ips/apb/apb_uart/uart_receiver.vhd
-Z167 F../../RTL/ips/apb/apb_uart/uart_receiver.vhd
+Z168 8../../RTL/ips/apb/apb_uart/uart_receiver.vhd
+Z169 F../../RTL/ips/apb/apb_uart/uart_receiver.vhd
 l0
-R145
+R147
 VWfzVZh1=KAni]aGJBl>Ie0
 !s100 WfDS6;?IjEa1K>Se7AT4E1
 R62
@@ -5336,7 +5347,7 @@ R57
 R58
 R59
 DEx4 work 13 uart_receiver 0 22 WfzVZh1=KAni]aGJBl>Ie0
-!i122 1044
+!i122 1189
 l119
 L49 262
 V<QYg^1bjL4<3O]@fGBl591
@@ -5362,7 +5373,7 @@ R9
 R66
 8../../RTL/ips/apb/apb_uart_sv/uart_rx.sv
 F../../RTL/ips/apb/apb_uart_sv/uart_rx.sv
-!i122 1031
+!i122 1176
 L0 11 250
 R11
 R12
@@ -5381,12 +5392,12 @@ R56
 R57
 R58
 R59
-!i122 1044
+!i122 1189
 R9
-Z168 8../../RTL/ips/apb/apb_uart/uart_transmitter.vhd
-Z169 F../../RTL/ips/apb/apb_uart/uart_transmitter.vhd
+Z170 8../../RTL/ips/apb/apb_uart/uart_transmitter.vhd
+Z171 F../../RTL/ips/apb/apb_uart/uart_transmitter.vhd
 l0
-R145
+R147
 VYGSNmbl;aQEPnah4SGnlA3
 !s100 [bY7QcS9BaHbk36dfUIl11
 R62
@@ -5403,7 +5414,7 @@ R57
 R58
 R59
 DEx4 work 16 uart_transmitter 0 22 YGSNmbl;aQEPnah4SGnlA3
-!i122 1044
+!i122 1189
 l59
 L48 168
 V@[9>5Z[2H6Sn[=;0DoYJi3
@@ -5429,7 +5440,7 @@ R9
 R66
 8../../RTL/ips/apb/apb_uart_sv/uart_tx.sv
 F../../RTL/ips/apb/apb_uart_sv/uart_tx.sv
-!i122 1031
+!i122 1176
 L0 11 203
 R11
 R12
