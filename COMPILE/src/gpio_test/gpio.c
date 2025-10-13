@@ -1,6 +1,7 @@
 #include "gpio.h"
 #include "timer.h"  // 如果没有这个头，删掉本行即可
 #include <stdlib.h> // 引入 malloc 和 free
+#include "uart.h"   // 引入 UART 函数
 
 // 预防性：若库里没有实现 set_pin_function，提供一个弱符号空实现以避免链接错误。
 // 若将来你添加了真正的实现，链接器会优先用真正的实现覆盖这个弱实现。
@@ -24,6 +25,10 @@ static void delay_cycles(volatile unsigned int cycles)
 
 int main(void)
 {
+  // 初始化 UART (波特率配置: parity=0, clk_counter=1)
+  // clk_counter=1 意味着使用 SoC clock / (16*2) = SoC clock / 32
+  uart_set_cfg(0, 1);
+
   // 选择你要观测的 GPIO 引脚；这里用 0..7 号做演示
   const int pins[] = {0, 1, 2, 3, 4, 5, 6, 7};
   const int num_pins = sizeof(pins) / sizeof(pins[0]);
