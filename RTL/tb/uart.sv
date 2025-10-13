@@ -24,7 +24,7 @@ interface uart_bus
   );
   timeunit      1ps;
   timeprecision 1ps;
-
+//比特周期
   localparam BIT_PERIOD = (1000000000/BAUD_RATE*1000);
 
   logic [7:0]       character;
@@ -71,6 +71,7 @@ interface uart_bus
 
       $fwrite(file, "%c", character);
       stringa[(255-charnum)*8 +: 8] = character;
+      $display("[%t] RX bit: %b", $time, rx);
       if (character == 8'h0A || charnum == 254) // line feed or max. chars reached
       begin
         if (character == 8'h0A)

@@ -54,7 +54,7 @@ do ../scripts/run_pre_syn.do
 #   ../../RTL/rtl/components/pulp_clock_gating.sv  ../../RTL/rtl/components/cluster_clock_gating.sv  ../../RTL/rtl/components/cluster_clock_inverter.sv  ../../RTL/rtl/components/cluster_clock_mux2.sv  ../../RTL/rtl/components/rstgen.sv  ../../RTL/rtl/components/pulp_clock_inverter.sv  ../../RTL/rtl/components/pulp_clock_mux2.sv  ../../RTL/rtl/components/generic_fifo.sv  ../../RTL/rtl/components/sp_ram.sv  
 #   ../../RTL/rtl/axi2apb_wrap.sv  ../../RTL/rtl/periph_bus_wrap.sv  ../../RTL/rtl/core2axi_wrap.sv  ../../RTL/rtl/axi_node_intf_wrap.sv  ../../RTL/rtl/axi_spi_slave_wrap.sv  ../../RTL/rtl/axi_slice_wrap.sv  ../../RTL/rtl/axi_mem_if_SP_wrap.sv  ../../RTL/rtl/core_region.sv  ../../RTL/rtl/instr_ram_wrap.sv  ../../RTL/rtl/sp_ram_wrap.sv  ../../RTL/rtl/boot_code.sv  ../../RTL/rtl/boot_rom_wrap.sv  ../../RTL/rtl/peripherals.sv  ../../RTL/rtl/ram_mux.sv  ../../RTL/rtl/pulpino_top.sv  ../../RTL/rtl/clk_rst_gen.sv  
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:33 on Oct 09,2025
+# Start time: 20:29:28 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_node/apb_regs_top.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv ../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv ../../RTL/ips/axi/axi_node/axi_BR_allocator.sv ../../RTL/ips/axi/axi_node/axi_BW_allocator.sv ../../RTL/ips/axi/axi_node/axi_DW_allocator.sv ../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv ../../RTL/ips/axi/axi_node/axi_multiplexer.sv ../../RTL/ips/axi/axi_node/axi_node.sv ../../RTL/ips/axi/axi_node/axi_node_wrap.sv ../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv ../../RTL/ips/axi/axi_node/axi_regs_top.sv ../../RTL/ips/axi/axi_node/axi_request_block.sv ../../RTL/ips/axi/axi_node/axi_response_block.sv ../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv 
 # -- Compiling module apb_regs_top
 # ** Warning: ../../RTL/ips/axi/axi_node/apb_regs_top.sv(92): (vlog-13314) Defaulting port 'init_START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -204,10 +204,10 @@ do ../scripts/run_pre_syn.do
 # 	apb_regs_top
 # 	axi_node_wrap_with_slices
 # 	axi_regs_top
-# End time: 20:01:33 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:28 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 122
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_node/apb_node.sv ../../RTL/ips/apb/apb_node/apb_node_wrap.sv 
 # -- Compiling module apb_node
 # ** Warning: ../../RTL/ips/apb/apb_node/apb_node.sv(46): (vlog-13314) Defaulting port 'prdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -219,10 +219,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_node_wrap
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 5
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_multi_bank.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP_hybr.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_read_only_ctrl.sv ../../RTL/ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv 
 # -- Compiling module axi_mem_if_MP_Hybrid_multi_bank
 # ** Warning: ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv(46): (vlog-13314) Defaulting port 'CH0_AWID_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -271,10 +271,10 @@ do ../scripts/run_pre_syn.do
 # 	axi_mem_if_DP_hybr
 # 	axi_mem_if_DP
 # 	axi_mem_if_SP
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 33
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_spi_slave/axi_spi_slave.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_controller.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_regs.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_rx.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_syncro.sv ../../RTL/ips/axi/axi_spi_slave/spi_slave_tx.sv 
 # -- Compiling module axi_spi_slave
 # -- Compiling module spi_slave_axi_plug
@@ -288,10 +288,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	axi_spi_slave
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_spi_master/axi_spi_master.sv ../../RTL/ips/axi/axi_spi_master/spi_master_axi_if.sv ../../RTL/ips/axi/axi_spi_master/spi_master_clkgen.sv ../../RTL/ips/axi/axi_spi_master/spi_master_controller.sv ../../RTL/ips/axi/axi_spi_master/spi_master_fifo.sv ../../RTL/ips/axi/axi_spi_master/spi_master_rx.sv ../../RTL/ips/axi/axi_spi_master/spi_master_tx.sv 
 # -- Compiling module axi_spi_master
 # -- Compiling module spi_master_axi_if
@@ -303,10 +303,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	axi_spi_master
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_uart_sv/apb_uart_sv.sv ../../RTL/ips/apb/apb_uart_sv/uart_rx.sv ../../RTL/ips/apb/apb_uart_sv/uart_tx.sv ../../RTL/ips/apb/apb_uart_sv/io_generic_fifo.sv ../../RTL/ips/apb/apb_uart_sv/uart_interrupt.sv 
 # -- Compiling module apb_uart_sv
 # -- Compiling module uart_rx
@@ -317,19 +317,19 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_uart_sv
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_gpio/apb_gpio.sv 
 # -- Compiling module apb_gpio
 # 
 # Top level modules:
 # 	apb_gpio
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv ../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv ../../RTL/ips/apb/apb_event_unit/sleep_unit.sv "+incdir+../../RTL/ips/apb/apb_event_unit/include" 
 # -- Compiling module apb_event_unit
 # -- Compiling module generic_service_unit
@@ -337,10 +337,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_event_unit
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_spi_master/apb_spi_master.sv ../../RTL/ips/apb/apb_spi_master/spi_master_apb_if.sv ../../RTL/ips/apb/apb_spi_master/spi_master_clkgen.sv ../../RTL/ips/apb/apb_spi_master/spi_master_controller.sv ../../RTL/ips/apb/apb_spi_master/spi_master_fifo.sv ../../RTL/ips/apb/apb_spi_master/spi_master_rx.sv ../../RTL/ips/apb/apb_spi_master/spi_master_tx.sv 
 # -- Compiling module apb_spi_master
 # -- Compiling module spi_master_apb_if
@@ -352,47 +352,47 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_spi_master
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_pulpino/apb_pulpino.sv 
 # -- Compiling module apb_pulpino
 # 
 # Top level modules:
 # 	apb_pulpino
-# End time: 20:01:34 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:34 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_fll_if/apb_fll_if.sv 
 # -- Compiling module apb_fll_if
 # 
 # Top level modules:
 # 	apb_fll_if
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:01
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:35 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/core2axi/core2axi.sv 
 # -- Compiling module core2axi
 # 
 # Top level modules:
 # 	core2axi
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:35 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_timer/apb_timer.sv ../../RTL/ips/apb/apb_timer/timer.sv 
 # -- Compiling module apb_timer
 # -- Compiling module timer
 # 
 # Top level modules:
 # 	apb_timer
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:29 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:35 on Oct 09,2025
+# Start time: 20:29:29 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi2apb/AXI_2_APB.sv ../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv ../../RTL/ips/axi/axi2apb/axi2apb.sv ../../RTL/ips/axi/axi2apb/axi2apb32.sv 
 # -- Compiling module AXI_2_APB
 # ** Warning: ../../RTL/ips/axi/axi2apb/AXI_2_APB.sv(69): (vlog-13314) Defaulting port 'WDATA_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
@@ -408,10 +408,10 @@ do ../scripts/run_pre_syn.do
 # 	AXI_2_APB_32
 # 	axi2apb
 # 	axi2apb32
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:30 on Oct 11,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 4
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:35 on Oct 09,2025
+# Start time: 20:29:30 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb_i2c/apb_i2c.sv ../../RTL/ips/apb/apb_i2c/i2c_master_bit_ctrl.sv ../../RTL/ips/apb/apb_i2c/i2c_master_byte_ctrl.sv ../../RTL/ips/apb/apb_i2c/i2c_master_defines.sv 
 # -- Compiling module apb_i2c
 # -- Compiling module i2c_master_bit_ctrl
@@ -419,10 +419,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	apb_i2c
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:30 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:35 on Oct 09,2025
+# Start time: 20:29:30 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_master.sv ../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_slave.sv ../../RTL/ips/axi/axi_slice_dc/dc_data_buffer.v ../../RTL/ips/axi/axi_slice_dc/onehot_to_bin.sv ../../RTL/ips/axi/axi_slice_dc/dc_full_detector.v ../../RTL/ips/axi/axi_slice_dc/dc_synchronizer.v ../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_din.v ../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_dout.v ../../RTL/ips/axi/axi_slice_dc/dc_token_ring.v 
 # -- Compiling module axi_slice_dc_master
 # -- Compiling module axi_slice_dc_slave
@@ -438,10 +438,10 @@ do ../scripts/run_pre_syn.do
 # 	axi_slice_dc_master
 # 	axi_slice_dc_slave
 # 	onehot_to_bin
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:30 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:35 on Oct 09,2025
+# Start time: 20:29:30 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/riscv/include/apu_core_package.sv ../../RTL/ips/riscv/include/riscv_defines.sv ../../RTL/ips/riscv/include/riscv_tracer_defines.sv ../../RTL/ips/riscv/riscv_alu.sv ../../RTL/ips/riscv/riscv_alu_basic.sv ../../RTL/ips/riscv/riscv_alu_div.sv ../../RTL/ips/riscv/riscv_compressed_decoder.sv ../../RTL/ips/riscv/riscv_controller.sv ../../RTL/ips/riscv/riscv_cs_registers.sv ../../RTL/ips/riscv/riscv_debug_unit.sv ../../RTL/ips/riscv/riscv_decoder.sv ../../RTL/ips/riscv/riscv_int_controller.sv ../../RTL/ips/riscv/riscv_ex_stage.sv ../../RTL/ips/riscv/riscv_hwloop_controller.sv ../../RTL/ips/riscv/riscv_hwloop_regs.sv ../../RTL/ips/riscv/riscv_id_stage.sv ../../RTL/ips/riscv/riscv_if_stage.sv ../../RTL/ips/riscv/riscv_load_store_unit.sv ../../RTL/ips/riscv/riscv_mult.sv ../../RTL/ips/riscv/riscv_prefetch_buffer.sv ../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv ../../RTL/ips/riscv/riscv_core.sv ../../RTL/ips/riscv/riscv_apu_disp.sv ../../RTL/ips/riscv/riscv_fetch_fifo.sv ../../RTL/ips/riscv/riscv_L0_buffer.sv "+incdir+../../RTL/ips/riscv/include/" 
 # -- Compiling package apu_core_package
 # -- Compiling package riscv_defines
@@ -834,19 +834,19 @@ do ../scripts/run_pre_syn.do
 # Top level modules:
 # 	riscv_alu_basic
 # 	riscv_core
-# End time: 20:01:35 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:30 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 344
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:30 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/riscv/riscv_register_file.sv 
 # -- Compiling module riscv_register_file
 # 
 # Top level modules:
 # 	riscv_register_file
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:30 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:30 on Oct 11,2025
 # vcom -reportprogress 300 ../../RTL/ips/apb/apb_uart/apb_uart.vhd ../../RTL/ips/apb/apb_uart/slib_clock_div.vhd ../../RTL/ips/apb/apb_uart/slib_counter.vhd ../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd ../../RTL/ips/apb/apb_uart/slib_fifo.vhd ../../RTL/ips/apb/apb_uart/slib_input_filter.vhd ../../RTL/ips/apb/apb_uart/slib_input_sync.vhd ../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd ../../RTL/ips/apb/apb_uart/uart_baudgen.vhd ../../RTL/ips/apb/apb_uart/uart_interrupt.vhd ../../RTL/ips/apb/apb_uart/uart_receiver.vhd ../../RTL/ips/apb/apb_uart/uart_transmitter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -876,10 +876,10 @@ do ../scripts/run_pre_syn.do
 # -- Compiling architecture rtl of uart_receiver
 # -- Compiling entity uart_transmitter
 # -- Compiling architecture rtl of uart_transmitter
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/axi/axi_slice/axi_ar_buffer.sv ../../RTL/ips/axi/axi_slice/axi_aw_buffer.sv ../../RTL/ips/axi/axi_slice/axi_b_buffer.sv ../../RTL/ips/axi/axi_slice/axi_buffer.sv ../../RTL/ips/axi/axi_slice/axi_r_buffer.sv ../../RTL/ips/axi/axi_slice/axi_slice.sv ../../RTL/ips/axi/axi_slice/axi_w_buffer.sv 
 # -- Compiling module axi_ar_buffer
 # -- Compiling module axi_aw_buffer
@@ -892,10 +892,10 @@ do ../scripts/run_pre_syn.do
 # Top level modules:
 # 	axi_buffer
 # 	axi_slice
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv ../../RTL/ips/adv_dbg_if/rtl/bytefifo.v ../../RTL/ips/adv_dbg_if/rtl/syncflop.v ../../RTL/ips/adv_dbg_if/rtl/syncreg.v ../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v ../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv ../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv 
 # -- Compiling module adbg_axi_biu
 # -- Compiling module adbg_axi_module
@@ -972,19 +972,19 @@ do ../scripts/run_pre_syn.do
 # 	adv_dbg_if
 # 	adbg_axionly_top
 # 	adbg_lintonly_top
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 52
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/ips/apb/apb2per/apb2per.sv 
 # -- Compiling module apb2per
 # 
 # Top level modules:
 # 	apb2per
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/rtl/components/pulp_clock_gating.sv ../../RTL/rtl/components/cluster_clock_gating.sv ../../RTL/rtl/components/cluster_clock_inverter.sv ../../RTL/rtl/components/cluster_clock_mux2.sv ../../RTL/rtl/components/rstgen.sv ../../RTL/rtl/components/pulp_clock_inverter.sv ../../RTL/rtl/components/pulp_clock_mux2.sv ../../RTL/rtl/components/generic_fifo.sv ../../RTL/rtl/components/sp_ram.sv 
 # -- Compiling module pulp_clock_gating
 # -- Compiling module cluster_clock_gating
@@ -1005,10 +1005,10 @@ do ../scripts/run_pre_syn.do
 # 	pulp_clock_mux2
 # 	generic_fifo
 # 	sp_ram
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:36 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/rtl/axi2apb_wrap.sv ../../RTL/rtl/periph_bus_wrap.sv ../../RTL/rtl/core2axi_wrap.sv ../../RTL/rtl/axi_node_intf_wrap.sv ../../RTL/rtl/axi_spi_slave_wrap.sv ../../RTL/rtl/axi_slice_wrap.sv ../../RTL/rtl/axi_mem_if_SP_wrap.sv ../../RTL/rtl/core_region.sv ../../RTL/rtl/instr_ram_wrap.sv ../../RTL/rtl/sp_ram_wrap.sv ../../RTL/rtl/boot_code.sv ../../RTL/rtl/boot_rom_wrap.sv ../../RTL/rtl/peripherals.sv ../../RTL/rtl/ram_mux.sv ../../RTL/rtl/pulpino_top.sv ../../RTL/rtl/clk_rst_gen.sv "+incdir+../../RTL/rtl/includes/" 
 # -- Compiling interface AXI_BUS
 # -- Compiling module axi2apb_wrap
@@ -1058,10 +1058,10 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	pulpino_top
-# End time: 20:01:36 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 10
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:37 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/tb.sv "+incdir+../../RTL/rtl/includes" 
 # -- Compiling interface jtag_i
 # -- Compiling package tb_sv_unit
@@ -1069,37 +1069,37 @@ do ../scripts/run_pre_syn.do
 # 
 # Top level modules:
 # 	tb
-# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:37 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/if_spi_master.sv 
 # -- Compiling interface spi_bus_master
 # 
 # Top level modules:
 # 	--none--
-# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:37 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/if_spi_slave.sv 
 # -- Compiling interface spi_slave
 # 
 # Top level modules:
 # 	--none--
-# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:37 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" ../../RTL/tb/uart.sv 
 # -- Compiling interface uart_bus
 # 
 # Top level modules:
 # 	--none--
-# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:37 on Oct 09,2025
+# Start time: 20:29:31 on Oct 11,2025
 # vlog -reportprogress 300 -sv "+define+SYNTHESIS" -timescale 1 ns / 1 ns ../../RTL/tb/i2c_eeprom_model.sv 
 # -- Compiling package pkg_i2c_model
 # -- Compiling module i2c_buf
@@ -1110,11 +1110,203 @@ do ../scripts/run_pre_syn.do
 # Top level modules:
 # 	i2c_buf
 # 	i2c_eeprom_model
-# End time: 20:01:37 on Oct 09,2025, Elapsed time: 0:00:00
+# End time: 20:29:31 on Oct 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -vopt -t ns work.tb -voptargs="+acc" 
-# Start time: 20:01:37 on Oct 09,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt6
+# Start time: 20:29:31 on Oct 11,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_int_controller(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_multiplexer.sv(49): (vopt-13314) Defaulting port 'IN_DATA' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_DW_allocator.sv(60): (vopt-13314) Defaulting port 'wdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_DW_allocator.sv(61): (vopt-13314) Defaulting port 'wstrb_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_DW_allocator.sv(63): (vopt-13314) Defaulting port 'wuser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv(77): (vopt-13314) Defaulting port 'cpu_data_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv(69): (vopt-13314) Defaulting port 'cpu_data_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "apb_fll_if(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_master_byte_ctrl(fast)".
+# ** Warning: ../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv(31): (vopt-13314) Defaulting port 'cpu_data_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__2)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__3)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__4)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__5)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__6)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__7)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__8)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__9)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__10)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__11)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "sleep_unit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master_rx(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_eeprom_model(fast)".
+# ** Warning: ../../RTL/ips/riscv/riscv_hwloop_controller.sv(34): (vopt-13314) Defaulting port 'hwlp_start_addr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_hwloop_controller.sv(35): (vopt-13314) Defaulting port 'hwlp_end_addr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_hwloop_controller.sv(36): (vopt-13314) Defaulting port 'hwlp_counter_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/apb/apb_node/apb_node_wrap.sv(40): (vopt-13314) Defaulting port 'start_addr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/apb/apb_node/apb_node_wrap.sv(41): (vopt-13314) Defaulting port 'end_addr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi2apb32(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_read_only_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_read_only_ctrl(fast__1)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BR_allocator.sv(60): (vopt-13314) Defaulting port 'rid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BR_allocator.sv(61): (vopt-13314) Defaulting port 'rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BR_allocator.sv(62): (vopt-13314) Defaulting port 'rresp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BR_allocator.sv(64): (vopt-13314) Defaulting port 'ruser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_BR_allocator(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv(48): (vopt-13314) Defaulting port 'WDATA_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv(48): (vopt-13314) Defaulting port 'WDATA_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_master_bit_ctrl(fast)".
+# ** Warning: ../../RTL/ips/riscv/riscv_ex_stage.sv(93): (vopt-13314) Defaulting port 'apu_operands_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_ex_stage.sv(97): (vopt-13314) Defaulting port 'apu_read_regs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_ex_stage.sv(100): (vopt-13314) Defaulting port 'apu_write_regs_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/rtl/peripherals.sv(297): (vopt-2685) [TFMPC] - Too few port connections for 'apb_gpio_i'.  Expected 17, found 15.
+# ** Warning: ../../RTL/rtl/peripherals.sv(297): (vopt-2718) [TFMPC] - Missing connection for port 'power_event'.
+# ** Warning: ../../RTL/rtl/peripherals.sv(297): (vopt-2718) [TFMPC] - Missing connection for port 'gpio_in_sync'.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "spi_slave_axi_plug(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv(64): (vopt-13314) Defaulting port 'START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv(65): (vopt-13314) Defaulting port 'END_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv(66): (vopt-13314) Defaulting port 'enable_region_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_address_decoder_AW(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(67): (vopt-13314) Defaulting port 'awid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(68): (vopt-13314) Defaulting port 'awaddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(69): (vopt-13314) Defaulting port 'awlen_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(70): (vopt-13314) Defaulting port 'awsize_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(71): (vopt-13314) Defaulting port 'awburst_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(73): (vopt-13314) Defaulting port 'awcache_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(74): (vopt-13314) Defaulting port 'awprot_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(75): (vopt-13314) Defaulting port 'awregion_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(76): (vopt-13314) Defaulting port 'awuser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(77): (vopt-13314) Defaulting port 'awqos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(83): (vopt-13314) Defaulting port 'wdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(84): (vopt-13314) Defaulting port 'wstrb_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(86): (vopt-13314) Defaulting port 'wuser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(93): (vopt-13314) Defaulting port 'arid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(94): (vopt-13314) Defaulting port 'araddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(95): (vopt-13314) Defaulting port 'arlen_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(96): (vopt-13314) Defaulting port 'arsize_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(97): (vopt-13314) Defaulting port 'arburst_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(99): (vopt-13314) Defaulting port 'arcache_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(100): (vopt-13314) Defaulting port 'arprot_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(101): (vopt-13314) Defaulting port 'arregion_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(102): (vopt-13314) Defaulting port 'aruser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_request_block.sv(103): (vopt-13314) Defaulting port 'arqos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(56): (vopt-13314) Defaulting port 'awid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(57): (vopt-13314) Defaulting port 'awaddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(58): (vopt-13314) Defaulting port 'awlen_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(59): (vopt-13314) Defaulting port 'awsize_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(60): (vopt-13314) Defaulting port 'awburst_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(62): (vopt-13314) Defaulting port 'awcache_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(63): (vopt-13314) Defaulting port 'awprot_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(64): (vopt-13314) Defaulting port 'awregion_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(65): (vopt-13314) Defaulting port 'awuser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AW_allocator.sv(66): (vopt-13314) Defaulting port 'awqos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_slave_controller(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "riscv_prefetch_buffer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_write_only_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_write_only_ctrl(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "core2axi(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_tap_top(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(56): (vopt-13314) Defaulting port 'arid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(57): (vopt-13314) Defaulting port 'araddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(58): (vopt-13314) Defaulting port 'arlen_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(59): (vopt-13314) Defaulting port 'arsize_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(60): (vopt-13314) Defaulting port 'arburst_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(62): (vopt-13314) Defaulting port 'arcache_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(63): (vopt-13314) Defaulting port 'arprot_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(64): (vopt-13314) Defaulting port 'arregion_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(65): (vopt-13314) Defaulting port 'aruser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_AR_allocator.sv(66): (vopt-13314) Defaulting port 'arqos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_if_stage.sv(81): (vopt-13314) Defaulting port 'hwlp_start_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_if_stage.sv(82): (vopt-13314) Defaulting port 'hwlp_end_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_if_stage.sv(83): (vopt-13314) Defaulting port 'hwlp_cnt_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "apb_spi_master(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BW_allocator.sv(59): (vopt-13314) Defaulting port 'bid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BW_allocator.sv(60): (vopt-13314) Defaulting port 'bresp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_BW_allocator.sv(61): (vopt-13314) Defaulting port 'buser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_BW_allocator(fast)".
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv(59): (vopt-13314) Defaulting port 'START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv(60): (vopt-13314) Defaulting port 'END_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv(61): (vopt-13314) Defaulting port 'enable_region_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(62): (vopt-13314) Defaulting port 'rid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(63): (vopt-13314) Defaulting port 'rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(64): (vopt-13314) Defaulting port 'rresp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(66): (vopt-13314) Defaulting port 'ruser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(71): (vopt-13314) Defaulting port 'bid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(72): (vopt-13314) Defaulting port 'bresp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(73): (vopt-13314) Defaulting port 'buser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(123): (vopt-13314) Defaulting port 'START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(124): (vopt-13314) Defaulting port 'END_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_response_block.sv(125): (vopt-13314) Defaulting port 'enable_region_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/apb/apb_node/apb_node.sv(46): (vopt-13314) Defaulting port 'prdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/apb/apb_node/apb_node.sv(51): (vopt-13314) Defaulting port 'START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/apb/apb_node/apb_node.sv(52): (vopt-13314) Defaulting port 'END_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 2 FSMs in architecture body "apb_uart(rtl)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uart_receiver(rtl)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uart_transmitter(rtl)".
+# ** Warning: ../../RTL/tb/tb.sv(131): (vopt-2685) [TFMPC] - Too few port connections for 'top_i'.  Expected 55, found 51.
+# ** Warning: ../../RTL/tb/tb.sv(131): (vopt-2718) [TFMPC] - Missing connection for port 'pad_mux_o'.
+# ** Warning: ../../RTL/tb/tb.sv(131): (vopt-2718) [TFMPC] - Missing connection for port 'pad_cfg_o'.
+# ** Warning: ../../RTL/tb/tb.sv(131): (vopt-2718) [TFMPC] - Missing connection for port 'scan_enable_i'.
+# ** Warning: ../../RTL/tb/tb.sv(131): (vopt-2718) [TFMPC] - Missing connection for port 'clk_standalone_i'.
+# ** Warning: ../../RTL/rtl/axi_node_intf_wrap.sv(34): (vopt-13314) Defaulting port 'start_addr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/rtl/axi_node_intf_wrap.sv(35): (vopt-13314) Defaulting port 'end_addr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(74): (vopt-13314) Defaulting port 'slave_awid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(75): (vopt-13314) Defaulting port 'slave_awaddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(76): (vopt-13314) Defaulting port 'slave_awlen_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(77): (vopt-13314) Defaulting port 'slave_awsize_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(78): (vopt-13314) Defaulting port 'slave_awburst_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(80): (vopt-13314) Defaulting port 'slave_awcache_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(81): (vopt-13314) Defaulting port 'slave_awprot_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(82): (vopt-13314) Defaulting port 'slave_awregion_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(83): (vopt-13314) Defaulting port 'slave_awuser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(84): (vopt-13314) Defaulting port 'slave_awqos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(90): (vopt-13314) Defaulting port 'slave_wdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(91): (vopt-13314) Defaulting port 'slave_wstrb_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(93): (vopt-13314) Defaulting port 'slave_wuser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(109): (vopt-13314) Defaulting port 'slave_arid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(110): (vopt-13314) Defaulting port 'slave_araddr_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(111): (vopt-13314) Defaulting port 'slave_arlen_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(112): (vopt-13314) Defaulting port 'slave_arsize_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(113): (vopt-13314) Defaulting port 'slave_arburst_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(115): (vopt-13314) Defaulting port 'slave_arcache_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(116): (vopt-13314) Defaulting port 'slave_arprot_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(117): (vopt-13314) Defaulting port 'slave_arregion_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(118): (vopt-13314) Defaulting port 'slave_aruser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(119): (vopt-13314) Defaulting port 'slave_arqos_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(168): (vopt-13314) Defaulting port 'master_bid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(169): (vopt-13314) Defaulting port 'master_bresp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(170): (vopt-13314) Defaulting port 'master_buser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(195): (vopt-13314) Defaulting port 'master_rid_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(196): (vopt-13314) Defaulting port 'master_rdata_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(197): (vopt-13314) Defaulting port 'master_rresp_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(199): (vopt-13314) Defaulting port 'master_ruser_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(240): (vopt-13314) Defaulting port 'cfg_START_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(241): (vopt-13314) Defaulting port 'cfg_END_ADDR_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(242): (vopt-13314) Defaulting port 'cfg_valid_rule_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_node.sv(243): (vopt-13314) Defaulting port 'cfg_connectivity_map_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_cs_registers.sv(93): (vopt-13314) Defaulting port 'hwlp_start_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_cs_registers.sv(94): (vopt-13314) Defaulting port 'hwlp_end_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/riscv/riscv_cs_registers.sv(95): (vopt-13314) Defaulting port 'hwlp_cnt_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_controller(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_axi_module(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_axi_biu(fast)".
+# ** Warning: ../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv(91): (vopt-13314) Defaulting port 'cpu_data_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_or1k_module(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "riscv_debug_unit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_alu_div(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master_controller(fast)".
+# ** Warning: ../../RTL/rtl/core_region.sv(571): (vopt-2685) [TFMPC] - Too few port connections for 'adv_dbg_if_i'.  Expected 63, found 61.
+# ** Warning: ../../RTL/rtl/core_region.sv(571): (vopt-2718) [TFMPC] - Missing connection for port 'cpu_clk_i'.
+# ** Warning: ../../RTL/rtl/core_region.sv(571): (vopt-2718) [TFMPC] - Missing connection for port 'tdo_padoe_o'.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv(57): (vopt-13314) Defaulting port 'data_AUX_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv(58): (vopt-13314) Defaulting port 'data_ID_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv(57): (vopt-13314) Defaulting port 'data_AUX_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv(58): (vopt-13314) Defaulting port 'data_ID_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv(57): (vopt-13314) Defaulting port 'data_AUX_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Warning: ../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv(58): (vopt-13314) Defaulting port 'data_ID_i' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_mult(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_load_store_unit(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=146.
 # Loading sv_std.std
 # Loading work.tb_sv_unit(fast)
 # Loading work.tb(fast)
@@ -1333,4 +1525,34 @@ run -all
 # [SPI] Enabling QPI mode
 # [adv_dbg_if] AXI4 WRITE         32 burst @1a107008 for           4 bytes.
 # [SPI] Loading Instruction RAM
+# [SPI] Prev address 00000edc current addr 00100000
+# [SPI] Loading Data RAM
 # [SPI] Checking Instruction RAM
+# [SPI] Prev address 00000edc current addr 00100000
+# [SPI] Checking Data RAM
+#             18001220, Branch decision is X in module tb.top_i.core_region_i.CORE.RISCV_CORE.id_stage_i
+#             18003900, Branch decision is X in module tb.top_i.core_region_i.CORE.RISCV_CORE.id_stage_i
+# [            32275020] RX bit: 0
+# [            32288460] RX bit: 0
+# [            32301900] RX bit: 1
+# [            32314060] RX bit: 0
+# [            32326860] RX bit: 0
+# [            32339660] RX bit: 1
+# [            46567500] RX bit: 0
+# [            46580940] RX bit: 0
+# [            46594380] RX bit: 1
+# [            46606540] RX bit: 0
+# [            46619340] RX bit: 0
+# [            46632140] RX bit: 1
+# [            60859980] RX bit: 0
+# [            60873420] RX bit: 0
+# [            60886860] RX bit: 1
+# [            60899020] RX bit: 0
+# [            60911820] RX bit: 0
+# [            60924620] RX bit: 1
+# [            75152460] RX bit: 0
+# [            75165900] RX bit: 0
+# [            75179340] RX bit: 1
+# [            75191500] RX bit: 0
+# [            75204300] RX bit: 0
+# [            75217100] RX bit: 1

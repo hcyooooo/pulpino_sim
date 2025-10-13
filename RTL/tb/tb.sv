@@ -28,7 +28,7 @@ module tb;
   parameter  SPI            = "QUAD";    // valid values are "SINGLE", "QUAD"
   parameter  BAUDRATE       = 781250;    // 1562500
   parameter  CLK_USE_FLL    = 0;  // 0 or 1
-  parameter  TEST           = ""; //valid values are "" (NONE), "DEBUG"
+  parameter  TEST           = "ARDUINO_GPIO"; //valid values are "" (NONE), "DEBUG"
   parameter  USE_ZERO_RISCY = 0;
   parameter  RISCY_RV32F    = 0;
   parameter  ZERO_RV32M     = 1;

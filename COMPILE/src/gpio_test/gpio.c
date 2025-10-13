@@ -84,6 +84,8 @@ int main(void)
       }
       delay_cycles(10000);
     }
+
+    printf("Cycle complete\n");
   }
 
   // 使用完后释放内存

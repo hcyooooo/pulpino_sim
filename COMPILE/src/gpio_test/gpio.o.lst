@@ -1,245 +1,246 @@
    1              		.file	"gpio.c"
    2              		.option nopic
-   3              		.section	.text.set_pin_function,"ax",@progbits
+   3              		.section	.text.startup.main,"ax",@progbits
    4              		.align	1
-   5              		.weak	set_pin_function
-   7              	set_pin_function:
-   8 0000 8280     		ret
-  10              		.section	.text.startup.main,"ax",@progbits
-  11              		.align	1
-  12              		.globl	main
-  14              	main:
-  15 0000 3971     		add	sp,sp,-64
-  16 0002 8547     		li	a5,1
-  17 0004 3EC2     		sw	a5,4(sp)
-  18 0006 8947     		li	a5,2
-  19 0008 3EC4     		sw	a5,8(sp)
-  20 000a 8D47     		li	a5,3
-  21 000c 3EC6     		sw	a5,12(sp)
-  22 000e 9147     		li	a5,4
-  23 0010 3EC8     		sw	a5,16(sp)
-  24 0012 9547     		li	a5,5
-  25 0014 3ECA     		sw	a5,20(sp)
-  26 0016 9947     		li	a5,6
-  27 0018 3ECC     		sw	a5,24(sp)
-  28 001a 9D47     		li	a5,7
-  29 001c 26DA     		sw	s1,52(sp)
-  30 001e 52D4     		sw	s4,40(sp)
-  31 0020 06DE     		sw	ra,60(sp)
-  32 0022 22DC     		sw	s0,56(sp)
-  33 0024 4AD8     		sw	s2,48(sp)
-  34 0026 4ED6     		sw	s3,44(sp)
-  35 0028 02C0     		sw	zero,0(sp)
-  36 002a 3ECE     		sw	a5,28(sp)
-  37 002c 0410     		add	s1,sp,32
-  38 002e 0A8A     		mv	s4,sp
-  39              	.L4:
-  40 0030 0B244A00 		p.lw	s0,4(s4!)	# load post inc
-  41 0034 8545     		li	a1,1
-  42 0036 2285     		mv	a0,s0
-  43 0038 97000000 		call	set_gpio_pin_direction
-  43      E7800000 
-  44 0040 8145     		li	a1,0
-  45 0042 2285     		mv	a0,s0
-  46 0044 97000000 		call	set_gpio_pin_value
-  46      E7800000 
-  47 004c E3129AFE 		bne	s4,s1,.L4
-  48 0050 0145     		li	a0,0
-  49              	.L20:
-  50 0052 13090100 		add	s2,sp,0
-  51              	.L10:
-  52 0056 8545     		li	a1,1
-  53 0058 97000000 		call	set_gpio_pin_value
-  53      E7800000 
-  54 0060 8567     		li	a5,4096
-  55 0062 93878738 		add	a5,a5,904
-  56 0066 FBC03700 		lp.setup  	x1,a5,(.L37)	 # loop setup, lc+le set
-  57              	.L6:
-  58              	 #APP
-  59              	# 70 "../src/gpio_test/gpio.c" 1
-   1              	// #include "gpio.h"
-   2              	// #include "string_lib.h"
-   3              	// #include "utils.h"
+   5              		.globl	main
+   7              	main:
+   8 0000 3971     		add	sp,sp,-64
+   9 0002 8547     		li	a5,1
+  10 0004 3EC2     		sw	a5,4(sp)
+  11 0006 8947     		li	a5,2
+  12 0008 3EC4     		sw	a5,8(sp)
+  13 000a 8D47     		li	a5,3
+  14 000c 3EC6     		sw	a5,12(sp)
+  15 000e 9147     		li	a5,4
+  16 0010 3EC8     		sw	a5,16(sp)
+  17 0012 9547     		li	a5,5
+  18 0014 3ECA     		sw	a5,20(sp)
+  19 0016 9947     		li	a5,6
+  20 0018 3ECC     		sw	a5,24(sp)
+  21 001a 13050002 		li	a0,32
+  22 001e 9D47     		li	a5,7
+  23 0020 4ED6     		sw	s3,44(sp)
+  24 0022 06DE     		sw	ra,60(sp)
+  25 0024 22DC     		sw	s0,56(sp)
+  26 0026 26DA     		sw	s1,52(sp)
+  27 0028 4AD8     		sw	s2,48(sp)
+  28 002a 52D4     		sw	s4,40(sp)
+  29 002c 56D2     		sw	s5,36(sp)
+  30 002e 5AD0     		sw	s6,32(sp)
+  31 0030 02C0     		sw	zero,0(sp)
+  32 0032 3ECE     		sw	a5,28(sp)
+  33 0034 B7090000 		lui	s3,%hi(pin_state)
+  34 0038 97000000 		call	malloc
+  34      E7800000 
+  35 0040 23A0A900 		sw	a0,%lo(pin_state)(s3)
+  36 0044 05CD     		beqz	a0,.L23
+  37 0046 AA87     		mv	a5,a0
+  38 0048 0A89     		mv	s2,sp
+  39 004a 0410     		add	s1,sp,32
+  40 004c 8A8A     		mv	s5,sp
+  41              	.L3:
+  42 004e 33872A41 		sub	a4,s5,s2
+  43 0052 0BA44A00 		p.lw	s0,4(s5!)	# load post inc
+  44 0056 8545     		li	a1,1
+  45 0058 2285     		mv	a0,s0
+  46 005a 23E70700 		p.sw	x0,a4(a5)	# store 0 reg(reg)
+  47 005e 97000000 		call	set_gpio_pin_direction
+  47      E7800000 
+  48 0066 8145     		li	a1,0
+  49 0068 2285     		mv	a0,s0
+  50 006a 97000000 		call	set_gpio_pin_value
+  50      E7800000 
+  51 0072 63805403 		beq	s1,s5,.L21
+  52 0076 83A70900 		lw	a5,%lo(pin_state)(s3)
+  53 007a D1BF     		j	.L3
+  54              	.L23:
+  55 007c F250     		lw	ra,60(sp)
+  56 007e 6254     		lw	s0,56(sp)
+  57 0080 D254     		lw	s1,52(sp)
+  58 0082 4259     		lw	s2,48(sp)
+  59 0084 B259     		lw	s3,44(sp)
+  60 0086 225A     		lw	s4,40(sp)
+  61 0088 925A     		lw	s5,36(sp)
+  62 008a 025B     		lw	s6,32(sp)
+  63 008c 7D55     		li	a0,-1
+  64 008e 2161     		add	sp,sp,64
+  65 0090 8280     		jr	ra
+  66              	.L21:
+  67 0092 0145     		li	a0,0
+  68 0094 370B0000 		lui	s6,%hi(.LC1)
+  69              	.L4:
+  70 0098 CA84     		mv	s1,s2
+  71              	.L10:
+  72 009a 83A70900 		lw	a5,%lo(pin_state)(s3)
+  73 009e 8545     		li	a1,1
+  74 00a0 33842441 		sub	s0,s1,s2
+  75 00a4 23E4B700 		p.sw	a1,s0(a5)	# store reg(reg)
+  76 00a8 97000000 		call	set_gpio_pin_value
+  76      E7800000 
+  77 00b0 8567     		li	a5,4096
+  78 00b2 93878738 		add	a5,a5,904
+  79 00b6 FBC03700 		lp.setup  	x1,a5,(.L38)	 # loop setup, lc+le set
+  80              	.L6:
+  81              	 #APP
+  82              	# 21 "../src/gpio_test/gpio.c" 1
+   1              	#include "gpio.h"
+   2              	#include "timer.h"  // 如果没有这个头，删掉本行即可
+   3              	#include <stdlib.h> // 引入 malloc 和 free
    4              	
-   5              	// void delay(volatile int cycles) {
-   6              	//     for (volatile int i = 0; i < cycles; i++);
-   7              	// }
-   8              	
-   9              	// int main() {
-  10              	//     // 设置 GPIO0~GPIO7 为输出
-  11              	//     for (int i = 0; i < 8; i++) {
-  12              	//         set_gpio_pin_direction(i, DIR_IN);
-  13              	//     }
-  14              	
-  15              	//     printf("GPIO0~GPIO7 configured as output\n");
-  16              	
-  17              	//     while (1) {
-  18              	//         // 全部置高
-  19              	//         for (int i = 0; i < 8; i++) {
-  20              	//             set_gpio_pin_value(i, 1);
-  21              	//         }
-  22              	//         printf("GPIO0~7 set HIGH\n");
-  23              	//         delay(1000000);
-  24              	
-  25              	//         // 全部置低
-  26              	//         for (int i = 0; i < 8; i++) {
-  27              	//             set_gpio_pin_value(i, 0);
-  28              	//         }
-  29              	//         printf("GPIO0~7 set LOW\n");
-  30              	//         delay(1000000);
-  31              	
-  32              	//         // 单个引脚轮流置高
-  33              	//         for (int i = 0; i < 8; i++) {
-  34              	//             // 先清零所有
-  35              	//             for (int j = 0; j < 8; j++)
-  36              	//                 set_gpio_pin_value(j, 0);
-  37              	//             set_gpio_pin_value(i, 1);
-  38              	//             printf("GPIO%d set HIGH\n", i);
-  39              	//             delay(500000);
-  40              	//         }
-  41              	//     }
-  42              	
-  43              	//     return 0;
-  44              	// }
-  45              	// #include "gpio.h"
-  46              	
-  47              	// int main() {
-  48              	//     // 设置 GPIO0 为输出
-  49              	//     set_gpio_pin_direction(0, DIR_IN);
-  50              	
-  51              	//     // 循环翻转 GPIO0 输出
-  52              	//     while (1) {
-  53              	//         set_gpio_pin_value(0, 1);
-  54              	//         for (volatile int i = 0; i < 100000; i++);
-  55              	//         set_gpio_pin_value(0, 0);
-  56              	//         for (volatile int i = 0; i < 100000; i++);
-  57              	//     }
-  58              	
-  59              	//     return 0;
-  60              	// }
-  61              	#include "gpio.h"
-  62              	#include "timer.h"   // 如果没有这个头，删掉本行即可
-  63              	
-  64              	// 预防性：若库里没有实现 set_pin_function，提供一个弱符号空实现以避免链�
-  65              	// 若将来你添加了真正的实现，链接器会优先用真正的实现覆盖这个弱实现
-  66              	__attribute__((weak)) void set_pin_function(int pin, int function) { (void)pin; (void)function; }
-  67              	
-  68              	// 简单延时（仿真用）
-  69              	static void delay_cycles(volatile unsigned int cycles) {
-  70 006a 0100     	  while (cycles--) { __asm__ volatile ("nop"); }
-  71              	}
-  60              		nop
-  61              	# 0 "" 2
-  62              	 #NO_APP
-  63              	.L37:
-  64 006c 0100     		nop
-  65              		/* loop end a5 .L6 */ 
-  66 006e 03250900 		lw	a0,0(s2)
-  67 0072 8145     		li	a1,0
-  68 0074 97000000 		call	set_gpio_pin_value
-  68      E7800000 
-  69 007c FBD0017D 		lp.setupi 	x1,2000,(.L36)	 # loop setup, lc+le set
-  70              	.L8:
-  71              	 #APP
-  72              	# 70 "../src/gpio_test/gpio.c" 1
-  73              		nop
-  74              	# 0 "" 2
-  75              	 #NO_APP
-  76              	.L36:
-  77 0082 0100     		nop
-  78              		/* loop end a5 .L8 */ 
-  79 0084 1109     		add	s2,s2,4
-  80 0086 63054901 		beq	s2,s4,.L21
-  81 008a 03250900 		lw	a0,0(s2)
-  82 008e E1B7     		j	.L10
-  83              	.L21:
-  84 0090 13040100 		add	s0,sp,0
-  85              	.L9:
-  86 0094 0B254400 		p.lw	a0,4(s0!)	# load post inc
-  87 0098 8545     		li	a1,1
-  88 009a 97000000 		call	set_gpio_pin_value
-  88      E7800000 
-  89 00a2 E31924FF 		bne	s0,s2,.L9
-  90 00a6 9567     		li	a5,20480
-  91 00a8 938707E2 		add	a5,a5,-480
-  92 00ac FBC03700 		lp.setup  	x1,a5,(.L35)	 # loop setup, lc+le set
-  93              	.L12:
-  94              	 #APP
-  95              	# 70 "../src/gpio_test/gpio.c" 1
-  96              		nop
-  97              	# 0 "" 2
-  98              	 #NO_APP
-  99              	.L35:
- 100 00b2 0100     		nop
- 101              		/* loop end a5 .L12 */ 
- 102 00b4 13040100 		add	s0,sp,0
- 103              	.L13:
- 104 00b8 0B254400 		p.lw	a0,4(s0!)	# load post inc
- 105 00bc 8145     		li	a1,0
- 106 00be 97000000 		call	set_gpio_pin_value
- 106      E7800000 
- 107 00c6 E31924FF 		bne	s0,s2,.L13
- 108 00ca 9567     		li	a5,20480
- 109 00cc 938707E2 		add	a5,a5,-480
- 110 00d0 FBC03700 		lp.setup  	x1,a5,(.L34)	 # loop setup, lc+le set
- 111              	.L15:
- 112              	 #APP
- 113              	# 70 "../src/gpio_test/gpio.c" 1
- 114              		nop
- 115              	# 0 "" 2
- 116              	 #NO_APP
- 117              	.L34:
- 118 00d6 0100     		nop
- 119              		/* loop end a5 .L15 */ 
- 120 00d8 A149     		li	s3,8
- 121              	.L16:
- 122 00da 13040100 		add	s0,sp,0
- 123              	.L17:
- 124 00de 8B244400 		p.lw	s1,4(s0!)	# load post inc
- 125 00e2 2685     		mv	a0,s1
- 126 00e4 97000000 		call	get_gpio_pin_value
- 126      E7800000 
- 127 00ec 93351500 		seqz	a1,a0
- 128 00f0 2685     		mv	a0,s1
- 129 00f2 97000000 		call	set_gpio_pin_value
- 129      E7800000 
- 130 00fa E31224FF 		bne	s0,s2,.L17
- 131 00fe 8967     		li	a5,8192
- 132 0100 93870771 		add	a5,a5,1808
- 133 0104 FBC03700 		lp.setup  	x1,a5,(.L33)	 # loop setup, lc+le set
- 134              	.L19:
- 135              	 #APP
- 136              	# 70 "../src/gpio_test/gpio.c" 1
- 137              		nop
- 138              	# 0 "" 2
- 139              	 #NO_APP
- 140              	.L33:
- 141 010a 0100     		nop
- 142              		/* loop end a5 .L19 */ 
- 143 010c FD19     		add	s3,s3,-1
- 144 010e E39609FC 		bnez	s3,.L16
- 145 0112 0245     		lw	a0,0(sp)
- 146 0114 3DBF     		j	.L20
- 148              		.ident	"GCC: (GNU) 7.1.1 20170509"
+   5              	// 预防性：若库里没有实现 set_pin_function，提供一个弱符号空实现以避免链�
+   6              	// 若将来你添加了真正的实现，链接器会优先用真正的实现覆盖这个弱实现
+   7              	// __attribute__((weak)) void set_pin_function(int pin, int function)
+   8              	// {
+   9              	//   (void)pin;
+  10              	//   (void)function;
+  11              	// }
+  12              	
+  13              	// 动态分配的 pin 状态数组
+  14              	int *pin_state;
+  15              	
+  16              	// 简单延时（仿真用）
+  17              	static void delay_cycles(volatile unsigned int cycles)
+  18              	{
+  19              	  while (cycles--)
+  20              	  {
+  21 00ba 0100     	    __asm__ volatile("nop");
+  22              	  }
+  83              		nop
+  84              	# 0 "" 2
+  85              	 #NO_APP
+  86              	.L38:
+  87 00bc 0100     		nop
+  88              		/* loop end a5 .L6 */ 
+  89 00be 83A70900 		lw	a5,%lo(pin_state)(s3)
+  90 00c2 8840     		lw	a0,0(s1)
+  91 00c4 23E40700 		p.sw	x0,s0(a5)	# store 0 reg(reg)
+  92 00c8 8145     		li	a1,0
+  93 00ca 97000000 		call	set_gpio_pin_value
+  93      E7800000 
+  94 00d2 FBD0017D 		lp.setupi 	x1,2000,(.L37)	 # loop setup, lc+le set
+  95              	.L8:
+  96              	 #APP
+  97              	# 21 "../src/gpio_test/gpio.c" 1
+  98              		nop
+  99              	# 0 "" 2
+ 100              	 #NO_APP
+ 101              	.L37:
+ 102 00d8 0100     		nop
+ 103              		/* loop end a5 .L8 */ 
+ 104 00da 9104     		add	s1,s1,4
+ 105 00dc 63849A00 		beq	s5,s1,.L22
+ 106 00e0 8840     		lw	a0,0(s1)
+ 107 00e2 65BF     		j	.L10
+ 108              	.L22:
+ 109 00e4 4A84     		mv	s0,s2
+ 110              	.L9:
+ 111 00e6 03A70900 		lw	a4,%lo(pin_state)(s3)
+ 112 00ea B3072441 		sub	a5,s0,s2
+ 113 00ee 8545     		li	a1,1
+ 114 00f0 0B254400 		p.lw	a0,4(s0!)	# load post inc
+ 115 00f4 A367B700 		p.sw	a1,a5(a4)	# store reg(reg)
+ 116 00f8 97000000 		call	set_gpio_pin_value
+ 116      E7800000 
+ 117 0100 E39384FE 		bne	s1,s0,.L9
+ 118 0104 9567     		li	a5,20480
+ 119 0106 938707E2 		add	a5,a5,-480
+ 120 010a FBC03700 		lp.setup  	x1,a5,(.L36)	 # loop setup, lc+le set
+ 121              	.L12:
+ 122              	 #APP
+ 123              	# 21 "../src/gpio_test/gpio.c" 1
+ 124              		nop
+ 125              	# 0 "" 2
+ 126              	 #NO_APP
+ 127              	.L36:
+ 128 0110 0100     		nop
+ 129              		/* loop end a5 .L12 */ 
+ 130 0112 4A84     		mv	s0,s2
+ 131              	.L13:
+ 132 0114 03A70900 		lw	a4,%lo(pin_state)(s3)
+ 133 0118 B3072441 		sub	a5,s0,s2
+ 134 011c 0B254400 		p.lw	a0,4(s0!)	# load post inc
+ 135 0120 8145     		li	a1,0
+ 136 0122 A3670700 		p.sw	x0,a5(a4)	# store 0 reg(reg)
+ 137 0126 97000000 		call	set_gpio_pin_value
+ 137      E7800000 
+ 138 012e E39384FE 		bne	s1,s0,.L13
+ 139 0132 9567     		li	a5,20480
+ 140 0134 938707E2 		add	a5,a5,-480
+ 141 0138 FBC03700 		lp.setup  	x1,a5,(.L35)	 # loop setup, lc+le set
+ 142              	.L15:
+ 143              	 #APP
+ 144              	# 21 "../src/gpio_test/gpio.c" 1
+ 145              		nop
+ 146              	# 0 "" 2
+ 147              	 #NO_APP
+ 148              	.L35:
+ 149 013e 0100     		nop
+ 150              		/* loop end a5 .L15 */ 
+ 151 0140 214A     		li	s4,8
+ 152              	.L16:
+ 153 0142 4A84     		mv	s0,s2
+ 154              	.L17:
+ 155 0144 83A70900 		lw	a5,%lo(pin_state)(s3)
+ 156 0148 33072441 		sub	a4,s0,s2
+ 157 014c BA97     		add	a5,a5,a4
+ 158 014e 8C43     		lw	a1,0(a5)
+ 159 0150 0B254400 		p.lw	a0,4(s0!)	# load post inc
+ 160 0154 93B51500 		seqz	a1,a1
+ 161 0158 8CC3     		sw	a1,0(a5)
+ 162 015a 97000000 		call	set_gpio_pin_value
+ 162      E7800000 
+ 163 0162 E31194FE 		bne	s0,s1,.L17
+ 164 0166 8967     		li	a5,8192
+ 165 0168 93870771 		add	a5,a5,1808
+ 166 016c FBC03700 		lp.setup  	x1,a5,(.L34)	 # loop setup, lc+le set
+ 167              	.L19:
+ 168              	 #APP
+ 169              	# 21 "../src/gpio_test/gpio.c" 1
+ 170              		nop
+ 171              	# 0 "" 2
+ 172              	 #NO_APP
+ 173              	.L34:
+ 174 0172 0100     		nop
+ 175              		/* loop end a5 .L19 */ 
+ 176 0174 7D1A     		add	s4,s4,-1
+ 177 0176 E3160AFC 		bnez	s4,.L16
+ 178 017a 13050B00 		addi	a0,s6,%lo(.LC1)
+ 179 017e 97000000 		call	puts
+ 179      E7800000 
+ 180 0186 0245     		lw	a0,0(sp)
+ 181 0188 01BF     		j	.L4
+ 183              		.comm	pin_state,4,4
+ 184              		.section	.rodata.main.str1.4,"aMS",@progbits,1
+ 185              		.align	2
+ 186              	.LC1:
+ 187 0000 4379636C 		.string	"Cycle complete"
+ 187      6520636F 
+ 187      6D706C65 
+ 187      746500
+ 188              		.ident	"GCC: (GNU) 7.1.1 20170509"
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gpio.c
-     /tmp/cc5ndBC2.s:7      .text.set_pin_function:0000000000000000 set_pin_function
-     /tmp/cc5ndBC2.s:14     .text.startup.main:0000000000000000 main
-     /tmp/cc5ndBC2.s:63     .text.startup.main:000000000000006c .L37
-     /tmp/cc5ndBC2.s:76     .text.startup.main:0000000000000082 .L36
-     /tmp/cc5ndBC2.s:99     .text.startup.main:00000000000000b2 .L35
-     /tmp/cc5ndBC2.s:117    .text.startup.main:00000000000000d6 .L34
-     /tmp/cc5ndBC2.s:140    .text.startup.main:000000000000010a .L33
-     /tmp/cc5ndBC2.s:39     .text.startup.main:0000000000000030 .L4
-     /tmp/cc5ndBC2.s:83     .text.startup.main:0000000000000090 .L21
-     /tmp/cc5ndBC2.s:51     .text.startup.main:0000000000000056 .L10
-     /tmp/cc5ndBC2.s:85     .text.startup.main:0000000000000094 .L9
-     /tmp/cc5ndBC2.s:103    .text.startup.main:00000000000000b8 .L13
-     /tmp/cc5ndBC2.s:123    .text.startup.main:00000000000000de .L17
-     /tmp/cc5ndBC2.s:121    .text.startup.main:00000000000000da .L16
-     /tmp/cc5ndBC2.s:49     .text.startup.main:0000000000000052 .L20
+     /tmp/ccT9TbdS.s:7      .text.startup.main:0000000000000000 main
+                            *COM*:0000000000000004 pin_state
+     /tmp/ccT9TbdS.s:186    .rodata.main.str1.4:0000000000000000 .LC1
+     /tmp/ccT9TbdS.s:86     .text.startup.main:00000000000000bc .L38
+     /tmp/ccT9TbdS.s:101    .text.startup.main:00000000000000d8 .L37
+     /tmp/ccT9TbdS.s:127    .text.startup.main:0000000000000110 .L36
+     /tmp/ccT9TbdS.s:148    .text.startup.main:000000000000013e .L35
+     /tmp/ccT9TbdS.s:173    .text.startup.main:0000000000000172 .L34
+     /tmp/ccT9TbdS.s:54     .text.startup.main:000000000000007c .L23
+     /tmp/ccT9TbdS.s:66     .text.startup.main:0000000000000092 .L21
+     /tmp/ccT9TbdS.s:41     .text.startup.main:000000000000004e .L3
+     /tmp/ccT9TbdS.s:108    .text.startup.main:00000000000000e4 .L22
+     /tmp/ccT9TbdS.s:71     .text.startup.main:000000000000009a .L10
+     /tmp/ccT9TbdS.s:110    .text.startup.main:00000000000000e6 .L9
+     /tmp/ccT9TbdS.s:131    .text.startup.main:0000000000000114 .L13
+     /tmp/ccT9TbdS.s:154    .text.startup.main:0000000000000144 .L17
+     /tmp/ccT9TbdS.s:152    .text.startup.main:0000000000000142 .L16
+     /tmp/ccT9TbdS.s:69     .text.startup.main:0000000000000098 .L4
 
 UNDEFINED SYMBOLS
+malloc
 set_gpio_pin_direction
 set_gpio_pin_value
-get_gpio_pin_value
+puts
