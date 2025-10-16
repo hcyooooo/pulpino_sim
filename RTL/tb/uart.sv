@@ -79,7 +79,6 @@ interface uart_bus
         else
           stringa[(255-charnum-1)*8 +: 8] = 8'h0; // null terminate string
 
-        $write("RX string: %s\n",stringa);
         charnum = 0;
         stringa = "";
       end

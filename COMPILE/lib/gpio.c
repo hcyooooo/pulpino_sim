@@ -47,6 +47,15 @@ int  get_gpio_pin_direction(int pinnumber) {
 
 }
 
+
+// Workaround 函数
+int get_gpio_pin_direction_fixed(int pinnumber) {
+  volatile int old_dir;
+  old_dir = *(volatile int*) (GPIO_REG_PADDIR);
+  old_dir = ((old_dir >> pinnumber) & 0x01);  // 正确的括号！
+  return old_dir;
+}
+
 void set_gpio_pin_value(int pinnumber, int value) {
   volatile int v;
   v = *(volatile int*) (GPIO_REG_PADOUT);
